@@ -7,14 +7,14 @@ from datetime import datetime, date, time
 #https://docs.python.org/3/library/subprocess.html#module-subprocess
 def prepend_file(p_tf):
     tfnew ='temporary.txt'
-    shutil.copy(p_tf,p_tf+'bck')
+    #shutil.copy(p_tf,p_tf+'bck')
     f = open(p_tf,'r')
     fnew = open(tfnew,'w+')
     readed_lines = f.readlines();
     rev_from = readed_lines[4]
     rev_to = readed_lines[5]
     rev_to_splitted = rev_to.split("=")
-    print(rev_to_splitted[1])
+    print(p_tf+' -> '+rev_to_splitted[1])
     fnew.write('%s' %d)
     fnew.write('\n')
     for i in range(1,12):
