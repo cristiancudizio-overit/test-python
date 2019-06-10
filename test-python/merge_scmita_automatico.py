@@ -26,13 +26,13 @@ def get_var_value(p_line):
     line_splitted = p_line.split("=")
     return line_splitted[1]
 def create_cmd_file(p_tf):
-    #tfnew ='temporary.txt'
     tfnew = p_tf[:-4]+'.cmd'
+    tfnew_commit = p_tf[:-4]+'_commit.cmd'
     print(tfnew)
     f = open(p_tf,'r')
     fnew = open(tfnew,'w+')
+    fnew_commit = open(tfnew_commit,'w+')
     readed_lines = f.readlines();
-    #rev_from = readed_lines[4]
     rev_to_old = get_var_value(readed_lines[5])
     rev_from = rev_to_old
     project_name = get_var_value(readed_lines[1])
@@ -46,19 +46,34 @@ def create_cmd_file(p_tf):
     #riscrive comandi con revision aggiornate
     #for i in range(1,12):
     # per test si ferma all'update
-    for i in range(1,9):
-        if i == 4:
+    for i in range(1,11):
+        #print(str(i))
+        #print(readed_lines[i])
+        if i<4:
+            fnew.writelines(readed_lines[i])
+            fnew_commit.writelines(readed_lines[i])
+        elif i == 4:
             fnew.write('set REV_FROM='+rev_from)
+            fnew_commit.write('set REV_FROM='+rev_from)
         elif i == 5:
             fnew.write('set REV_TO='+str(rev_to)+'\n')
+            fnew_commit.write('set REV_TO='+str(rev_to)+'\n')
         elif i == 7:
             fnew.write('cd '+base_path+'%PROJECT_NAME%-%BRANCH_TO%'+sub_path+'\n')
+            fnew_commit.write('cd '+base_path+'%PROJECT_NAME%-%BRANCH_TO%'+sub_path+'\n')
+        elif i == 8 or i == 9:
+            fnew.writelines(readed_lines[i])
+        elif i == 10:
+            fnew_commit.write('svn_commit.cmd\n')
         else:
             fnew.writelines(readed_lines[i])
+            fnew_commit.writelines(readed_lines[i])
     f.close()
     fnew.close()
-    return tfnew
-def prepend_file(p_tf):
+    fnew_commit.close()
+    return (tfnew,tfnew_commit)
+#procedura obsoleta sostituita
+def prepend_file_old(p_tf):
     #tfnew ='temporary.txt'
     tfnew = p_tf[:-4]+'.cmd'
     print(tfnew)
@@ -85,6 +100,26 @@ def prepend_file(p_tf):
     f.close()
     fnew.close()
     shutil.copy(tfnew,p_tf)
+#inserisce in testa al file di log l'output dell'ultimo .cmd    
+def prepend_file(p_tf):
+    tfnew ='temporary.txt'
+    tfcmd = p_tf[:-4]+'.cmd'
+    fold = open(p_tf,'r')
+    #backup per test
+    shutil.copy(p_tf,p_tf+'bck')
+    f = open(tfcmd,'r')
+    fnew = open(tfnew,'w+')
+    readed_lines = f.readlines();
+    for i in range(0,len(readed_lines)):
+        fnew.writelines(readed_lines[i])
+    fnew.write('\n\n----\n')
+    #accoda il contenuto completo del file com'era prima
+    readed_lines_old = fold.readlines()
+    fnew.writelines(readed_lines_old)
+    f.close()
+    fold.close()
+    fnew.close()
+    shutil.copy(tfnew,p_tf)    
 def main(argv):
     inputfile = 'merge_log_list.txt'
     opts, args = getopt.getopt(argv,"hi:o:",["ifile="])    
@@ -97,17 +132,31 @@ def main(argv):
               inputfile = arg
     print('Input file is "', inputfile)
     flist = open(inputfile,'r')
-    readed_lines = flist.readlines()
-    for line in readed_lines:        
+    flist_readed_lines = flist.readlines()
+    #passa uno ad uno i file di log del merge.
+    for line in flist_readed_lines:        
         if not line.strip().startswith('#'):
             #print(line[:-1])
-            cmd_file_name = create_cmd_file(line[:-1])            
+            cmd_files = create_cmd_file(line[:-1])
+            cmd_file_name = cmd_files[0]
+            cmd_commit_file_name = cmd_files[1]
             cp = subprocess.run(cmd_file_name, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,encoding="cp1252")
             print(cp.stdout)
             #out_file = cmd_file_name[:-4]+'.out'
             fof = open(cmd_file_name,'a+')
             fof.write(cp.stdout)
-            #prepend_file(line[:-1])
+            v_risposta = input('finito? ')
+            if v_risposta=='yes':
+                print('y')
+                #lancio il commit?
+                #nome del file di commit.....
+                print(cmd_commit_file_name)
+                cp2 = subprocess.run(cmd_commit_file_name, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,encoding="cp1252")
+                fof.write(cp2.stdout)                
+            else:
+                print('n')
+            fof.close()    
+            prepend_file(line[:-1])
 if __name__ == "__main__":
    main(sys.argv[1:])
 
