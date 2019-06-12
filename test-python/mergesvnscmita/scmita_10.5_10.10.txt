@@ -1,3 +1,66 @@
+REM 2019-06-12 10:16:14.598268
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=10.5
+set BRANCH_TO=10.10
+set REV_FROM=373699
+set REV_TO=374053
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd \OVERIT\geocall61\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+
+C:\development-cri\test-python\test-python\mergesvnscmita>REM 2019-06-12 10:16:14.598268 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=SCMIta 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=10.5 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=10.10 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=373699 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=374053 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 10.5 da rev 373699 a 374053 sul 10.10" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\SCMIta-10.10\overit 
+
+C:\OVERIT\geocall61\SCMIta-10.10\overit>svn update 
+Updating '.':
+Alla revisione 374053.
+
+C:\OVERIT\geocall61\SCMIta-10.10\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-10.10\overit>svn merge -r 373699:374053 http://svn.overit.it/repositories/geocall/SCMIta/branches/10.5/src/overit --accept postpone 
+--- Fusione di r373700 attraverso r374053 in '.':
+A    geocallapp\scmita\anagrafiche\strategiecl\RicercaStrategiaCL.java
+--- Recording mergeinfo for merge of r373700 through r374053 into '.':
+ U   .
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=SCMIta 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=10.5 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=10.10 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=373699 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=374053 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 10.5 da rev 373699 a 374053 sul 10.10" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\SCMIta-10.10\overit 
+
+C:\OVERIT\geocall61\SCMIta-10.10\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-10.10\overit>svn commit -m "riportate modifiche dal branch 10.5 da rev 373699 a 374053 sul 10.10" 
+Trasmetto      .
+Aggiungo       geocallapp\scmita\anagrafiche\strategiecl\RicercaStrategiaCL.java
+
+Committed revision 374054.
+
+
+----
 REM 2019-06-10 17:54:32.757834
 set PROJECT_NAME=SCMIta
 set BRANCH_FROM=10.5
