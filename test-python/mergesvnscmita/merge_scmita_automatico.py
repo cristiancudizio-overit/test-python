@@ -25,6 +25,7 @@ def get_svn_rev(p_branch):
 def get_var_value(p_line):
     line_splitted = p_line.split("=")
     return line_splitted[1]
+#prepara due file .cmd, uno per il merge e uno per il commit
 def create_cmd_file(p_tf):
     tfnew = p_tf[:-4]+'.cmd'
     tfnew_commit = p_tf[:-4]+'_commit.cmd'
@@ -106,7 +107,7 @@ def prepend_file(p_tf):
     tfcmd = p_tf[:-4]+'.cmd'
     fold = open(p_tf,'r')
     #backup per test
-    shutil.copy(p_tf,p_tf+'bck')
+    shutil.copy(p_tf,'log\\'+p_tf)
     f = open(tfcmd,'r')
     fnew = open(tfnew,'w+')
     readed_lines = f.readlines();
@@ -138,25 +139,30 @@ def main(argv):
         if not line.strip().startswith('#'):
             #print(line[:-1])
             cmd_files = create_cmd_file(line[:-1])
+            #file cmd che fa il merge
             cmd_file_name = cmd_files[0]
+            #file cmd che fa il commit
             cmd_commit_file_name = cmd_files[1]
+            #lancia cmd del merge e cattura l'output e lo accoda al file cmd stesso
             cp = subprocess.run(cmd_file_name, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,encoding="cp1252")
             print(cp.stdout)
             #out_file = cmd_file_name[:-4]+'.out'
             fof = open(cmd_file_name,'a+')
             fof.write(cp.stdout)
-            v_risposta = input('finito? ')
-            if v_risposta=='yes':
-                print('y')
-                #lancio il commit?
-                #nome del file di commit.....
-                print(cmd_commit_file_name)
-                cp2 = subprocess.run(cmd_commit_file_name, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,encoding="cp1252")
-                fof.write(cp2.stdout)                
-            else:
-                print('n')
-            fof.close()    
+            v_risposta = 'NO'
+            while v_risposta != 'yes' 
+                v_risposta = input('continuare (yes/no)? ')
+            #se rispondo si lancio il commit
+            print(cmd_commit_file_name)
+            cp2 = subprocess.run(cmd_commit_file_name, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,encoding="cp1252")
+            fof.write(cp2.stdout)                
+            fof.close()
+            #inserisce in testa al log il contenuto completo del cmd, quindi comandi e output
             prepend_file(line[:-1])
+            #sposta file cmd per non avere confusione
+            shutil.move(cmd_file_name,'log\\')
+            shutil.move(cmd_commit_file_name,'log\\')
+    flist.close()
 if __name__ == "__main__":
    main(sys.argv[1:])
 
