@@ -150,7 +150,7 @@ def main(argv):
             fof = open(cmd_file_name,'a+')
             fof.write(cp.stdout)
             v_risposta = 'NO'
-            while v_risposta != 'yes' 
+            while v_risposta != 'yes': 
                 v_risposta = input('continuare (yes/no)? ')
             #se rispondo si lancio il commit
             print(cmd_commit_file_name)
