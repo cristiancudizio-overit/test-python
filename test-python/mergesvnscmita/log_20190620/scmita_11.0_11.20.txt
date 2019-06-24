@@ -1,0 +1,1072 @@
+REM 2019-06-18 11:25:13.279729
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=374812
+set REV_TO=375104
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd \OVERIT\geocall61\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+
+C:\development-cri\test-python\test-python\mergesvnscmita>REM 2019-06-18 11:25:13.279729 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=SCMIta 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=11.0 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=11.20 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=374812 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=375104 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 11.0 da rev 374812 a 375104 sul 11.20" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\SCMIta-11.20\overit 
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update 
+Updating '.':
+Alla revisione 375104.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 374812:375104 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit --accept postpone 
+--- Fusione di r374813 attraverso r375104 in '.':
+U    geocallapp\scmita\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+U    geocallapp\scmita\fibraottica\anagrafiche\incarichivf\IncarichiVF.xml
+U    geocallapp\scmita\fibraottica\parametrizzazione\rgidrisposteirr\DARGidRisposteIrr.java
+ G   .
+--- Recording mergeinfo for merge of r374813 through r375104 into '.':
+ G   .
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=SCMIta 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=11.0 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=11.20 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=374812 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=375104 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 11.0 da rev 374812 a 375104 sul 11.20" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\SCMIta-11.20\overit 
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 374812 a 375104 sul 11.20" 
+Trasmetto      .
+Trasmetto      geocallapp\scmita\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+Trasmetto      geocallapp\scmita\fibraottica\anagrafiche\incarichivf\IncarichiVF.xml
+Trasmetto      geocallapp\scmita\fibraottica\parametrizzazione\rgidrisposteirr\DARGidRisposteIrr.java
+Trasmissione dati ...
+Committed revision 375105.
+
+
+----
+REM 2019-06-17 09:21:50.356044
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=374064
+set REV_TO=374812
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd \OVERIT\geocall61\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+
+C:\development-cri\test-python\test-python\mergesvnscmita>REM 2019-06-17 09:21:50.356044 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=SCMIta 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=11.0 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=11.20 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=374064 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=374812 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 11.0 da rev 374064 a 374812 sul 11.20" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\SCMIta-11.20\overit 
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update 
+Updating '.':
+Alla revisione 374812.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 374064:374812 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit --accept postpone 
+--- Fusione di r374065 attraverso r374812 in '.':
+U    geocallapp\scmita\cxf\gwfesitoverifiche\wrapper\DATCallEsitoVerificaFinale.java
+U    geocallapp\scmita\visitesorveglianza\report\reportmaster\DATReportMaster.java
+ G   .
+--- Recording mergeinfo for merge of r374065 through r374812 into '.':
+ G   .
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=SCMIta 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=11.0 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=11.20 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=374064 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=374812 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 11.0 da rev 374064 a 374812 sul 11.20" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\SCMIta-11.20\overit 
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 374064 a 374812 sul 11.20" 
+Trasmetto      .
+Trasmetto      geocallapp\scmita\cxf\gwfesitoverifiche\wrapper\DATCallEsitoVerificaFinale.java
+Trasmetto      geocallapp\scmita\visitesorveglianza\report\reportmaster\DATReportMaster.java
+Trasmissione dati ..
+Committed revision 374813.
+
+
+----
+REM 2019-06-12 10:20:00.336296
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=373709
+set REV_TO=374064
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd \OVERIT\geocall61\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+
+C:\development-cri\test-python\test-python\mergesvnscmita>REM 2019-06-12 10:20:00.336296 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=SCMIta 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=11.0 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=11.20 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=373709 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=374064 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 11.0 da rev 373709 a 374064 sul 11.20" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\SCMIta-11.20\overit 
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update 
+Updating '.':
+Alla revisione 374064.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 373709:374064 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit --accept postpone 
+--- Fusione di r373710 attraverso r374064 in '.':
+U    geocallapp\scmita\amministrazione\aschede\AllegatiSchede.xsl
+U    geocallapp\scmita\amministrazione\aschede\CAllegatiSchede.java
+A    geocallapp\scmita\anagrafiche\strategiecl\RicercaStrategiaCL.java
+U    geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\DATLavorazioniAttoVF.java
+U    geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\LavorazioneAttoVF.java
+ G   .
+--- Recording mergeinfo for merge of r373710 through r374064 into '.':
+ G   .
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=SCMIta 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=11.0 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=11.20 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=373709 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=374064 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 11.0 da rev 373709 a 374064 sul 11.20" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\SCMIta-11.20\overit 
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 373709 a 374064 sul 11.20" 
+Trasmetto      .
+Trasmetto      geocallapp\scmita\amministrazione\aschede\AllegatiSchede.xsl
+Trasmetto      geocallapp\scmita\amministrazione\aschede\CAllegatiSchede.java
+Aggiungo       geocallapp\scmita\anagrafiche\strategiecl\RicercaStrategiaCL.java
+Trasmetto      geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\DATLavorazioniAttoVF.java
+Trasmetto      geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\LavorazioneAttoVF.java
+Trasmissione dati ....
+Committed revision 374065.
+
+
+----
+REM 2019-06-10 17:56:06.667733
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=373302
+set REV_TO=373709
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd \OVERIT\geocall61\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+
+C:\development-cri\test-python\test-python>REM 2019-06-10 17:56:06.667733 
+
+C:\development-cri\test-python\test-python>set PROJECT_NAME=SCMIta 
+
+C:\development-cri\test-python\test-python>set BRANCH_FROM=11.0 
+
+C:\development-cri\test-python\test-python>set BRANCH_TO=11.20 
+
+C:\development-cri\test-python\test-python>set REV_FROM=373302 
+
+C:\development-cri\test-python\test-python>set REV_TO=373709 
+
+C:\development-cri\test-python\test-python>set COMMENT="riportate modifiche dal branch 11.0 da rev 373302 a 373709 sul 11.20" 
+
+C:\development-cri\test-python\test-python>cd \OVERIT\geocall61\SCMIta-11.20\overit 
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update 
+Updating '.':
+Alla revisione 373709.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 373302:373709 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit --accept postpone 
+--- Fusione di r373303 attraverso r373709 in '.':
+ G   .
+--- Recording mergeinfo for merge of r373303 through r373709 into '.':
+ G   .
+
+C:\development-cri\test-python\test-python>set PROJECT_NAME=SCMIta 
+
+C:\development-cri\test-python\test-python>set BRANCH_FROM=11.0 
+
+C:\development-cri\test-python\test-python>set BRANCH_TO=11.20 
+
+C:\development-cri\test-python\test-python>set REV_FROM=373302 
+
+C:\development-cri\test-python\test-python>set REV_TO=373709 
+
+C:\development-cri\test-python\test-python>set COMMENT="riportate modifiche dal branch 11.0 da rev 373302 a 373709 sul 11.20" 
+
+C:\development-cri\test-python\test-python>cd \OVERIT\geocall61\SCMIta-11.20\overit 
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 373302 a 373709 sul 11.20" 
+Trasmetto      .
+
+Committed revision 373710.
+
+
+----
+2019-06-07 11:51:32.485764
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=373230
+set REV_TO=373302
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set PROJECT_NAME=SCMIta
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_FROM=11.0
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_TO=11.20
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_FROM=373230
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_TO=373302
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update
+Updating '.':
+Alla revisione 373302.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 373230:373302 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit --accept postpone
+--- Fusione di r373231 attraverso r373302 in '.':
+U    geocallapp\scmita\anagrafiche\lcl\DATSalvaLcl.java
+ G   .
+--- Recording mergeinfo for merge of r373231 through r373302 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 373230 a 373302 sul 11.20"
+Trasmetto      .
+Trasmetto      geocallapp\scmita\anagrafiche\lcl\DATSalvaLcl.java
+Trasmissione dati .
+Committed revision 373303.
+
+----
+2019-06-06 17:07:29.397105
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=372544
+set REV_TO=373230
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit> set PROJECT_NAME=SCMIta
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_FROM=11.0
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_TO=11.20
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_FROM=372544
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_TO=373230
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update
+Updating '.':
+U    geocallapp\scmita\anagrafiche\contratti\DAAContrattiTestate.java
+U    geocallapp\scmita\anagrafiche\comunicazioni\GestioneComunicazioniLCS.java
+U    geocallapp\scmita\anagrafiche\comunicazioni\ConsultazioneComunicazioni.java
+U    geocallapp\scmita\controllilcs\DATLavorazioniControlloLcs.java
+U    geocallapp\scmita\controllilcs\ControlliLcs.java
+U    geocallapp\scmita\controllilcs\DATSaveControlloLcs.java
+Aggiornato alla revisione 373230.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 372544:373230 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit --accept postpone
+--- Fusione di r372545 attraverso r373230 in '.':
+C    geocallapp\scmita\anagrafiche\lcl\DATSalvaLcl.java
+U    geocallapp\scmita\anagrafiche\ticketguasti\CompilazioneTicketGuasto.java
+U    geocallapp\scmita\cxf\scmgetem\wrapper\DATSCMGetEM.java
+U    geocallapp\scmita\visitesorveglianza\programmistrategie\strategievs\PEditStrategia.java
+ G   .
+--- Recording mergeinfo for merge of r372545 through r373230 into '.':
+ G   .
+Summary of conflicts:
+  Text conflicts: 1
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn resolved geocallapp\scmita\anagrafiche\lcl\DATSalvaLcl.java
+Risolto lo stato di conflitto di 'geocallapp\scmita\anagrafiche\lcl\DATSalvaLcl.java'
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 372544 a 373230 sul 11.20"
+Trasmetto      .
+Trasmetto      geocallapp\scmita\anagrafiche\lcl\DATSalvaLcl.java
+Trasmetto      geocallapp\scmita\anagrafiche\ticketguasti\CompilazioneTicketGuasto.java
+Trasmetto      geocallapp\scmita\cxf\scmgetem\wrapper\DATSCMGetEM.java
+Trasmetto      geocallapp\scmita\visitesorveglianza\programmistrategie\strategievs\PEditStrategia.java
+Trasmissione dati ....
+Committed revision 373246.
+
+----
+2019-06-04 16:07:37.920764
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=371993
+set REV_TO=372544
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set PROJECT_NAME=SCMIta
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_FROM=11.0
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_TO=11.20
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_FROM=371993
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_TO=372544
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update
+Updating '.':
+Alla revisione 372544.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 371993:372544 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit --accept postpone
+--- Fusione di r371994 attraverso r372544 in '.':
+U    geocallapp\scmita\amministrazione\rdipendenticontrattirp\DARDipendentiContrattiRP.java
+U    geocallapp\scmita\anagrafiche\materialiconsuntivati\DAAMaterialiConsuntivati.java
+U    geocallapp\scmita\anagrafiche\ticketguasti\CompilazioneTicketGuasto.java
+U    geocallapp\scmita\anagrafiche\contratti\Contratto.java
+C    geocallapp\scmita\anagrafiche\contratti\DAAContrattiTestate.java
+U    geocallapp\scmita\anagrafiche\lcl\DAALclTestate.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\StatusError.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteDiSorveglianzaRequest.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza.wsdl
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianzaEndpoint1Impl.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza_Service.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza_VisiteSorveglianzaEndpoint1_Client.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza_VisiteSorveglianzaEndpoint1_Server.java
+U    geocallapp\scmita\cxf\scmgetem\wrapper\DATSCMGetEM.java
+U    geocallapp\scmita\functions.xml
+U    geocallapp\scmita\cruscottoco\CreaStrategiaDaLCL.java
+U    geocallapp\scmita\cruscottoco\ParametriPerContratto.java
+A    geocallapp\scmita\cruscottoco\ParametriPerContratto.xml
+A    geocallapp\scmita\cruscottoco\ParametriPerContratto.xsl
+A    geocallapp\scmita\cruscottoco\ParametriPerImpresa.java
+A    geocallapp\scmita\cruscottoco\ParametriPerImpresa.xml
+U    geocallapp\scmita\util\UtilsDMS.java
+ G   .
+--- Recording mergeinfo for merge of r371994 through r372544 into '.':
+ G   .
+Summary of conflicts:
+  Text conflicts: 1
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 371993 a 372544 sul 11.20"
+svn: E155015: Commit fallito (seguono dettagli):
+svn: E155015: Interruzione del commit: 'C:\OVERIT\geocall61\SCMIta-11.20\overit\geocallapp\scmita\anagrafiche\contratti\DAAContrattiTestate.java' S ancora in conflitto
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn resolved geocallapp\scmita\anagrafiche\contratti\DAAContrattiTestate.java
+Risolto lo stato di conflitto di 'geocallapp\scmita\anagrafiche\contratti\DAAContrattiTestate.java'
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 371993 a 372544 sul 11.20"
+Trasmetto      .
+Trasmetto      geocallapp\scmita\amministrazione\rdipendenticontrattirp\DARDipendentiContrattiRP.java
+Trasmetto      geocallapp\scmita\anagrafiche\contratti\Contratto.java
+Trasmetto      geocallapp\scmita\anagrafiche\contratti\DAAContrattiTestate.java
+Trasmetto      geocallapp\scmita\anagrafiche\lcl\DAALclTestate.java
+Trasmetto      geocallapp\scmita\anagrafiche\materialiconsuntivati\DAAMaterialiConsuntivati.java
+Trasmetto      geocallapp\scmita\anagrafiche\ticketguasti\CompilazioneTicketGuasto.java
+Trasmetto      geocallapp\scmita\cruscottoco\CreaStrategiaDaLCL.java
+Trasmetto      geocallapp\scmita\cruscottoco\ParametriPerContratto.java
+Aggiungo       geocallapp\scmita\cruscottoco\ParametriPerContratto.xml
+Aggiungo       geocallapp\scmita\cruscottoco\ParametriPerContratto.xsl
+Aggiungo       geocallapp\scmita\cruscottoco\ParametriPerImpresa.java
+Aggiungo       geocallapp\scmita\cruscottoco\ParametriPerImpresa.xml
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\StatusError.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteDiSorveglianzaRequest.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza.wsdl
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianzaEndpoint1Impl.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza_Service.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza_VisiteSorveglianzaEndpoint1_Client.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza_VisiteSorveglianzaEndpoint1_Server.java
+Trasmetto      geocallapp\scmita\cxf\scmgetem\wrapper\DATSCMGetEM.java
+Trasmetto      geocallapp\scmita\functions.xml
+Trasmetto      geocallapp\scmita\util\UtilsDMS.java
+Trasmissione dati ...................
+Committed revision 372554.
+----
+2019-05-31 14:21:28.900420
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=371494
+set REV_TO=371993
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set PROJECT_NAME=SCMIta
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_FROM=11.0
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_TO=11.20
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_FROM=371494
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_TO=371993
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update
+Updating '.':
+Alla revisione 371994.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 371494:371993 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit --accept postpone
+--- Fusione di r371495 attraverso r371993 in '.':
+ G   .
+--- Recording mergeinfo for merge of r371495 through r371993 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 371494 a 371993 sul 11.20"
+Trasmetto      .
+
+Committed revision 371995.
+
+----
+2019-05-29 14:06:41.713446
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=371223
+set REV_TO=371494
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set PROJECT_NAME=SCMIta
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_FROM=11.0
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_TO=11.20
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_FROM=371223
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_TO=371494
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update
+Updating '.':
+Alla revisione 371494.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 371223:371494 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit
+--- Fusione di r371224 attraverso r371494 in '.':
+U    geocallapp\scmita\cxf\sapletterafinelavori\wrapper\DATCallSAPLetteraFineLavori.java
+U    geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\LavorazioneAttoVF.xml
+A    geocallapp\scmita\install\scripts\10.10.19052900.sql
+ G   .
+--- Recording mergeinfo for merge of r371224 through r371494 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 371223 a 371494 sul 11.20"
+Trasmetto      .
+Trasmetto      geocallapp\scmita\cxf\sapletterafinelavori\wrapper\DATCallSAPLetteraFineLavori.java
+Trasmetto      geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\LavorazioneAttoVF.xml
+Aggiungo       geocallapp\scmita\install\scripts\10.10.19052900.sql
+Trasmissione dati ..
+Committed revision 371495.
+
+----
+?** 2019/05/27
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=370603
+set REV_TO=371223
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set PROJECT_NAME=SCMIta
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_FROM=11.0
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_TO=11.20
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_FROM=370603
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_TO=371223
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update
+Updating '.':
+Alla revisione 371223.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 370603:371223 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit
+--- Fusione di r370604 attraverso r371223 in '.':
+U    geocallapp\scmita\amministrazione\adatifissi\ADatiFissi.xsl
+U    geocallapp\scmita\amministrazione\aschedetestate\DAASchedeTestate.java
+U    geocallapp\scmita\anagrafiche\lotticampioni\DAALottiCampioniTestate.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\wrapper\DATCallSAPVisiteSorveglianza.java
+ G   .
+--- Recording mergeinfo for merge of r370604 through r371223 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 370603 a 371223 sul 11.20"
+Trasmetto      .
+Trasmetto      geocallapp\scmita\amministrazione\adatifissi\ADatiFissi.xsl
+Trasmetto      geocallapp\scmita\amministrazione\aschedetestate\DAASchedeTestate.java
+Trasmetto      geocallapp\scmita\anagrafiche\lotticampioni\DAALottiCampioniTestate.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\wrapper\DATCallSAPVisiteSorveglianza.java
+Trasmissione dati ....
+Committed revision 371224.
+
+** 2019/05/23
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=370170
+set REV_TO=370603
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit> set PROJECT_NAME=SCMIta
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_FROM=11.0
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_TO=11.20
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_FROM=370170
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_TO=370603
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update
+Updating '.':
+A    geocallapp\scmita\io697\reportlcs
+A    geocallapp\scmita\install\scripts\11.20.19052200.sql
+A    geocallapp\scmita\install\scripts\11.20.19052201.sql
+U    geocallapp\scmita\controllilcs\DAAControlliLcs.java
+A    geocallapp\scmita\io697\reportlcs\DATReportDettaglioLCS.java
+A    geocallapp\scmita\io697\reportlcs\ReportLCS.java
+A    geocallapp\scmita\io697\reportlcs\ReportLCS.xml
+A    geocallapp\scmita\io697\reportlcs\XlsReportDettaglioLCS.xml
+U    geocallapp\scmita\menu.xml
+Aggiornato alla revisione 370603.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 370170:370603 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit
+--- Fusione di r370171 attraverso r370603 in '.':
+U    geocallapp\scmita\amministrazione\tclusterprofili\TClusterProfili.java
+U    geocallapp\scmita\anagrafiche\barcode\PSceltaBarcode.java
+U    geocallapp\scmita\anagrafiche\libretti\DATSalvaLibretto.java
+U    geocallapp\scmita\anagrafiche\libretti\MaterialiLM.xsl
+U    geocallapp\scmita\anagrafiche\materialiconsuntivati\DAAMaterialiConsuntivati.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteDiSorveglianzaRequest.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza.wsdl
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\wrapper\DATCallSAPVisiteSorveglianza.java
+U    geocallapp\scmita\cxf\scma2a\wrapper\DATSetDocumentoLM.java
+U    geocallapp\scmita\visitesorveglianza\UtilsVS.java
+ G   .
+--- Recording mergeinfo for merge of r370171 through r370603 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 370170 a 370603 sul 11.20"
+Trasmetto      .
+Trasmetto      geocallapp\scmita\amministrazione\tclusterprofili\TClusterProfili.java
+Trasmetto      geocallapp\scmita\anagrafiche\barcode\PSceltaBarcode.java
+Trasmetto      geocallapp\scmita\anagrafiche\libretti\DATSalvaLibretto.java
+Trasmetto      geocallapp\scmita\anagrafiche\libretti\MaterialiLM.xsl
+Trasmetto      geocallapp\scmita\anagrafiche\materialiconsuntivati\DAAMaterialiConsuntivati.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteDiSorveglianzaRequest.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza.wsdl
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\wrapper\DATCallSAPVisiteSorveglianza.java
+Trasmetto      geocallapp\scmita\cxf\scma2a\wrapper\DATSetDocumentoLM.java
+Trasmetto      geocallapp\scmita\visitesorveglianza\UtilsVS.java
+Trasmissione dati ..........
+Committed revision 370604.
+
+** 2019/05/22
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=369501
+set REV_TO=370170
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set PROJECT_NAME=SCMIta
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_FROM=11.0
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_TO=11.20
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_FROM=369501
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_TO=370170
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update
+Updating '.':
+A    geocallapp\scmita\install\scripts\11.20.19051700.sql
+U    geocallapp\scmita\anagrafiche\lcl\AttiCOAutorizzatiLcl.java
+U    geocallapp\scmita\anagrafiche\lcl\AttiCOAutorizzatiLcl.xml
+U    geocallapp\scmita\anagrafiche\comunicazioni\Comunicazione.java
+A    geocallapp\scmita\anagrafiche\comunicazioni\ConsultazioneComunicazioni.java
+A    geocallapp\scmita\anagrafiche\comunicazioni\ConsultazioneComunicazioni.xml
+A    geocallapp\scmita\anagrafiche\comunicazioni\ConsultazioneComunicazioni.xsl
+U    geocallapp\scmita\anagrafiche\comunicazioni\DAAComunicazioni.java
+U    geocallapp\scmita\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+A    geocallapp\scmita\anagrafiche\comunicazioni\EventControllerRisposteComunicazione.java
+A    geocallapp\scmita\anagrafiche\comunicazioni\GestioneComunicazioniLCS.java
+A    geocallapp\scmita\anagrafiche\comunicazioni\GestioneComunicazioniLCS.xml
+U    geocallapp\scmita\anagrafiche\atticontrollo\ConsuntivazioneSchedeAtto.xsl
+U    geocallapp\scmita\anagrafiche\atticontrollo\DAAAttiControllo.java
+U    geocallapp\scmita\anagrafiche\atticontrollo\DATUpdateAttoControllo.java
+U    geocallapp\scmita\anagrafiche\atticontrollo\LavorazioneAttoControllo.xsl
+U    geocallapp\scmita\anagrafiche\atticontrollo\ListaAttiControllo.java
+U    geocallapp\scmita\anagrafiche\atticontrollo\ListaAttiControllo.xsl
+A    geocallapp\scmita\anagrafiche\atticontrollo\PAbilitaCopiaCL.java
+A    geocallapp\scmita\anagrafiche\atticontrollo\PAbilitaCopiaCL.xml
+U    geocallapp\scmita\anagrafiche\atticontrollocl\AttoControlloCL.java
+A    geocallapp\scmita\anagrafiche\atticontrollocl\ConsuntivazioneSchedeAttoCL.java
+U    geocallapp\scmita\anagrafiche\atticontrollocl\CreazioneSaggio.java
+A    geocallapp\scmita\anagrafiche\atticontrollocl\DATSalvaAttoControlloCL.java
+A    geocallapp\scmita\anagrafiche\atticontrollocl\GestioneDifettiNew.java
+U    geocallapp\scmita\anagrafiche\atticontrollocl\SchedeAttoControlloCL.java
+U    geocallapp\scmita\anagrafiche\lotticampioni\CreaLottoCampione.java
+A    geocallapp\scmita\anagrafiche\lotticampioni\CreaLottoCampione.xml
+A    geocallapp\scmita\anagrafiche\lotticampioni\CreaLottoCampione.xsl
+A    geocallapp\scmita\anagrafiche\lotticampioni\DARAttiCoSuCL.java
+U    geocallapp\scmita\anagrafiche\lotticampioni\DATSalvaLottoCampioneDaLottoTemp.java
+A    geocallapp\scmita\anagrafiche\lotticampioni\PAttiCOSuCL.java
+A    geocallapp\scmita\anagrafiche\lotticampioni\PAttiCOSuCL.xml
+U    geocallapp\scmita\anagrafiche\lotticampioni\PCreaCampione.java
+U    geocallapp\scmita\anagrafiche\lotticampioni\PCreaCampione.xsl
+A    geocallapp\scmita\global\LTipiComunicazioneLCS.xml
+U    geocallapp\scmita\amministrazione\adatifissi\ADatiFissi.xsl
+U    geocallapp\scmita\amministrazione\aschedetestate\DAASchedeTestate.java
+A    geocallapp\scmita\amministrazione\aschederisposte\DATSalvaRisposteSchedaCL.java
+U    geocallapp\scmita\SCMITAConst.java
+A    geocallapp\scmita\controllilcs\CompilaSchedaControlloLcs.java
+A    geocallapp\scmita\controllilcs\CompilaSchedaControlloLcs.xml
+U    geocallapp\scmita\controllilcs\ControlliLcs.java
+U    geocallapp\scmita\controllilcs\ControlloLcs.java
+U    geocallapp\scmita\controllilcs\DATLavorazioniControlloLcs.java
+U    geocallapp\scmita\controllilcs\DATLoadControlloLcs.java
+U    geocallapp\scmita\controllilcs\DATSaveControlloLcs.java
+A    geocallapp\scmita\controllilcs\DettaglioSchedaControlloLcs.java
+A    geocallapp\scmita\controllilcs\DettaglioSchedaControlloLcs.xml
+U    geocallapp\scmita\controllilcs\LavorazioneControlloLcs.java
+A    geocallapp\scmita\controllilcs\LavorazioneSchedeLcs.java
+A    geocallapp\scmita\controllilcs\LavorazioneSchedeLcs.xml
+U    geocallapp\scmita\controllilcs\PCreaControlloLcs.java
+U    geocallapp\scmita\controllilcs\PCreaControlloLcs.xml
+U    geocallapp\scmita\gestionemail\atemplateemail\TemplateConfig.xsl
+U    geocallapp\scmita\gestionemail\notifichemail\DATGeneraMail.java
+U    geocallapp\scmita\menu.xml
+U    geocallapp\scmita\functions.xml
+Aggiornato alla revisione 370170.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 369501:370170 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit
+--- Fusione di r369502 attraverso r370170 in '.':
+C    geocallapp\scmita\anagrafiche\atticontrollo\DAAAttiControllo.java
+C    geocallapp\scmita\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+U    geocallapp\scmita\anagrafiche\libretti\DATSalvaLibretto.java
+U    geocallapp\scmita\anagrafiche\libretti\StrutturaLM.java
+U    geocallapp\scmita\cxf\idrauploadmodificafilelmds\wrapper\DATCallSCMUploadModificaFileLMDS.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\ObjectFactory.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteDiSorveglianzaRequest.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza.wsdl
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza_VisiteSorveglianzaEndpoint1_Client.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza_VisiteSorveglianzaEndpoint1_Server.java
+U    geocallapp\scmita\cxf\sapvisitesorveglianza\wrapper\DATCallSAPVisiteSorveglianza.java
+U    geocallapp\scmita\fibraottica\anagrafiche\attocontrollofoco\AttiControlloFoCo.xml
+U    geocallapp\scmita\fibraottica\anagrafiche\attocontrollofoco\DAAAttiControlloFoCo.java
+U    geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\AttiControlloFoVF.xml
+U    geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\CompilaSchedaAttoFoVF.xml
+U    geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\DAAttiControlloFoVF.java
+U    geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\PFiltriRicercaAttiFoVF.xml
+U    geocallapp\scmita\fibraottica\anagrafiche\incarichivf\DAIncaricoVF.java
+U    geocallapp\scmita\install\scripts\10.10.19051700.sql
+A    geocallapp\scmita\install\scripts\11.0.19052200.sql
+U    geocallapp\scmita\ws\UtilsWS.java
+U    geocallapp\scmita\amministrazione\adatifissi\ADatiFissi.xsl
+ G   .
+--- Recording mergeinfo for merge of r369502 through r370170 into '.':
+ G   .
+Conflict discovered in file 'geocallapp\scmita\anagrafiche\atticontrollo\DAAAttiControllo.java'.
+Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,
+        (mc) my side of conflict, (tc) their side of conflict,
+        (s) show all options: P
+Unrecognized option.
+
+Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,
+        (mc) my side of conflict, (tc) their side of conflict,
+        (s) show all options: p
+Conflict discovered in file 'geocallapp\scmita\anagrafiche\comunicazioni\DATSalvaComunicazione.java'.
+Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,
+        (mc) my side of conflict, (tc) their side of conflict,
+        (s) show all options: p
+Summary of conflicts:
+  Text conflicts: 2
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit> geocallapp\scmita\anagrafiche\atticontrollo\DAAAttiControllo.java
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>geocallapp\scmita\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn resolved geocallapp\scmita\anagrafiche\atticontrollo\DAAAttiControllo.java
+Risolto lo stato di conflitto di 'geocallapp\scmita\anagrafiche\atticontrollo\DAAAttiControllo.java'
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn resolved geocallapp\scmita\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+Risolto lo stato di conflitto di 'geocallapp\scmita\anagrafiche\comunicazioni\DATSalvaComunicazione.java'
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 369501 a 370170 sul 11.20"
+Trasmetto      .
+Trasmetto      geocallapp\scmita\amministrazione\adatifissi\ADatiFissi.xsl
+Trasmetto      geocallapp\scmita\anagrafiche\atticontrollo\DAAAttiControllo.java
+Trasmetto      geocallapp\scmita\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+Trasmetto      geocallapp\scmita\anagrafiche\libretti\DATSalvaLibretto.java
+Trasmetto      geocallapp\scmita\anagrafiche\libretti\StrutturaLM.java
+Trasmetto      geocallapp\scmita\cxf\idrauploadmodificafilelmds\wrapper\DATCallSCMUploadModificaFileLMDS.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\ObjectFactory.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteDiSorveglianzaRequest.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza.wsdl
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza_VisiteSorveglianzaEndpoint1_Client.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\VisiteSorveglianza_VisiteSorveglianzaEndpoint1_Server.java
+Trasmetto      geocallapp\scmita\cxf\sapvisitesorveglianza\wrapper\DATCallSAPVisiteSorveglianza.java
+Trasmetto      geocallapp\scmita\fibraottica\anagrafiche\attocontrollofoco\AttiControlloFoCo.xml
+Trasmetto      geocallapp\scmita\fibraottica\anagrafiche\attocontrollofoco\DAAAttiControlloFoCo.java
+Trasmetto      geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\AttiControlloFoVF.xml
+Trasmetto      geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\CompilaSchedaAttoFoVF.xml
+Trasmetto      geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\DAAttiControlloFoVF.java
+Trasmetto      geocallapp\scmita\fibraottica\anagrafiche\attocontrollofovf\PFiltriRicercaAttiFoVF.xml
+Trasmetto      geocallapp\scmita\fibraottica\anagrafiche\incarichivf\DAIncaricoVF.java
+Trasmetto      geocallapp\scmita\install\scripts\10.10.19051700.sql
+Aggiungo       geocallapp\scmita\install\scripts\11.0.19052200.sql
+Trasmetto      geocallapp\scmita\ws\UtilsWS.java
+Trasmissione dati .....................
+Committed revision 370175.    
+  
+  
+** 2019/05/17
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=368132
+set REV_TO=369501
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set PROJECT_NAME=SCMIta
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_FROM=11.0
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_TO=11.20
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_FROM=368132
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_TO=369501
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update
+Updating '.':
+U    geocallapp\scmita\amministrazione\anautente\NewUtente.xsl
+A    geocallapp\scmita\anagrafiche\lcl\AttiCOAutorizzatiLcl.java
+A    geocallapp\scmita\anagrafiche\lcl\AttiCOAutorizzatiLcl.xml
+U    geocallapp\scmita\anagrafiche\lcl\DATLoadLcl.java
+U    geocallapp\scmita\anagrafiche\atticontrollo\DAAAttiControllo.java
+U    geocallapp\scmita\anagrafiche\lotticampioni\PCreaCampione.java
+A    geocallapp\scmita\anagrafiche\lotticampioni\PCreaCampione.xml
+A    geocallapp\scmita\anagrafiche\lotticampioni\PCreaCampione.xsl
+A    geocallapp\scmita\cruscottocl\CreaStrategiaCL.xml
+A    geocallapp\scmita\cruscottocl\CreaStrategiaCL.xsl
+U    geocallapp\scmita\io697\reportco\ReportControlliCOManAuto.xml
+Aggiornato alla revisione 369501.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 368132:369501 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit
+--- Fusione di r368133 attraverso r369501 in '.':
+U    geocallapp\scmita\cxf\scmrichiesteaccessofo\wrapper\DATSCMRichiesteAccessoFO.java
+U    geocallapp\scmita\cxf\scmgetlclgu\lclgu\DATImportLclGU.java
+U    geocallapp\scmita\anagrafiche\caricamentomaestranzemezzi\mezzi\DettaglioMezzo.java
+U    geocallapp\scmita\anagrafiche\lcl\DATSalvaLcl.java
+U    geocallapp\scmita\global\LSistemiEmittentiTicket.xml
+A    geocallapp\scmita\install\scripts\10.10.19051700.sql
+ G   .
+--- Recording mergeinfo for merge of r368133 through r369501 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 368132 a 369501 sul 11.20"
+Trasmetto      .
+Trasmetto      geocallapp\scmita\anagrafiche\caricamentomaestranzemezzi\mezzi\DettaglioMezzo.java
+Trasmetto      geocallapp\scmita\anagrafiche\lcl\DATSalvaLcl.java
+Trasmetto      geocallapp\scmita\cxf\scmgetlclgu\lclgu\DATImportLclGU.java
+Trasmetto      geocallapp\scmita\cxf\scmrichiesteaccessofo\wrapper\DATSCMRichiesteAccessoFO.java
+Trasmetto      geocallapp\scmita\global\LSistemiEmittentiTicket.xml
+Aggiungo       geocallapp\scmita\install\scripts\10.10.19051700.sql
+Trasmissione dati .....
+Committed revision 369502.
+
+** 2019/05/10
+set PROJECT_NAME=SCMIta
+set BRANCH_FROM=11.0
+set BRANCH_TO=11.20
+set REV_FROM=367536
+set REV_TO=368132
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set PROJECT_NAME=SCMIta
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_FROM=11.0
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set BRANCH_TO=11.20
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_FROM=367536
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set REV_TO=368132
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMIta-11.0\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn update
+Updating '.':
+A    geocallapp\scmita\install\scripts\11.20.19050900.sql
+U    geocallapp\scmita\anagrafiche\atticontrollo\DAAAttiControllo.java
+U    geocallapp\scmita\anagrafiche\attivitacontrollo\DAAAttivitaTestate.java
+U    geocallapp\scmita\anagrafiche\attivitacontrollo\DATCreaStrategie.java
+U    geocallapp\scmita\anagrafiche\attivitacontrollo\RicercaAttivita.java
+U    geocallapp\scmita\anagrafiche\attivitacontrollo\RicercaAttivita.xsl
+U    geocallapp\scmita\anagrafiche\contratti\DAAContrattiTestate.java
+U    geocallapp\scmita\anagrafiche\lcl\DATSalvaLcl.java
+U    geocallapp\scmita\anagrafiche\organizzazioniterritoriali\DAAOrganizzazioneTerritoriale.java
+A    geocallapp\scmita\io697\reportco\DATReportControlliCOManAuto.java
+A    geocallapp\scmita\io697\reportco\ReportControlliCOManAuto.java
+A    geocallapp\scmita\io697\reportco\ReportControlliCOManAuto.xml
+U    geocallapp\scmita\io697\reportco\XlsExportReportConteggiCO.xml
+A    geocallapp\scmita\io697\reportco\XlsReportControlliCOManAuto.xml
+U    geocallapp\scmita\io697\DATCalcoloMassivoRaggCQIImpresa.java
+A    geocallapp\scmita\io697\DATCreaStrategieCOAutomatiche.java
+U    geocallapp\scmita\menu.xml
+U    geocallapp\scmita\amministrazione\adatifissi\ADatiFissi.xsl
+U    geocallapp\scmita\amministrazione\adatifissi\DatiFissi.java
+U    geocallapp\scmita\amministrazione\anautente\DAAnaUtente.java
+A    geocallapp\scmita\cruscottoco\IndicatoreCOAuto.java
+A    geocallapp\scmita\cruscottoco\IndicatoreCOAuto.xml
+U    geocallapp\scmita\functions.xml
+U    geocallapp\scmita\scmita_coll.xml
+U    geocallapp\scmita\scmita_prep.xml
+U    geocallapp\scmita\scmita_prod.xml
+U    geocallapp\scmita\scmita_svil.xml
+Aggiornato alla revisione 368134.
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn merge -r 367536:368132 http://svn.overit.it/repositories/geocall/SCMIta/branches/11.0/src/overit
+--- Fusione di r367537 attraverso r368132 in '.':
+A    geocallapp\scmita\anagrafiche\documenti\lfl
+A    geocallapp\scmita\cxf\sapletterafinelavori
+A    geocallapp\scmita\cxf\sapletterafinelavori\letterafinelavorirequest
+A    geocallapp\scmita\cxf\sapletterafinelavori\wrapper
+A    geocallapp\scmita\cxf\sapletterafinelavori\ackresponse
+A    geocallapp\scmita\cxf\sapletterafinelavori\cmd
+A    geocallapp\scmita\cxf\sapletterafinelavori\eneloutputheader
+A    geocallapp\scmita\cxf\sapletterafinelavori\enelwsheader
+A    geocallapp\scmita\cxf\sapletterafinelavori\statuserror
+U    geocallapp\scmita\amministrazione\adatifissi\ADatiFissi.xsl
+A    geocallapp\scmita\anagrafiche\documenti\lfl\DATSalvaDocumentoLfl.java
+A    geocallapp\scmita\anagrafiche\lcl\DAALclLavori.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\letterafinelavorirequest\LetteraFineLavoriRequest.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\letterafinelavorirequest\ObjectFactory.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\letterafinelavorirequest\Request.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\letterafinelavorirequest\package-info.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\wrapper\DATCallSAPLetteraFineLavori.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\LetteraFineLavori.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\LetteraFineLavori.wsdl
+A    geocallapp\scmita\cxf\sapletterafinelavori\LetteraFineLavoriEndpoint1Impl.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\LetteraFineLavori_LetteraFineLavoriEndpoint1_Client.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\LetteraFineLavori_LetteraFineLavoriEndpoint1_Server.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\LetteraFineLavori_Service.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\LetteraFineLavori_Service_handler.xml
+A    geocallapp\scmita\cxf\sapletterafinelavori\LetteraFineLavori_handler.xml
+A    geocallapp\scmita\cxf\sapletterafinelavori\StatusError.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\ackresponse\AckResponse.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\ackresponse\ObjectFactory.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\ackresponse\Response.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\ackresponse\package-info.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\cmd\compile.txt
+A    geocallapp\scmita\cxf\sapletterafinelavori\custom.xml
+A    geocallapp\scmita\cxf\sapletterafinelavori\eneloutputheader\EnelheaderOutputSchema.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\eneloutputheader\ObjectFactory.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\eneloutputheader\package-info.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\enelwsheader\EnelWSMessageSchema.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\enelwsheader\ObjectFactory.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\enelwsheader\package-info.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\statuserror\Error.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\statuserror\ObjectFactory.java
+A    geocallapp\scmita\cxf\sapletterafinelavori\statuserror\package-info.java
+U    geocallapp\scmita\fibraottica\anagrafiche\attocontrollofoco\DAAAttiControlloFoCo.java
+U    geocallapp\scmita\fibraottica\report\spotfire\ReportSpotfire.xml
+A    geocallapp\scmita\install\scripts\10.35.19051000.sql
+ U   .
+--- Recording mergeinfo for merge of r367537 through r368132 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMIta-11.20\overit>svn commit -m "riportate modifiche dal branch 11.0 da rev 367536 a 368132 sul 11.20"
+Trasmetto      .
+Trasmetto      geocallapp\scmita\amministrazione\adatifissi\ADatiFissi.xsl
+Aggiungo       geocallapp\scmita\anagrafiche\documenti\lfl
+Aggiungo       geocallapp\scmita\anagrafiche\lcl\DAALclLavori.java
+Aggiungo       geocallapp\scmita\cxf\sapletterafinelavori
+Trasmetto      geocallapp\scmita\fibraottica\anagrafiche\attocontrollofoco\DAAAttiControlloFoCo.java
+Trasmetto      geocallapp\scmita\fibraottica\report\spotfire\ReportSpotfire.xml
+Aggiungo       geocallapp\scmita\install\scripts\10.35.19051000.sql
+Trasmissione dati ...
+Committed revision 368135.
+

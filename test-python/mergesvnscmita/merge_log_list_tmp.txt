@@ -1,0 +1,17 @@
+#le righe che iniziano con # non vengono considerate.
+#damasco_10.5_10.20.txt
+damasco_10.20_10.30.txt
+damasco_10.30_10.40.txt
+scmglobal_1.1-1.2.txt
+scmglobal_1.2-1.3.txt
+scmglobal_1.3-1.4 .txt
+scmita_10.5_10.10.txt
+scmita_10.10_10.11.txt
+scmita_10.11_10.20.txt
+scmita_10.20_10.25.txt
+scmita_10.25_10.30.txt
+scmita_10.30_10.35.txt
+scmita_10.35_10.40.txt
+scmita_10.40_10.50.txt
+scmita_10.50_11.0.txt
+scmita_11.0_11.20.txt

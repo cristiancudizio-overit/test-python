@@ -1,0 +1,1855 @@
+REM 2019-06-12 10:16:03.996930
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=373698
+set REV_TO=374052
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd \OVERIT\geocall61\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+
+C:\development-cri\test-python\test-python\mergesvnscmita>REM 2019-06-12 10:16:03.996930 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=SCMGlobal 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=1.3 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=1.4 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=373698 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=374052 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 1.3 da rev 373698 a 374052 sul 1.4" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\SCMGlobal-1.4\overit 
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update 
+Updating '.':
+Alla revisione 374052.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 373698:374052 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit --accept postpone 
+--- Fusione di r373699 attraverso r374052 in '.':
+ G   .
+--- Recording mergeinfo for merge of r373699 through r374052 into '.':
+ G   .
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=SCMGlobal 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=1.3 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=1.4 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=373698 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=374052 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 1.3 da rev 373698 a 374052 sul 1.4" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\SCMGlobal-1.4\overit 
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 373698 a 374052 sul 1.4" 
+Trasmetto      .
+
+Committed revision 374053.
+
+
+----
+REM 2019-06-10 17:51:44.639876
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=373177
+set REV_TO=373698
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd \OVERIT\geocall61\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+
+C:\development-cri\test-python\test-python>REM 2019-06-10 17:51:44.639876 
+
+C:\development-cri\test-python\test-python>set PROJECT_NAME=SCMGlobal 
+
+C:\development-cri\test-python\test-python>set BRANCH_FROM=1.3 
+
+C:\development-cri\test-python\test-python>set BRANCH_TO=1.4 
+
+C:\development-cri\test-python\test-python>set REV_FROM=373177 
+
+C:\development-cri\test-python\test-python>set REV_TO=373698 
+
+C:\development-cri\test-python\test-python>set COMMENT="riportate modifiche dal branch 1.3 da rev 373177 a 373698 sul 1.4" 
+
+C:\development-cri\test-python\test-python>cd \OVERIT\geocall61\SCMGlobal-1.4\overit 
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update 
+Updating '.':
+Alla revisione 373698.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 373177:373698 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit --accept postpone 
+--- Fusione di r373178 attraverso r373698 in '.':
+ G   .
+--- Recording mergeinfo for merge of r373178 through r373698 into '.':
+ G   .
+
+C:\development-cri\test-python\test-python>set PROJECT_NAME=SCMGlobal 
+
+C:\development-cri\test-python\test-python>set BRANCH_FROM=1.3 
+
+C:\development-cri\test-python\test-python>set BRANCH_TO=1.4 
+
+C:\development-cri\test-python\test-python>set REV_FROM=373177 
+
+C:\development-cri\test-python\test-python>set REV_TO=373698 
+
+C:\development-cri\test-python\test-python>set COMMENT="riportate modifiche dal branch 1.3 da rev 373177 a 373698 sul 1.4" 
+
+C:\development-cri\test-python\test-python>cd \OVERIT\geocall61\SCMGlobal-1.4\overit 
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 373177 a 373698 sul 1.4" 
+Trasmetto      .
+
+Committed revision 373699.
+
+
+----
+2019-06-06 17:07:29.397105
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=372528
+set REV_TO=373177
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>  set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=372528
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=373177
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 373179.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 372528:373177 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit --accept postpone
+--- Fusione di r372529 attraverso r373177 in '.':
+ G   .
+--- Recording mergeinfo for merge of r372529 through r373177 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 372528 a 373177 sul 1.4"
+Trasmetto      .
+
+Committed revision 373180.
+
+----
+2019-06-04 16:07:37.920764
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=371972
+set REV_TO=372528
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=371972
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=372528
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 372528.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 371972:372528 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit --accept postpone
+--- Fusione di r371973 attraverso r372528 in '.':
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\DAALottiCampioniTestate.java
+ G   .
+--- Recording mergeinfo for merge of r371973 through r372528 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 371972 a 372528 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\anagrafiche\lotticampioni\DAALottiCampioniTestate.java
+Trasmissione dati .
+Committed revision 372529.
+
+----
+2019-05-31 14:21:28.900420
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=371483
+set REV_TO=371972
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=371483
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=371972
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 371973.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 371483:371972 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r371484 attraverso r371972 in '.':
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\DAALottiCampioniTestate.java
+ G   .
+--- Recording mergeinfo for merge of r371484 through r371972 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 371483 a 371972 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\anagrafiche\lotticampioni\DAALottiCampioniTestate.java
+Trasmissione dati .
+Committed revision 371974.
+
+----
+2019-05-29 14:03:57.072328
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=371176
+set REV_TO=371483
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=371176
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=371483
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 371483.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 371176:371483 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r371177 attraverso r371483 in '.':
+ G   .
+--- Recording mergeinfo for merge of r371177 through r371483 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 371176 a 371483 sul 1.4"
+Trasmetto      .
+
+Committed revision 371484.
+
+
+----
+** 2019/05/27
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=370593
+set REV_TO=371176
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=370593
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=371176
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 371176.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 370593:371176 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r370594 attraverso r371176 in '.':
+U    geocallapp\scmglobal\anagrafiche\contratti\DAAContrattiTestate.java
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\DAALottiCampioniTestate.java
+U    geocallapp\scmglobal\cxf\sapodv\wrapper\DATCallSapODV.java
+ G   .
+--- Recording mergeinfo for merge of r370594 through r371176 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 370593 a 371176 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\anagrafiche\contratti\DAAContrattiTestate.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\lotticampioni\DAALottiCampioniTestate.java
+Trasmetto      geocallapp\scmglobal\cxf\sapodv\wrapper\DATCallSapODV.java
+Trasmissione dati ...
+Committed revision 371177.
+
+** 2019/05/23
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=370143
+set REV_TO=370593
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=370143
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=370593
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 370593.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 370143:370593 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r370144 attraverso r370593 in '.':
+ G   .
+--- Recording mergeinfo for merge of r370144 through r370593 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 370143 a 370593 sul 1.4"
+Trasmetto      .
+
+Committed revision 370594.
+
+** 2019/05/22
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=369452
+set REV_TO=370143
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=369452
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=370143
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\CreaLottoCampione.java
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\PCreaCampione.java
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\PCreaCampione.xml
+Aggiornato alla revisione 370144.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 369452:370143 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r369453 attraverso r370143 in '.':
+ G   .
+--- Recording mergeinfo for merge of r369453 through r370143 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 369452 a 370143 sul 1.4"
+Trasmetto      .
+
+Committed revision 370145.
+
+** 2019/05/17
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=368118
+set REV_TO=369452
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=368118
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=369452
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 369454.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 368118:369452 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r368119 attraverso r369452 in '.':
+ G   .
+--- Recording mergeinfo for merge of r368119 through r369452 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 368118 a 369452 sul 1.4"
+Trasmetto      .
+
+Committed revision 369456.
+
+** 2019/05/10
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=367865
+set REV_TO=368118
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=367865
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=368118
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 368118.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 367865:368118 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r367866 attraverso r368118 in '.':
+ G   .
+--- Recording mergeinfo for merge of r367866 through r368118 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 367865 a 368118 sul 1.4"
+Trasmetto      .
+
+Committed revision 368119.
+
+** 2019/05/09
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=367513
+set REV_TO=367865
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=367513
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=367865
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 367866.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 367513:367865 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r367514 attraverso r367865 in '.':
+ G   .
+--- Recording mergeinfo for merge of r367514 through r367865 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 367513 a 367865 sul 1.4"
+Trasmetto      .
+
+Committed revision 367867.
+
+** 2019/05/08
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=366843
+set REV_TO=367513
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=366843
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=367513
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 367513.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 366843:367513 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r366844 attraverso r367513 in '.':
+U    geocallapp\scmglobal\cxf\sapodv\wrapper\DATCallSapODV.java
+ G   .
+--- Recording mergeinfo for merge of r366844 through r367513 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 366843 a 367513 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\cxf\sapodv\wrapper\DATCallSapODV.java
+Trasmissione dati .
+Committed revision 367514.
+
+** 2019/05/03
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=366033
+set REV_TO=366843
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=366033
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=366843
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 366843.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 366033:366843 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r366034 attraverso r366843 in '.':
+ G   .
+--- Recording mergeinfo for merge of r366034 through r366843 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 366033 a 366843 sul 1.4"
+Trasmetto      .
+
+Committed revision 366844.
+
+** 2019/04/24
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=365883
+set REV_TO=366033
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=365883
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=366033
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 366034.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 365883:366033 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r365884 attraverso r366033 in '.':
+U    geocallapp\scmglobal\cxf\sapodv\wrapper\DATCallSapODV.java
+ G   .
+--- Recording mergeinfo for merge of r365884 through r366033 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 365883 a 366033 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\cxf\sapodv\wrapper\DATCallSapODV.java
+Trasmissione dati .
+Committed revision 366035.
+
+** 2019/04/23
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=364970
+set REV_TO=365883
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=364970
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=365883
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 365883.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 364970:365883 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r364971 attraverso r365883 in '.':
+ G   .
+--- Recording mergeinfo for merge of r364971 through r365883 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 364970 a 365883 sul 1.4"
+Trasmetto      .
+
+Committed revision 365884.
+
+** 2019/04/16
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=364371
+set REV_TO=364970
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=364371
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=364970
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 364970.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 364371:364970 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r364372 attraverso r364970 in '.':
+ G   .
+--- Recording mergeinfo for merge of r364372 through r364970 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 364371 a 364970 sul 1.4"
+Trasmetto      .
+
+Committed revision 364971.
+
+** 2019/04/12
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=364097
+set REV_TO=364371
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=364097
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=364371
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 364372.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 364097:364371 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r364098 attraverso r364371 in '.':
+ G   .
+--- Recording mergeinfo for merge of r364098 through r364371 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 364097 a 364371 sul 1.4"
+Trasmetto      .
+
+Committed revision 364373.
+
+** 2019/04/11
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=363853
+set REV_TO=364097
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=363853
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=364097
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 364097.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 363853:364097 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r363854 attraverso r364097 in '.':
+ G   .
+--- Recording mergeinfo for merge of r363854 through r364097 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 363853 a 364097 sul 1.4"
+Trasmetto      .
+
+Committed revision 364098.
+
+** 2019/04/10
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=363643
+set REV_TO=363853
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=363643
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=363853
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 363853.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 363643:363853 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r363644 attraverso r363853 in '.':
+ G   .
+--- Recording mergeinfo for merge of r363644 through r363853 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 363643 a 363853 sul 1.4"
+Trasmetto      .
+
+Committed revision 363854.
+
+** 2019/04/09
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=363090
+set REV_TO=363643
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=363090
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=363643
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 363643.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 363090:363643 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r363091 attraverso r363643 in '.':
+U    geocallapp\scmglobal\anagrafiche\aps\DAAApsRighe.java
+A    geocallapp\scmglobal\anagrafiche\aps\DATLoadAps.java
+U    geocallapp\scmglobal\anagrafiche\aps\DATSalvaAps.java
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.xml
+ G   .
+--- Recording mergeinfo for merge of r363091 through r363643 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 363090 a 363643 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\anagrafiche\aps\DAAApsRighe.java
+Aggiungo       geocallapp\scmglobal\anagrafiche\aps\DATLoadAps.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\aps\DATSalvaAps.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.xml
+Trasmissione dati ...
+Committed revision 363646.
+
+** 2019/04/05
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=362595
+set REV_TO=363090
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=362595
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=363090
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 363090.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 362595:363090 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r362596 attraverso r363090 in '.':
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.java
+ G   .
+--- Recording mergeinfo for merge of r362596 through r363090 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 362595 a 363090 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.java
+Trasmissione dati .
+Committed revision 363091.
+
+** 2019/04/03
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=361961
+set REV_TO=362595
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=361961
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=362595
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 362596.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 361961:362595 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r361962 attraverso r362595 in '.':
+U    geocallapp\scmglobal\anagrafiche\aps\DATSalvaAps.java
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\PAddPrestazioneSchCantieri.java
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\PAddPrestazioneSchCantieri.xml
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.java
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.xml
+U    geocallapp\scmglobal\anagrafiche\libretti\DAALibrettiTestate.java
+U    geocallapp\scmglobal\ws\UtilsWS.java
+ G   .
+--- Recording mergeinfo for merge of r361962 through r362595 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 361961 a 362595 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\anagrafiche\aps\DATSalvaAps.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\PAddPrestazioneSchCantieri.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\PAddPrestazioneSchCantieri.xml
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.xml
+Trasmetto      geocallapp\scmglobal\anagrafiche\libretti\DAALibrettiTestate.java
+Trasmetto      geocallapp\scmglobal\ws\UtilsWS.java
+Trasmissione dati .......
+Committed revision 362599.
+
+** 2019/03/29
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=361652
+set REV_TO=361961
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=361652
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=361961
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 361961.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 361652:361961 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r361653 attraverso r361961 in '.':
+ G   .
+--- Recording mergeinfo for merge of r361653 through r361961 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 361652 a 361961 sul 1.4"
+Trasmetto      .
+
+Committed revision 361962.
+
+** 2019/03/28
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=361005
+set REV_TO=361652
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=361005
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=361652
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 361653.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 361005:361652 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r361006 attraverso r361652 in '.':
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\PAddPrestazioneSchCantieri.xml
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.java
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.xml
+ G   .
+--- Recording mergeinfo for merge of r361006 through r361652 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 361005 a 361652 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\PAddPrestazioneSchCantieri.xml
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.xml
+Trasmissione dati ...
+Committed revision 361654.
+
+** 2019/03/26
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=360674
+set REV_TO=361005
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=360674
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=361005
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 361005.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 360674:361005 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r360675 attraverso r361005 in '.':
+ G   .
+--- Recording mergeinfo for merge of r360675 through r361005 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 360674 a 361005 sul 1.4"
+Trasmetto      .
+
+Committed revision 361006.
+
+** 2019/03/25
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=359955
+set REV_TO=360674
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=359955
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=360674
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 360674.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 359955:360674 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r359956 attraverso r360674 in '.':
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\AutorizzaResetLotto.java
+ G   .
+--- Recording mergeinfo for merge of r359956 through r360674 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 359955 a 360674 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\anagrafiche\lotticampioni\AutorizzaResetLotto.java
+Trasmissione dati .
+Committed revision 360675.
+
+** 2019/03/20
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=359601
+set REV_TO=359955
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=359601
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=359955
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 359956.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 359601:359955 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r359602 attraverso r359955 in '.':
+ G   .
+--- Recording mergeinfo for merge of r359602 through r359955 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 359601 a 359955 sul 1.4"
+Trasmetto      .
+
+Committed revision 359957.
+
+** 2019/03/19
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=359034
+set REV_TO=359601
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=359034
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=359601
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 359601.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 359034:359601 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r359035 attraverso r359601 in '.':
+ G   .
+--- Recording mergeinfo for merge of r359035 through r359601 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 359034 a 359601 sul 1.4"
+Trasmetto      .
+
+Committed revision 359602.
+
+** 2019/03/15
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=358621
+set REV_TO=359034
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=358621
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=359034
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 359034.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 358621:359034 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r358622 attraverso r359034 in '.':
+ G   .
+--- Recording mergeinfo for merge of r358622 through r359034 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 358621 a 359034 sul 1.4"
+Trasmetto      .
+
+Committed revision 359035.
+
+** 2019/03/13
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=358373
+set REV_TO=358621
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=358373
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=358621
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 358622.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 358373:358621 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r358374 attraverso r358621 in '.':
+ G   .
+--- Recording mergeinfo for merge of r358374 through r358621 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 358373 a 358621 sul 1.4"
+Trasmetto      .
+
+Committed revision 358623.
+
+** 2019/03/12
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=358003
+set REV_TO=358373
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=358003
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=358373
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 358374.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 358003:358373 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r358004 attraverso r358373 in '.':
+ G   .
+--- Recording mergeinfo for merge of r358004 through r358373 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 358003 a 358373 sul 1.4"
+Trasmetto      .
+
+Committed revision 358375.
+
+** 2019/03/11
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=357716
+set REV_TO=358003
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=357716
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=358003
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 358003.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 357716:358003 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r357717 attraverso r358003 in '.':
+U    geocallapp\scmglobal\anagrafiche\aps\DATSalvaAps.java
+ G   .
+--- Recording mergeinfo for merge of r357717 through r358003 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 357716 a 358003 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\anagrafiche\aps\DATSalvaAps.java
+Trasmissione dati .
+Committed revision 358004.
+
+** 2019/03/08
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=357509
+set REV_TO=357716
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=357509
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=357716
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 357716.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 357509:357716 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r357510 attraverso r357716 in '.':
+ G   .
+--- Recording mergeinfo for merge of r357510 through r357716 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 357509 a 357716 sul 1.4"
+Trasmetto      .
+
+Committed revision 357717.
+
+** 2019/03/07
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=356048
+set REV_TO=357509
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set PROJECT_NAME=SCMGlobal
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=356048
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=357509
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+U    geocallapp\scmglobal\anagrafiche\aps\DAAApsRighe.java
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\CreaLottoCampione.java
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\ListaAttiControlloCL.java
+U    geocallapp\scmglobal\cruscottocl\exportparametriliberi\ExportParametriLiberi.java
+U    geocallapp\scmglobal\cruscottocl\exportparametriliberi\ExportParametriLiberi.xml
+U    geocallapp\scmglobal\importexport\importazione\importapsposizioni\DATImportApsPosizioni.java
+ U   .
+Aggiornato alla revisione 357509.
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 356048:357509 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r356049 attraverso r357509 in '.':
+U    geocallapp\scmglobal\anagrafiche\aps\DATSalvaAps.java
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\DAALottiCampioniTestate.java
+U    geocallapp\scmglobal\cxf\scmgetaps\wrapper\DATSCMGetAPS.java
+ G   .
+--- Recording mergeinfo for merge of r356049 through r357509 into '.':
+ G   .
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 356048 a 357509 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\anagrafiche\aps\DATSalvaAps.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\lotticampioni\DAALottiCampioniTestate.java
+Trasmetto      geocallapp\scmglobal\cxf\scmgetaps\wrapper\DATSCMGetAPS.java
+Trasmissione dati ...
+Committed revision 357510.
+
+** 2019/02/28
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=355435
+set REV_TO=356048
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=355435
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=356048
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 356048.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 355435:356048 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r355436 attraverso r356048 in '.':
+U    geocallapp\scmglobal\anagrafiche\aps\DAAApsRighe.java
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\ListaAttiControlloCL.java
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\CreaLottoCampione.java
+U    geocallapp\scmglobal\cruscottocl\exportparametriliberi\ExportParametriLiberi.java
+U    geocallapp\scmglobal\cruscottocl\exportparametriliberi\ExportParametriLiberi.xml
+U    geocallapp\scmglobal\importexport\importazione\importapsposizioni\DATImportApsPosizioni.java
+ G   .
+--- Recording mergeinfo for merge of r355436 through r356048 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 355435 a 356048 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\anagrafiche\aps\DAAApsRighe.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\ListaAttiControlloCL.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\lotticampioni\CreaLottoCampione.java
+Trasmetto      geocallapp\scmglobal\cruscottocl\exportparametriliberi\ExportParametriLiberi.java
+Trasmetto      geocallapp\scmglobal\cruscottocl\exportparametriliberi\ExportParametriLiberi.xml
+Trasmetto      geocallapp\scmglobal\importexport\importazione\importapsposizioni\DATImportApsPosizioni.java
+Trasmissione dati ......
+Committed revision 356049.
+
+** 2019/02/26
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=355085
+set REV_TO=355435
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=355085
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=355435
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 355435.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 355085:355435 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r355086 attraverso r355435 in '.':
+U    geocallapp\scmglobal\anagrafiche\aps\DAAApsRighe.java
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\NotaCreditoPenale.java
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.java
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.xml
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\DAALottiCampioniPosizioni.java
+U    geocallapp\scmglobal\cxf\scmgetaps\wrapper\DATSCMGetAPS.java
+A    geocallapp\scmglobal\install\scripts\1.1.19022500.sql
+ G   .
+--- Recording mergeinfo for merge of r355086 through r355435 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 355085 a 355435 sul 1.4"
+Trasmetto      .
+Trasmetto      geocallapp\scmglobal\anagrafiche\aps\DAAApsRighe.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\NotaCreditoPenale.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\SchedaCantieri.xml
+Trasmetto      geocallapp\scmglobal\anagrafiche\lotticampioni\DAALottiCampioniPosizioni.java
+Trasmetto      geocallapp\scmglobal\cxf\scmgetaps\wrapper\DATSCMGetAPS.java
+Aggiungo       geocallapp\scmglobal\install\scripts\1.1.19022500.sql
+Trasmissione dati ......
+Committed revision 355436.
+
+** 2019/02/22
+set PROJECT_NAME=SCMGlobal
+set BRANCH_FROM=1.3
+set BRANCH_TO=1.4
+set REV_FROM=353644
+set REV_TO=355085
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit> set PROJECT_NAME=SCMGlobal
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_FROM=1.3
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set BRANCH_TO=1.4
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_FROM=353644
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set REV_TO=355085
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\SCMGlobal-1.3\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn update
+Updating '.':
+Alla revisione 355085.
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn merge -r 353644:355085 http://svn.overit.it/repositories/geocall/SCMGlobal/branches/1.3/src/overit
+--- Fusione di r353690 attraverso r355085 in '.':
+A    geocallapp\scmglobal\monitor
+A    geocallapp\scmglobal\monitor\ws
+A    geocallapp\scmglobal\monitor\ws\bosospensioni
+A    geocallapp\scmglobal\anagrafiche\atticontrollocl\DATLoadAttoControlloCL.java
+U    geocallapp\scmglobal\anagrafiche\atticontrollocl\ListaAttiControlloCL.java
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\DAALottiCampioniPosizioni.java
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\DATLoadLottoCampione.java
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\DATSalvaLottoCampione.java
+U    geocallapp\scmglobal\anagrafiche\lotticampioni\DATSalvaLottoCampioneDaLottoTemp.java
+A    geocallapp\scmglobal\monitor\ws\bosospensioni\DATRiattivaSospesi.java
+ U   .
+--- Recording mergeinfo for merge of r353690 through r355085 into '.':
+ G   .
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\SCMGlobal-1.4\overit>svn commit -m "riportate modifiche dal branch 1.3 da rev 353644 a 355085 sul 1.4"
+Trasmetto      .
+Aggiungo       geocallapp\scmglobal\anagrafiche\atticontrollocl\DATLoadAttoControlloCL.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\atticontrollocl\ListaAttiControlloCL.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\lotticampioni\DAALottiCampioniPosizioni.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\lotticampioni\DATLoadLottoCampione.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\lotticampioni\DATSalvaLottoCampione.java
+Trasmetto      geocallapp\scmglobal\anagrafiche\lotticampioni\DATSalvaLottoCampioneDaLottoTemp.java
+Aggiungo       geocallapp\scmglobal\monitor
+Trasmissione dati .....
+Committed revision 355086.

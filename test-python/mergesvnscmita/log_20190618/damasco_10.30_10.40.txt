@@ -1,0 +1,2581 @@
+REM 2019-06-17 09:15:05.523974
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=374048
+set REV_TO=374798
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd \OVERIT\geocall61\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+
+C:\development-cri\test-python\test-python\mergesvnscmita>REM 2019-06-17 09:15:05.523974 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=Damasco 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=10.30 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=10.40 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=374048 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=374798 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 10.30 da rev 374048 a 374798 sul 10.40" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\Damasco-10.40\overit 
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update 
+Updating '.':
+Alla revisione 374798.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 374048:374798 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit --accept postpone 
+--- Fusione di r374049 attraverso r374798 in '.':
+ G   .
+--- Recording mergeinfo for merge of r374049 through r374798 into '.':
+ G   .
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=Damasco 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=10.30 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=10.40 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=374048 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=374798 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 10.30 da rev 374048 a 374798 sul 10.40" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\Damasco-10.40\overit 
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 374048 a 374798 sul 10.40" 
+Trasmetto      .
+
+Committed revision 374799.
+
+
+----
+REM 2019-06-12 10:13:57.117970
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=373694
+set REV_TO=374048
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd \OVERIT\geocall61\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+
+C:\development-cri\test-python\test-python\mergesvnscmita>REM 2019-06-12 10:13:57.117970 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=Damasco 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=10.30 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=10.40 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=373694 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=374048 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 10.30 da rev 373694 a 374048 sul 10.40" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\Damasco-10.40\overit 
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update 
+Updating '.':
+Alla revisione 374048.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 373694:374048 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit --accept postpone 
+--- Fusione di r373695 attraverso r374048 in '.':
+U    geocallapp\damasco\cruscottocl\DARUtentiOrgTerritoriali.java
+ G   .
+--- Recording mergeinfo for merge of r373695 through r374048 into '.':
+ G   .
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set PROJECT_NAME=Damasco 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_FROM=10.30 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set BRANCH_TO=10.40 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_FROM=373694 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set REV_TO=374048 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>set COMMENT="riportate modifiche dal branch 10.30 da rev 373694 a 374048 sul 10.40" 
+
+C:\development-cri\test-python\test-python\mergesvnscmita>cd \OVERIT\geocall61\Damasco-10.40\overit 
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 373694 a 374048 sul 10.40" 
+Trasmetto      .
+Trasmetto      geocallapp\damasco\cruscottocl\DARUtentiOrgTerritoriali.java
+Trasmissione dati .
+Committed revision 374050.
+
+
+----
+REM 2019-06-10 17:48:55.173011
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=373164
+set REV_TO=373694
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd \OVERIT\geocall61\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+
+C:\development-cri\test-python\test-python>REM 2019-06-10 17:48:55.173011 
+
+C:\development-cri\test-python\test-python>set PROJECT_NAME=Damasco 
+
+C:\development-cri\test-python\test-python>set BRANCH_FROM=10.30 
+
+C:\development-cri\test-python\test-python>set BRANCH_TO=10.40 
+
+C:\development-cri\test-python\test-python>set REV_FROM=373164 
+
+C:\development-cri\test-python\test-python>set REV_TO=373694 
+
+C:\development-cri\test-python\test-python>set COMMENT="riportate modifiche dal branch 10.30 da rev 373164 a 373694 sul 10.40" 
+
+C:\development-cri\test-python\test-python>cd \OVERIT\geocall61\Damasco-10.40\overit 
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update 
+Updating '.':
+Alla revisione 373694.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 373164:373694 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit --accept postpone 
+--- Fusione di r373165 attraverso r373694 in '.':
+U    geocallapp\damasco\cxf\da\DASWsRequestToSap.java
+ G   .
+--- Recording mergeinfo for merge of r373165 through r373694 into '.':
+ G   .
+
+C:\development-cri\test-python\test-python>set PROJECT_NAME=Damasco 
+
+C:\development-cri\test-python\test-python>set BRANCH_FROM=10.30 
+
+C:\development-cri\test-python\test-python>set BRANCH_TO=10.40 
+
+C:\development-cri\test-python\test-python>set REV_FROM=373164 
+
+C:\development-cri\test-python\test-python>set REV_TO=373694 
+
+C:\development-cri\test-python\test-python>set COMMENT="riportate modifiche dal branch 10.30 da rev 373164 a 373694 sul 10.40" 
+
+C:\development-cri\test-python\test-python>cd \OVERIT\geocall61\Damasco-10.40\overit 
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 373164 a 373694 sul 10.40" 
+Trasmetto      .
+Trasmetto      geocallapp\damasco\cxf\da\DASWsRequestToSap.java
+Trasmissione dati .
+Committed revision 373695.
+
+
+----
+2019-06-06 17:07:29.397105
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=372524
+set REV_TO=373164
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61>test_merge_auto.cmd
+
+C:\OVERIT\geocall61>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61>set REV_FROM=372524
+
+C:\OVERIT\geocall61>set REV_TO=373164
+
+C:\OVERIT\geocall61>set COMMENT="riportate modifiche dal branch 10.30 da rev 372524 a 373164 sul 10.40"
+
+C:\OVERIT\geocall61>cd  Damasco-10.40\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\presenzecantiere\cruscottocantiere\CruscottoCantiereBase.xml
+Aggiornato alla revisione 373167.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 372524:373164 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit --accept postpone
+--- Fusione di r372525 attraverso r373164 in '.':
+U    geocallapp\damasco\anagrafiche\lcl\DATSalvaLcl.java
+U    geocallapp\damasco\cxf\da\DASWsRequestToSap.java
+U    geocallapp\damasco\importexport\importazione\importpresenze\ImportPresenze.xml
+U    geocallapp\damasco\presenzecantiere\DichiarazioneGiornalieraPresenze.xml
+U    geocallapp\damasco\presenzecantiere\NuovaProgrammazionePresenze.xml
+ G   .
+--- Recording mergeinfo for merge of r372525 through r373164 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 372524 a 373164 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\lcl\DATSalvaLcl.java
+Trasmetto      geocallapp\damasco\cxf\da\DASWsRequestToSap.java
+Trasmetto      geocallapp\damasco\importexport\importazione\importpresenze\ImportPresenze.xml
+Trasmetto      geocallapp\damasco\presenzecantiere\DichiarazioneGiornalieraPresenze.xml
+Trasmetto      geocallapp\damasco\presenzecantiere\NuovaProgrammazionePresenze.xml
+Trasmissione dati .....
+Committed revision 373169.
+
+----
+2019-06-04 16:07:37.920764
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=371968
+set REV_TO=372524
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=371968
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=372524
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\anagrafiche\lcl\DAALclTestate.java
+U    geocallapp\damasco\cruscottoco\ContainerCruscotto.java
+U    geocallapp\damasco\cruscottoco\CreaStrategiaDaLCL.java
+U    geocallapp\damasco\cruscottoco\ParametriPerContratto.java
+Aggiornato alla revisione 372524.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 371968:372524 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit --accept postpone
+--- Fusione di r371969 attraverso r372524 in '.':
+U    geocallapp\damasco\cruscottocl\ParametriPuntContratto.java
+U    geocallapp\damasco\cruscottocl\SelezioneAttiIrregolari.xml
+ G   .
+--- Recording mergeinfo for merge of r371969 through r372524 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 371968 a 372524 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\cruscottocl\ParametriPuntContratto.java
+Trasmetto      geocallapp\damasco\cruscottocl\SelezioneAttiIrregolari.xml
+Trasmissione dati ..
+Committed revision 372525.
+
+----
+2019-05-31 14:21:28.900420
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=371480
+set REV_TO=371968
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=371480
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=371968
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 371969.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 371480:371968 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r371481 attraverso r371968 in '.':
+U    geocallapp\damasco\anagrafiche\libretti\MaterialiLM.java
+U    geocallapp\damasco\cruscottocl\SelezioneAttiIrregolari.xml
+ G   .
+--- Recording mergeinfo for merge of r371481 through r371968 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 371480 a 371968 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\MaterialiLM.java
+Trasmetto      geocallapp\damasco\cruscottocl\SelezioneAttiIrregolari.xml
+Trasmissione dati ..
+Committed revision 371970.
+
+----
+2019-05-29 14:03:57.072328
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=371117
+set REV_TO=371480
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=371117
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=371480
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 371480.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 371117:371480 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r371118 attraverso r371480 in '.':
+ G   .
+--- Recording mergeinfo for merge of r371118 through r371480 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 371117 a 371480 sul 10.40"
+Trasmetto      .
+
+Committed revision 371481.
+
+----
+?** 2019/05/27
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=370590
+set REV_TO=371117
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=370590
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=371117
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 371117.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 370590:371117 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r370591 attraverso r371117 in '.':
+U    geocallapp\damasco\XDMSConst.java
+U    geocallapp\damasco\amministrazione\aschedetestate\DAASchedeTestate.java
+C    geocallapp\damasco\anagrafiche\contratti\DAAContrattiTestate.java
+U    geocallapp\damasco\cruscottocl\ParametriPuntContratto.xml
+U    geocallapp\damasco\cruscottocl\SelezioneAttiIrregolariCL.xml
+A    geocallapp\damasco\install\scripts\10.5.19052400.sql
+U    geocallapp\damasco\report\gestioneambientale\panel\PRicercaLCL.java
+ G   .
+--- Recording mergeinfo for merge of r370591 through r371117 into '.':
+ G   .
+Conflict discovered in file 'geocallapp\damasco\anagrafiche\contratti\DAAContrattiTestate.java'.
+Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,
+        (mc) my side of conflict, (tc) their side of conflict,
+        (s) show all options: p
+Summary of conflicts:
+  Text conflicts: 1
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>geocallapp\damasco\anagrafiche\contratti\DAAContrattiTestate.java
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn resolved geocallapp\damasco\anagrafiche\contratti\DAAContrattiTestate.java
+Risolto lo stato di conflitto di 'geocallapp\damasco\anagrafiche\contratti\DAAContrattiTestate.java'
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 370590 a 371117 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\XDMSConst.java
+Trasmetto      geocallapp\damasco\amministrazione\aschedetestate\DAASchedeTestate.java
+Trasmetto      geocallapp\damasco\anagrafiche\contratti\DAAContrattiTestate.java
+Trasmetto      geocallapp\damasco\cruscottocl\ParametriPuntContratto.xml
+Trasmetto      geocallapp\damasco\cruscottocl\SelezioneAttiIrregolariCL.xml
+Aggiungo       geocallapp\damasco\install\scripts\10.5.19052400.sql
+Trasmetto      geocallapp\damasco\report\gestioneambientale\panel\PRicercaLCL.java
+Trasmissione dati ......
+Committed revision 371155.  
+  
+  
+** 2019/05/23
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=370106
+set REV_TO=370590
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=370106
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=370590
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 370590.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 370106:370590 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r370107 attraverso r370590 in '.':
+U    geocallapp\damasco\anagrafiche\libretti\DATSalvaLibretto.java
+ G   .
+--- Recording mergeinfo for merge of r370107 through r370590 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 370106 a 370590 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\DATSalvaLibretto.java
+Trasmissione dati .
+Committed revision 370591.
+
+** 2019/05/22
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=369448
+set REV_TO=370106
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=369448
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=370106
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+U    geocallapp\damasco\anagrafiche\comunicazioni\EventControllerRisposteComunicazione.java
+U    geocallapp\damasco\anagrafiche\caricamentomaestranzemezzi\esportazione\DATExportCaricamentoDipendentiMezzi.java
+U    geocallapp\damasco\anagrafiche\caricamentomaestranzemezzi\esportazione\XlsDipendentiMezziImport.xml
+U    geocallapp\damasco\anagrafiche\caricamentomaestranzemezzi\esportazione\XlsDipendentiMezziImportWFM.xml
+U    geocallapp\damasco\anagrafiche\atticontrollo\DATUpdateAttoControllo.java
+U    geocallapp\damasco\anagrafiche\atticontrollo\ListaAttiControllo.java
+U    geocallapp\damasco\anagrafiche\atticontrollo\ListaAttiControllo.xml
+U    geocallapp\damasco\anagrafiche\atticontrollocl\ConsuntivazioneSchedeAttoCL.xml
+U    geocallapp\damasco\anagrafiche\atticontrollocl\CreazioneSaggio.java
+U    geocallapp\damasco\anagrafiche\atticontrollocl\CreazioneSaggio.xml
+U    geocallapp\damasco\anagrafiche\lotticampioni\DAALottiCampioniPosizioni.java
+U    geocallapp\damasco\amministrazione\rdipendenticontrattirp\DARDipendentiContrattiRP.java
+U    geocallapp\damasco\amministrazione\rmezzicontrattirp\DARMezziContrattiRP.java
+U    geocallapp\damasco\amministrazione\aschederisposte\DATSalvaRisposteSchedaCL.java
+U    geocallapp\damasco\monitor\monitorexport\CsvDipendenti.xml
+U    geocallapp\damasco\monitor\monitorexport\CsvMezzi.xml
+Aggiornato alla revisione 370106.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 369448:370106 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r369449 attraverso r370106 in '.':
+C    geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+ G   .
+--- Recording mergeinfo for merge of r369449 through r370106 into '.':
+ G   .
+Conflict discovered in file 'geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java'.
+Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,
+        (mc) my side of conflict, (tc) their side of conflict,
+        (s) show all options: p
+Summary of conflicts:
+  Text conflicts: 1
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn resolved geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+Risolto lo stato di conflitto di 'geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java'
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 369448 a 370106 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+Trasmissione dati .
+Committed revision 370129.
+
+** 2019/05/17
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=368113
+set REV_TO=369448
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=368113
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=369448
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\Factory.properties
+U    geocallapp\damasco\presenzecantiere\cruscottocantiere\gestionemappa\CPannelloMappa.java
+U    geocallapp\damasco\presenzecantiere\cruscottocantiere\gestionemappa\PMappa.xml
+A    geocallapp\damasco\presenzecantiere\cruscottocantiere\gestionemappa\esriLayerDefinition.xml
+A    geocallapp\damasco\geos\ui\EsriMapPanelCantieri.java
+U    geocallapp\damasco\amministrazione\anautente\NewUtente.xml
+U    geocallapp\damasco\anagrafiche\lcl\DATLoadLcl.java
+Aggiornato alla revisione 369448.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 368113:369448 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r368114 attraverso r369448 in '.':
+ G   .
+--- Recording mergeinfo for merge of r368114 through r369448 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 368113 a 369448 sul 10.40"
+Trasmetto      .
+
+Committed revision 369449.
+
+** 2019/05/10
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=367859
+set REV_TO=368113
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=367859
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=368113
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 368113.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 367859:368113 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r367860 attraverso r368113 in '.':
+ G   .
+--- Recording mergeinfo for merge of r367860 through r368113 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 367859 a 368113 sul 10.40"
+Trasmetto      .
+
+Committed revision 368114.
+
+** 2019/05/09
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=367510
+set REV_TO=367859
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=367510
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=367859
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\anagrafiche\attivitacontrollo\DATCreaStrategie.java
+U    geocallapp\damasco\anagrafiche\attivitacontrollo\RicercaAttivita.java
+U    geocallapp\damasco\anagrafiche\attivitacontrollo\RicercaAttivita.xml
+U    geocallapp\damasco\anagrafiche\lcl\DATSalvaLcl.java
+Aggiornato alla revisione 367859.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 367510:367859 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r367511 attraverso r367859 in '.':
+ G   .
+--- Recording mergeinfo for merge of r367511 through r367859 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 367510 a 367859 sul 10.40"
+Trasmetto      .
+
+Committed revision 367860.
+
+** 2019/05/08
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=366840
+set REV_TO=367510
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=366840
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=367510
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\amministrazione\adatifissi\ADatiFissi.xml
+Aggiornato alla revisione 367510.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 366840:367510 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r366841 attraverso r367510 in '.':
+ G   .
+--- Recording mergeinfo for merge of r366841 through r367510 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 366840 a 367510 sul 10.40"
+Trasmetto      .
+
+Committed revision 367511.
+
+** 2019/05/03
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=366030
+set REV_TO=366840
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=366030
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=366840
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\anagrafiche\contratti\DAAContrattiTestate.java
+Aggiornato alla revisione 366840.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 366030:366840 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r366031 attraverso r366840 in '.':
+ G   .
+--- Recording mergeinfo for merge of r366031 through r366840 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 366030 a 366840 sul 10.40"
+Trasmetto      .
+
+Committed revision 366841.
+
+** 2019/04/24
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=365880
+set REV_TO=366030
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=365880
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=366030
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 366030.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 365880:366030 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r365881 attraverso r366030 in '.':
+U    geocallapp\damasco\anagrafiche\contratti\base\Contratto.java
+U    geocallapp\damasco\anagrafichegestioneambientale\autorizzazionianga\base\AnagraficaAutorizzazioniANGA.java
+U    geocallapp\damasco\anagrafichegestioneambientale\ui\CGestioneAmbientale.java
+ G   .
+--- Recording mergeinfo for merge of r365881 through r366030 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 365880 a 366030 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\contratti\base\Contratto.java
+Trasmetto      geocallapp\damasco\anagrafichegestioneambientale\autorizzazionianga\base\AnagraficaAutorizzazioniANGA.java
+Trasmetto      geocallapp\damasco\anagrafichegestioneambientale\ui\CGestioneAmbientale.java
+Trasmissione dati ...
+Committed revision 366031.
+
+** 2019/04/23
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=364947
+set REV_TO=365880
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=364947
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=365880
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATTrasmettiPG.java
+U    geocallapp\damasco\presenzecantiere\EventControllerPresenzaGiornaliera.java
+Aggiornato alla revisione 365880.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 364947:365880 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r364948 attraverso r365880 in '.':
+U    geocallapp\damasco\anagrafiche\atticontrollocl\DAAAttiControlloCL.java
+ G   .
+--- Recording mergeinfo for merge of r364948 through r365880 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 364947 a 365880 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\atticontrollocl\DAAAttiControlloCL.java
+Trasmissione dati .
+Committed revision 365881.
+
+** 2019/04/16
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=364368
+set REV_TO=364947
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=364368
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=364947
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+..
+ U   .
+Aggiornato alla revisione 364947.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 364368:364947 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r364369 attraverso r364947 in '.':
+U    geocallapp\damasco\anagrafiche\atticontrollocl\ListaAttiControlloCL.java
+U    geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+ G   .
+--- Recording mergeinfo for merge of r364369 through r364947 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 364368 a 364947 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\atticontrollocl\ListaAttiControlloCL.java
+Trasmetto      geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+Trasmissione dati ..
+Committed revision 364948.
+
+** 2019/04/12
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=363849
+set REV_TO=364368
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=363849
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=364368
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\anagrafiche\aps\DATSalvaAps.java
+U    geocallapp\damasco\cxf\scmgetaps\wrapper\DATSCMGetAPS.java
+Aggiornato alla revisione 364368.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 363849:364368 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r363850 attraverso r364368 in '.':
+ G   .
+--- Recording mergeinfo for merge of r363850 through r364368 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 363849 a 364368 sul 10.40"
+Trasmetto      .
+
+Committed revision 364369.
+
+** 2019/04/10
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=363639
+set REV_TO=363849
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=363639
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=363849
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\amministrazione\adatifissi\DatiFissi.java
+Aggiornato alla revisione 363850.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 363639:363849 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r363640 attraverso r363849 in '.':
+ G   .
+--- Recording mergeinfo for merge of r363640 through r363849 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 363639 a 363849 sul 10.40"
+Trasmetto      .
+
+Committed revision 363851.
+
+** 2019/04/09
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=363087
+set REV_TO=363639
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=363087
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=363639
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 363639.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 363087:363639 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r363088 attraverso r363639 in '.':
+U    geocallapp\damasco\anagrafiche\aps\DATLoadAps.java
+ G   .
+--- Recording mergeinfo for merge of r363088 through r363639 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 363087 a 363639 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\aps\DATLoadAps.java
+Trasmissione dati .
+Committed revision 363641.
+
+** 2019/04/05
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=362591
+set REV_TO=363087
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=362591
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=363087
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\anagrafiche\atticontrollo\DATLoadAttoControllo.java
+U    geocallapp\damasco\anagrafiche\atticontrollo\DATSalvaAttoControllo.java
+U    geocallapp\damasco\anagrafiche\attivitacontrollo\DATCreaStrategie.java
+A    geocallapp\damasco\install\scripts\10.40.19040400.sql
+U    geocallapp\damasco\amministrazione\adatifissi\ADatiFissi.xml
+U    geocallapp\damasco\amministrazione\adatifissi\DatiFissi.java
+U    geocallapp\damasco\importexport\importazione\importpresenze\DATImportPresenze.java
+U    geocallapp\damasco\presenzecantiere\DichiarazioneGiornalieraPresenze.java
+Aggiornato alla revisione 363087.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 362591:363087 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r362592 attraverso r363087 in '.':
+U    geocallapp\damasco\XDMSConst.java
+ G   .
+--- Recording mergeinfo for merge of r362592 through r363087 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 362591 a 363087 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\XDMSConst.java
+Trasmissione dati .
+Committed revision 363088.
+
+** 2019/04/03
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=361957
+set REV_TO=362591
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=361957
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=362591
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\install\scripts\10.40.19032900.sql
+U    geocallapp\damasco\cxf\idrauploadmodifica\wrapper\DATCallSCMUploadModificaFile.java
+Aggiornato alla revisione 362591.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 361957:362591 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r361958 attraverso r362591 in '.':
+U    geocallapp\damasco\XDMSConst.java
+U    geocallapp\damasco\anagrafiche\contratti\base\Contratto.java
+U    geocallapp\damasco\anagrafichegestioneambientale\autorizzazionianga\base\AnagraficaAutorizzazioniANGA.java
+U    geocallapp\damasco\anagrafichegestioneambientale\autorizzazionianga\base\AutorizzazioneContratto.java
+U    geocallapp\damasco\anagrafichegestioneambientale\autorizzazionianga\base\CategoriaANGA.java
+U    geocallapp\damasco\anagrafichegestioneambientale\autorizzazionianga\da\DAAutoMezzi.java
+U    geocallapp\damasco\anagrafichegestioneambientale\impianticonferimento\base\ImpiantoConferimento.java
+U    geocallapp\damasco\anagrafichegestioneambientale\impianticonferimento\base\ImpiantoContratto.java
+U    geocallapp\damasco\anagrafichegestioneambientale\ui\CGestioneAmbientale.java
+U    geocallapp\damasco\codes.xml
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATInviaFattura.java
+ G   .
+--- Recording mergeinfo for merge of r361958 through r362591 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 361957 a 362591 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\XDMSConst.java
+Trasmetto      geocallapp\damasco\anagrafiche\contratti\base\Contratto.java
+Trasmetto      geocallapp\damasco\anagrafichegestioneambientale\autorizzazionianga\base\AnagraficaAutorizzazioniANGA.java
+Trasmetto      geocallapp\damasco\anagrafichegestioneambientale\autorizzazionianga\base\AutorizzazioneContratto.java
+Trasmetto      geocallapp\damasco\anagrafichegestioneambientale\autorizzazionianga\base\CategoriaANGA.java
+Trasmetto      geocallapp\damasco\anagrafichegestioneambientale\autorizzazionianga\da\DAAutoMezzi.java
+Trasmetto      geocallapp\damasco\anagrafichegestioneambientale\impianticonferimento\base\ImpiantoConferimento.java
+Trasmetto      geocallapp\damasco\anagrafichegestioneambientale\impianticonferimento\base\ImpiantoContratto.java
+Trasmetto      geocallapp\damasco\anagrafichegestioneambientale\ui\CGestioneAmbientale.java
+Trasmetto      geocallapp\damasco\codes.xml
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATInviaFattura.java
+Trasmissione dati ...........
+Committed revision 362592.
+
+** 2019/03/29
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=361642
+set REV_TO=361957
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=361642
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=361957
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 361957.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 361642:361957 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r361643 attraverso r361957 in '.':
+ G   .
+--- Recording mergeinfo for merge of r361643 through r361957 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 361642 a 361957 sul 10.40"
+Trasmetto      .
+
+Committed revision 361958.
+
+** 2019/03/28
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=360999
+set REV_TO=361642
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=360999
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=361642
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 361645.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 360999:361642 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r361000 attraverso r361642 in '.':
+U    geocallapp\damasco\anagrafiche\aps\DAAApsTestate.java
+U    geocallapp\damasco\anagrafiche\aps\RicercaAps.java
+U    geocallapp\damasco\ws\wswrapper\WSDoubleField.java
+ G   .
+--- Recording mergeinfo for merge of r361000 through r361642 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 360999 a 361642 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\aps\DAAApsTestate.java
+Trasmetto      geocallapp\damasco\anagrafiche\aps\RicercaAps.java
+Trasmetto      geocallapp\damasco\ws\wswrapper\WSDoubleField.java
+Trasmissione dati ...
+Committed revision 361646.
+
+** 2019/03/26
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=360670
+set REV_TO=360999
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=360670
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=360999
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\anagrafiche\atticontrollo\DATLoadAttoControllo.java
+U    geocallapp\damasco\anagrafiche\atticontrollo\DATSalvaAttoControllo.java
+U    geocallapp\damasco\anagrafiche\attivitacontrollo\DATCreaStrategie.java
+A    geocallapp\damasco\anagrafiche\caricamentomaestranzemezzi\DAAAttoRequest.java
+A    geocallapp\damasco\anagrafiche\caricamentomaestranzemezzi\DAAMaestranzeAggiuntive.java
+A    geocallapp\damasco\anagrafiche\caricamentomaestranzemezzi\DATCreaNuovaDPGDaMobile.java
+A    geocallapp\damasco\anagrafiche\caricamentomaestranzemezzi\DATCreaStrategiaDaMobile.java
+U    geocallapp\damasco\anagrafiche\caricamentomaestranzemezzi\dipendenti\DARMansioniPosizioni.java
+U    geocallapp\damasco\XDMSConst.java
+U    geocallapp\damasco\amministrazione\aaziende\AAziende.xsl
+U    geocallapp\damasco\amministrazione\adipendenti\DAADipendenti.java
+U    geocallapp\damasco\amministrazione\aschede\DAASchede.java
+U    geocallapp\damasco\amministrazione\aschedetestate\DAASchedeTestate.java
+U    geocallapp\damasco\amministrazione\tprofilomansione\DATProfiloMansione.java
+U    geocallapp\damasco\cxf\idrauploadmodifica\wrapper\DATCallSCMUploadModificaFile.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATModificaPG.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATSetPG.java
+U    geocallapp\damasco\importexport\importazione\importpresenze\DATImportPresenze.java
+U    geocallapp\damasco\importexport\importazione\importpresenze\ImportPresenze.java
+U    geocallapp\damasco\presenzecantiere\AssociaDipendenti.xml
+U    geocallapp\damasco\presenzecantiere\AssociaSquadraTipo.xml
+U    geocallapp\damasco\presenzecantiere\DichiarazioneGiornalieraPresenze.java
+U    geocallapp\damasco\presenzecantiere\DichiarazioneGiornalieraPresenze.xml
+U    geocallapp\damasco\presenzecantiere\EventControllerPresenzaGiornaliera.java
+U    geocallapp\damasco\presenzecantiere\ModificaDipendenteAssociato.java
+U    geocallapp\damasco\presenzecantiere\ModificaDipendenteAssociato.xml
+U    geocallapp\damasco\presenzecantiere\NuovaProgrammazionePresenze.xml
+U    geocallapp\damasco\presenzecantiere\base\DATSavePresenzaGiornaliera.java
+U    geocallapp\damasco\presenzecantiere\base\PresenzaGiornaliera.java
+U    geocallapp\damasco\presenzecantiere\cruscottocantiere\InfoCantiere.xml
+Aggiornato alla revisione 361001.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 360670:360999 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r360671 attraverso r360999 in '.':
+ G   .
+--- Recording mergeinfo for merge of r360671 through r360999 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 360670 a 360999 sul 10.40"
+Trasmetto      .
+
+Committed revision 361002.
+
+** 2019/03/25
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=359944
+set REV_TO=360670
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=359944
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=360670
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 360670.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 359944:360670 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r359945 attraverso r360670 in '.':
+U    geocallapp\damasco\anagrafiche\organizzazioniterritoriali\MappaOrganizzazioneTerr.java
+ G   .
+--- Recording mergeinfo for merge of r359945 through r360670 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 359944 a 360670 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\organizzazioniterritoriali\MappaOrganizzazioneTerr.java
+Trasmissione dati .
+Committed revision 360671.
+
+** 2019/03/20
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=359597
+set REV_TO=359944
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=359597
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=359944
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+A    geocallapp\damasco\install\scripts\10.40.19032000.sql
+U    geocallapp\damasco\util\UtilsDMS.java
+Aggiornato alla revisione 359944.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 359597:359944 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r359598 attraverso r359944 in '.':
+ G   .
+--- Recording mergeinfo for merge of r359598 through r359944 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 359597 a 359944 sul 10.40"
+Trasmetto      .
+
+Committed revision 359946.
+
+** 2019/03/19
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=359028
+set REV_TO=359597
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=359028
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=359597
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATSetDocumentoLM.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\xsd\librettomisure\classes\FOTOLIBRETTOType.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\librettomisure\classes\LIBRETTOType.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\librettomisure\classes\ObjectFactory.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\librettomisure\schema\LibrettoMisure.xsd
+U    geocallapp\damasco\cxf\scmesitouploadmodificafile\wrapper\DATSCMEsitoUploadModificaFile.java
+U    geocallapp\damasco\anagrafiche\libretti\DATLoadLibretto.java
+U    geocallapp\damasco\anagrafiche\libretti\DATSalvaLibretto.java
+U    geocallapp\damasco\anagrafiche\libretti\Libretto.java
+U    geocallapp\damasco\Factory.properties
+A    geocallapp\damasco\ui\control\ColumnFoto.java
+U    geocallapp\damasco\util\UtilsDMS.java
+Aggiornato alla revisione 359598.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 359028:359597 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r359029 attraverso r359597 in '.':
+ G   .
+--- Recording mergeinfo for merge of r359029 through r359597 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 359028 a 359597 sul 10.40"
+Trasmetto      .
+
+Committed revision 359599.
+
+** 2019/03/15
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=358617
+set REV_TO=359028
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=358617
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=359028
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 359029.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 358617:359028 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r358618 attraverso r359028 in '.':
+U    geocallapp\damasco\anagrafiche\documentisicurezza\DATCreaPsc.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATRxDocSicurezza.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATRxMart89.java
+ G   .
+--- Recording mergeinfo for merge of r358618 through r359028 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 358617 a 359028 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\documentisicurezza\DATCreaPsc.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATRxDocSicurezza.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATRxMart89.java
+Trasmissione dati ...
+Committed revision 359030.
+
+** 2019/03/13
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=358369
+set REV_TO=358617
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=358369
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=358617
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 358617.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 358369:358617 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r358370 attraverso r358617 in '.':
+U    geocallapp\damasco\anagrafiche\documentisicurezza\DAADocumentiSicurezza.java
+U    geocallapp\damasco\anagrafiche\documentisicurezza\DATCreaArt89.java
+U    geocallapp\damasco\anagrafiche\documentisicurezza\DATCreaMart.java
+U    geocallapp\damasco\anagrafiche\documentisicurezza\DATCreaPos.java
+U    geocallapp\damasco\anagrafiche\documentisicurezza\DATCreaPsc.java
+U    geocallapp\damasco\anagrafiche\documentisicurezza\DATEliminaDocumentoSicurezza.java
+U    geocallapp\damasco\anagrafiche\documentisicurezza\GestioneArt89.java
+U    geocallapp\damasco\anagrafiche\documentisicurezza\GestioneDocumentiSicurezza.java
+ G   .
+--- Recording mergeinfo for merge of r358370 through r358617 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 358369 a 358617 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\documentisicurezza\DAADocumentiSicurezza.java
+Trasmetto      geocallapp\damasco\anagrafiche\documentisicurezza\DATCreaArt89.java
+Trasmetto      geocallapp\damasco\anagrafiche\documentisicurezza\DATCreaMart.java
+Trasmetto      geocallapp\damasco\anagrafiche\documentisicurezza\DATCreaPos.java
+Trasmetto      geocallapp\damasco\anagrafiche\documentisicurezza\DATCreaPsc.java
+Trasmetto      geocallapp\damasco\anagrafiche\documentisicurezza\DATEliminaDocumentoSicurezza.java
+Trasmetto      geocallapp\damasco\anagrafiche\documentisicurezza\GestioneArt89.java
+Trasmetto      geocallapp\damasco\anagrafiche\documentisicurezza\GestioneDocumentiSicurezza.java
+Trasmissione dati ........
+Committed revision 358619.
+
+** 2019/03/12
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=357999
+set REV_TO=358369
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=357999
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=358369
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 358369.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 357999:358369 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r358000 attraverso r358369 in '.':
+ G   .
+--- Recording mergeinfo for merge of r358000 through r358369 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 357999 a 358369 sul 10.40"
+Trasmetto      .
+
+Committed revision 358370.
+
+** 2019/03/11
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=357710
+set REV_TO=357999
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=357710
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=357999
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 357999.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 357710:357999 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r357711 attraverso r357999 in '.':
+ G   .
+--- Recording mergeinfo for merge of r357711 through r357999 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 357710 a 357999 sul 10.40"
+Trasmetto      .
+
+Committed revision 358000.
+
+** 2019/03/08
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=357502
+set REV_TO=357710
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=357502
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=357710
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 357710.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 357502:357710 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r357503 attraverso r357710 in '.':
+U    geocallapp\damasco\amministrazione\aparametrischeda\DAAParametriScheda.java
+U    geocallapp\damasco\amministrazione\aparametrischeda\DettParametriScheda.java
+U    geocallapp\damasco\amministrazione\aparametrischeda\DettParametriScheda.xml
+U    geocallapp\damasco\anagrafiche\parametrischede\DATLoadParametroScheda.java
+U    geocallapp\damasco\util\UtilsDMS.java
+ G   .
+--- Recording mergeinfo for merge of r357503 through r357710 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 357502 a 357710 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\amministrazione\aparametrischeda\DAAParametriScheda.java
+Trasmetto      geocallapp\damasco\amministrazione\aparametrischeda\DettParametriScheda.java
+Trasmetto      geocallapp\damasco\amministrazione\aparametrischeda\DettParametriScheda.xml
+Trasmetto      geocallapp\damasco\anagrafiche\parametrischede\DATLoadParametroScheda.java
+Trasmetto      geocallapp\damasco\util\UtilsDMS.java
+Trasmissione dati .....
+Committed revision 357711.
+
+** 2019/03/07
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=356029
+set REV_TO=357502
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=356029
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=357502
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+c:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+U    geocallapp\damasco\amministrazione\aschedetestate\DAASchedeTestate.java
+U    geocallapp\damasco\report\comunicazioni\DATReportComunicazioni.java
+U    geocallapp\damasco\report\comunicazioni\ReportComunicazioni.java
+U    geocallapp\damasco\report\comunicazioni\ReportComunicazioni.xml
+ U   .
+Aggiornato alla revisione 357502.
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 356029:357502 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r356030 attraverso r357502 in '.':
+U    geocallapp\damasco\anagrafiche\aps\DATSalvaAps.java
+U    geocallapp\damasco\anagrafiche\ticketguasti\CompilazioneTicketGuasto.java
+U    geocallapp\damasco\anagrafiche\inbox\DAAInbox.java
+U    geocallapp\damasco\anagrafiche\inbox\InboxEnel.java
+U    geocallapp\damasco\cxf\scmgetaps\wrapper\DATSCMGetAPS.java
+U    geocallapp\damasco\report\landi\DATReportLandi.java
+U    geocallapp\damasco\ws\wswrapper\WSDoubleField.java
+ G   .
+--- Recording mergeinfo for merge of r356030 through r357502 into '.':
+ G   .
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+c:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 356029 a 357502 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\aps\DATSalvaAps.java
+Trasmetto      geocallapp\damasco\anagrafiche\inbox\DAAInbox.java
+Trasmetto      geocallapp\damasco\anagrafiche\inbox\InboxEnel.java
+Trasmetto      geocallapp\damasco\anagrafiche\ticketguasti\CompilazioneTicketGuasto.java
+Trasmetto      geocallapp\damasco\cxf\scmgetaps\wrapper\DATSCMGetAPS.java
+Trasmetto      geocallapp\damasco\report\landi\DATReportLandi.java
+Trasmetto      geocallapp\damasco\ws\wswrapper\WSDoubleField.java
+Trasmissione dati .......
+Committed revision 357503.
+
+** 2019/02/28
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=355432
+set REV_TO=356029
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=355432
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=356029
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 356029.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 355432:356029 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r355433 attraverso r356029 in '.':
+U    geocallapp\damasco\amministrazione\aschedetestate\DAASchedeTestate.java
+U    geocallapp\damasco\report\comunicazioni\DATReportComunicazioni.java
+U    geocallapp\damasco\report\comunicazioni\ReportComunicazioni.java
+U    geocallapp\damasco\report\comunicazioni\ReportComunicazioni.xml
+ G   .
+--- Recording mergeinfo for merge of r355433 through r356029 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 355432 a 356029 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\amministrazione\aschedetestate\DAASchedeTestate.java
+Trasmetto      geocallapp\damasco\report\comunicazioni\DATReportComunicazioni.java
+Trasmetto      geocallapp\damasco\report\comunicazioni\ReportComunicazioni.java
+Trasmetto      geocallapp\damasco\report\comunicazioni\ReportComunicazioni.xml
+Trasmissione dati ....
+Committed revision 356030.
+
+** 2019/02/26
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=355129
+set REV_TO=355432
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=355129
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=355432
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 355432.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 355129:355432 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r355130 attraverso r355432 in '.':
+U    geocallapp\damasco\importexport\importazione\DATImportBase.java
+ G   .
+--- Recording mergeinfo for merge of r355130 through r355432 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 355129 a 355432 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\importexport\importazione\DATImportBase.java
+Trasmissione dati .
+Committed revision 355433.
+
+** 2019/02/22
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=354711
+set REV_TO=355129
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit> set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=354711
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=355129
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+A    geocallapp\damasco\install\scripts\10.40.19022100.sql
+Aggiornato alla revisione 355129.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 354711:355129 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r354712 attraverso r355129 in '.':
+U    geocallapp\damasco\anagrafiche\atticontrollocl\DATLoadAttoControlloCL.java
+U    geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+U    geocallapp\damasco\anagrafiche\inbox\InboxImpresa.java
+U    geocallapp\damasco\anagrafiche\libretti\DAALibrettiAttivita.java
+U    geocallapp\damasco\anagrafiche\libretti\DAALibrettiTestate.java
+U    geocallapp\damasco\anagrafiche\libretti\DATSalvaLibretto.java
+U    geocallapp\damasco\anagrafiche\libretti\MaterialiLM.java
+U    geocallapp\damasco\anagrafiche\libretti\PrestazioniLM.java
+U    geocallapp\damasco\anagrafiche\libretti\StrutturaLM.java
+U    geocallapp\damasco\anagrafiche\libretti\report\pdflavoroattivita\DATStampaLMLavoroAttivita.java
+U    geocallapp\damasco\codes.xml
+A    geocallapp\damasco\cxf\scma2a\RemoveBarcode.java
+A    geocallapp\damasco\cxf\scma2a\RemoveBarcodeResponse.java
+U    geocallapp\damasco\cxf\scma2a\SCMA2A.java
+U    geocallapp\damasco\cxf\scma2a\SCMA2ABindingImpl.java
+U    geocallapp\damasco\cxf\scma2a\SCMA2A_SCMA2ABinding_Client.java
+A    geocallapp\damasco\cxf\scma2a\SetBarcode.java
+A    geocallapp\damasco\cxf\scma2a\SetBarcodeResponse.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATRemoveBarcode.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATSetBarcode.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATAccettazioneLM.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATGetListaLM.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATGetPdfLM.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATRifiutoLM.java
+A    geocallapp\damasco\cxf\scma2a\AccettazioneLM.java
+A    geocallapp\damasco\cxf\scma2a\AccettazioneLMResponse.java
+A    geocallapp\damasco\cxf\scma2a\GetListaLM.java
+A    geocallapp\damasco\cxf\scma2a\GetListaLMResponse.java
+A    geocallapp\damasco\cxf\scma2a\GetPdfLM.java
+A    geocallapp\damasco\cxf\scma2a\GetPdfLMResponse.java
+A    geocallapp\damasco\cxf\scma2a\RifiutoLM.java
+A    geocallapp\damasco\cxf\scma2a\RifiutoLMResponse.java
+U    geocallapp\damasco\functionsWSA2A.xml
+U    geocallapp\damasco\cruscottoLcl\DettagliLcl.java
+U    geocallapp\damasco\ws\ConstWS.java
+ G   .
+--- Recording mergeinfo for merge of r354712 through r355129 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 354711 a 355129 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\atticontrollocl\DATLoadAttoControlloCL.java
+Trasmetto      geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+Trasmetto      geocallapp\damasco\anagrafiche\inbox\InboxImpresa.java
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\DAALibrettiAttivita.java
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\DAALibrettiTestate.java
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\DATSalvaLibretto.java
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\MaterialiLM.java
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\PrestazioniLM.java
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\StrutturaLM.java
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\report\pdflavoroattivita\DATStampaLMLavoroAttivita.java
+Trasmetto      geocallapp\damasco\codes.xml
+Trasmetto      geocallapp\damasco\cruscottoLcl\DettagliLcl.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\AccettazioneLM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\AccettazioneLMResponse.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetListaLM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetListaLMResponse.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetPdfLM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetPdfLMResponse.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\RemoveBarcode.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\RemoveBarcodeResponse.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\RifiutoLM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\RifiutoLMResponse.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\SCMA2A.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\SCMA2ABindingImpl.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\SCMA2A_SCMA2ABinding_Client.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\SetBarcode.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\SetBarcodeResponse.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATAccettazioneLM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATGetListaLM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATGetPdfLM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATRemoveBarcode.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATRifiutoLM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATSetBarcode.java
+Trasmetto      geocallapp\damasco\functionsWSA2A.xml
+Trasmetto      geocallapp\damasco\ws\ConstWS.java
+Trasmissione dati .................
+Committed revision 355130.
+
+** 2019/02/21
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=353682
+set REV_TO=354711
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_FROM=353682
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set REV_TO=354711
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.30\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 354711.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 353682:354711 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r353683 attraverso r354711 in '.':
+U    geocallapp\damasco\codes.xml
+U    geocallapp\damasco\cxf\sapentratamerce\wrapper\DATCallSAPEntrataMerce.java
+A    geocallapp\damasco\cxf\scma2a\GetListaPreposto.java
+A    geocallapp\damasco\cxf\scma2a\GetListaPrepostoResponse.java
+A    geocallapp\damasco\cxf\scma2a\GetMaterialiRilevatiTicket.java
+A    geocallapp\damasco\cxf\scma2a\GetMaterialiRilevatiTicketResponse.java
+U    geocallapp\damasco\cxf\scma2a\SCMA2A.java
+U    geocallapp\damasco\cxf\scma2a\SCMA2ABindingImpl.java
+U    geocallapp\damasco\cxf\scma2a\SCMA2A_SCMA2ABinding_Client.java
+A    geocallapp\damasco\cxf\scma2a\SetTicketPreposto.java
+A    geocallapp\damasco\cxf\scma2a\SetTicketPrepostoResponse.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATEseguiOperationBase.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATGetListaPreposto.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATGetMaterialiRilevatiTicket.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATGetTicket.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATSetDocumentoDM.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATSetDocumentoLM.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATSetTicketPreposto.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\xsd\getticket\classes\BARCODEType.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\getticket\classes\DATIType.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\getticket\classes\MATERIALEType.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\getticket\classes\ObjectFactory.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\getticket\classes\TESTATAType.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\getticket\schema\getTicket.xsd
+A    geocallapp\damasco\cxf\scma2a\wrapper\xsd\librettomisure\classes\BARCODEType.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\librettomisure\classes\MATERIALEType.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\librettomisure\classes\ObjectFactory.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\librettomisure\schema\LibrettoMisure.xsd
+U    geocallapp\damasco\functionsWSA2A.xml
+U    geocallapp\damasco\ws\ConstWS.java
+U    geocallapp\damasco\anagrafiche\documentisicurezza\DATCreaArt89.java
+ G   .
+--- Recording mergeinfo for merge of r353683 through r354711 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 353682 a 354711 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\documentisicurezza\DATCreaArt89.java
+Trasmetto      geocallapp\damasco\codes.xml
+Trasmetto      geocallapp\damasco\cxf\sapentratamerce\wrapper\DATCallSAPEntrataMerce.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetListaPreposto.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetListaPrepostoResponse.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetMaterialiRilevatiTicket.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetMaterialiRilevatiTicketResponse.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\SCMA2A.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\SCMA2ABindingImpl.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\SCMA2A_SCMA2ABinding_Client.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\SetTicketPreposto.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\SetTicketPrepostoResponse.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATEseguiOperationBase.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATGetListaPreposto.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATGetMaterialiRilevatiTicket.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATGetTicket.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATSetDocumentoDM.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATSetDocumentoLM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATSetTicketPreposto.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\xsd\getticket\classes\BARCODEType.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\getticket\classes\DATIType.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\getticket\classes\MATERIALEType.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\getticket\classes\ObjectFactory.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\getticket\classes\TESTATAType.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\getticket\schema\getTicket.xsd
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\xsd\librettomisure\classes\BARCODEType.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\librettomisure\classes\MATERIALEType.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\librettomisure\classes\ObjectFactory.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\librettomisure\schema\LibrettoMisure.xsd
+Trasmetto      geocallapp\damasco\functionsWSA2A.xml
+Trasmetto      geocallapp\damasco\ws\ConstWS.java
+Trasmissione dati ....................
+Committed revision 354713.
+
+** 2019/02/15
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=346764
+set REV_TO=353682
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set REV_FROM=346764
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set REV_TO=353682
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 353682.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 346764:353682 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+--- Fusione di r348721 attraverso r353682 in '.':
+U    geocallapp\damasco\PackageStartup.java
+U    geocallapp\damasco\amministrazione\acampioniravica\DATControlloPuntiApsContratto.java
+U    geocallapp\damasco\amministrazione\rutentiorgterritoriali\CRUtentiOrgTerritoriali.java
+U    geocallapp\damasco\amministrazione\rutentiorgterritoriali\DARUtentiOrgTerritoriali.java
+U    geocallapp\damasco\amministrazione\rutentiorgterritoriali\DATRimuoviAssociazioneOT.java
+U    geocallapp\damasco\amministrazione\rutentiorgterritoriali\RUtentiOrgTerritoriali.xml
+U    geocallapp\damasco\anagrafiche\atticontrollo\DAAAttiControllo.java
+U    geocallapp\damasco\anagrafiche\atticontrollo\DATAnnullaAttiControlloMassivo.java
+U    geocallapp\damasco\anagrafiche\atticontrollo\LavorazioneAttoControllo.java
+U    geocallapp\damasco\anagrafiche\atticontrollocl\DAAAttiControlloCL.java
+U    geocallapp\damasco\anagrafiche\atticontrollocl\DATAnnullaAttoCL.java
+U    geocallapp\damasco\anagrafiche\atticontrollocl\DATSalvaAttoControlloCL.java
+U    geocallapp\damasco\anagrafiche\atticontrollocl\ListaAttiControlloCL.java
+U    geocallapp\damasco\anagrafiche\attivitacontrollo\RicercaAttivita.java
+U    geocallapp\damasco\anagrafiche\cantieri\DAACantiere.java
+U    geocallapp\damasco\anagrafiche\comunicazioni\DAAComunicazioni.java
+U    geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+U    geocallapp\damasco\anagrafiche\contratti\DAAContrattiRuoliPartner.java
+U    geocallapp\damasco\anagrafiche\contratti\DAAContrattiTestate.java
+U    geocallapp\damasco\anagrafiche\distintemateriali\DATLoadDistintaMateriali.java
+U    geocallapp\damasco\anagrafiche\distintemateriali\DATSalvaDistintaMateriali.java
+U    geocallapp\damasco\anagrafiche\distintemateriali\DettaglioDM.java
+U    geocallapp\damasco\anagrafiche\distintemateriali\DistintaMateriali.java
+U    geocallapp\damasco\anagrafiche\entratamerci\DAAEMRighe.java
+U    geocallapp\damasco\anagrafiche\entratamerci\DATLoadEntrataMerci.java
+U    geocallapp\damasco\anagrafiche\entratamerci\DATSalvaEntrataMerci.java
+U    geocallapp\damasco\anagrafiche\lcl\DAALclPosizioni.java
+U    geocallapp\damasco\anagrafiche\lcl\DAALclTestate.java
+U    geocallapp\damasco\anagrafiche\lcl\Lcl.java
+U    geocallapp\damasco\anagrafiche\libretti\DAALibrettiRighe.java
+U    geocallapp\damasco\anagrafiche\libretti\DATLoadLibretto.java
+U    geocallapp\damasco\anagrafiche\libretti\DATSalvaLibretto.java
+U    geocallapp\damasco\anagrafiche\libretti\MaterialiLM.java
+U    geocallapp\damasco\anagrafiche\libretti\StrutturaLM.java
+U    geocallapp\damasco\anagrafiche\lotticampioni\DATLoadLottoCampione.java
+U    geocallapp\damasco\anagrafiche\odamateriali\DAAOdaMaterialiMaterialiImpresa.java
+U    geocallapp\damasco\anagrafiche\organizzazioniterritoriali\DAAOrganizzazioneTerritoriale.java
+U    geocallapp\damasco\anagrafiche\organizzazioniterritoriali\MappaOrganizzazioneTerr.java
+U    geocallapp\damasco\anagrafiche\strategiecl\RicercaStrategiaCL.java
+U    geocallapp\damasco\anagrafiche\ticketguasti\CompilazioneTicketGuasto.java
+U    geocallapp\damasco\anagrafiche\ticketguasti\DATLoadTicketGuasto.java
+U    geocallapp\damasco\anagrafiche\ticketguasti\DATSaveTicketGuasto.java
+U    geocallapp\damasco\anagrafiche\ticketguasti\DATicketGuastiMatPrest.java
+U    geocallapp\damasco\anagrafiche\ticketguasti\DATicketGuastiTestata.java
+U    geocallapp\damasco\anagrafiche\ticketguasti\TicketGuasto.java
+U    geocallapp\damasco\anagrafichegestioneambientale\anagraficafir\ui\EditAnagraficaFIR.xml
+U    geocallapp\damasco\codes.xml
+U    geocallapp\damasco\cruscottoco\ParametriPerContratto.java
+A    geocallapp\damasco\cxf\scma2a\CheckBarcode.java
+A    geocallapp\damasco\cxf\scma2a\CheckBarcodeResponse.java
+A    geocallapp\damasco\cxf\scma2a\GetDM.java
+A    geocallapp\damasco\cxf\scma2a\GetDMResponse.java
+A    geocallapp\damasco\cxf\scma2a\GetListaDM.java
+A    geocallapp\damasco\cxf\scma2a\GetListaDMResponse.java
+A    geocallapp\damasco\cxf\scma2a\GetMaterialiRilevatiLCL.java
+A    geocallapp\damasco\cxf\scma2a\GetMaterialiRilevatiLCLResponse.java
+U    geocallapp\damasco\cxf\scma2a\SCMA2A.java
+U    geocallapp\damasco\cxf\scma2a\SCMA2ABindingImpl.java
+U    geocallapp\damasco\cxf\scma2a\SCMA2A_SCMA2ABinding_Client.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATCheckBarcode.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\xsd\distintamateriali\cmd
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATGetListaDM.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATSetEM.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\distintamateriali\classes\ObjectFactory.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\xsd\setentratamerci\classes\BarcodesType.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\setentratamerci\schema\SetEntrataMerci.xsd
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATSetDocumentoLM.java
+U    geocallapp\damasco\cxf\scmesitouploadmodificafile\wrapper\DATSCMEsitoUploadModificaFile.java
+U    geocallapp\damasco\cxf\IntestazioneChiamata.java
+U    geocallapp\damasco\importexport\importazione\importutentimi\DATImportUtentiMI.java
+U    geocallapp\damasco\install\scripts\1.0.1179.sql
+U    geocallapp\damasco\install\scripts\1.0.22.sql
+U    geocallapp\damasco\install\scripts\1.0.5.sql
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATGetDM.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATInviaFattura.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\distintamateriali\classes\MATERIALEType.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\distintamateriali\schema\DistintaMateriali.xsd
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\setentratamerci\classes\PosizioniType.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATRichiestaSospensione.java
+U    geocallapp\damasco\cxf\scmesitopresaincarico\wrapper\DATSCMEsitoPresaInCarico.java
+U    geocallapp\damasco\cxf\scmticketguasti\wrapper\DATPutTicketGuasto.java
+U    geocallapp\damasco\importexport\importazione\importutenti\DATImportUtentiAnagrafica.java
+U    geocallapp\damasco\install\scripts\1.0.1171.sql
+U    geocallapp\damasco\install\scripts\1.0.19.sql
+U    geocallapp\damasco\install\scripts\1.0.45.sql
+U    geocallapp\damasco\install\scripts\1.0.520.sql
+U    geocallapp\damasco\install\scripts\5.25.18060500.sql
+U    geocallapp\damasco\report\scm\prestazionimateriali\ReportPrestazioniMaterialiEnel.xml
+U    geocallapp\damasco\ui\container\CExpandable.java
+U    geocallapp\damasco\install\scripts\1.0.521.sql
+U    geocallapp\damasco\install\scripts\7.40.18110500.sql
+U    geocallapp\damasco\report\scm\prestazionimateriali\pdf\DATReportPrestMatPDF.java
+U    geocallapp\damasco\ui\container\TableViewExpandable.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATEseguiOperationBase.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\DATGetMaterialiRilevatiLCL.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\xsd\distintamateriali\classes\BARCODEType.java
+A    geocallapp\damasco\cxf\scma2a\wrapper\xsd\distintamateriali\cmd\xjc_command.txt
+U    geocallapp\damasco\cxf\scma2a\wrapper\xsd\setentratamerci\classes\ObjectFactory.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATRichiestaProroga.java
+U    geocallapp\damasco\cxf\scma2a\wrapper\DATTxLetteraFineLavori.java
+U    geocallapp\damasco\cxf\scmgetentratamerce\wrapper\DATSCMGetEntrataMerce.java
+U    geocallapp\damasco\functionsWSA2A.xml
+U    geocallapp\damasco\install\scripts\1.0.1102.sql
+U    geocallapp\damasco\install\scripts\1.0.1201.sql
+U    geocallapp\damasco\install\scripts\1.0.4.sql
+U    geocallapp\damasco\install\scripts\1.0.52.sql
+U    geocallapp\damasco\install\scripts\4.2.17120401.sql
+U    geocallapp\damasco\report\scm\prestazionimateriali\DAAPrestazioni.java
+U    geocallapp\damasco\report\scm\prestazionimateriali\xml\DATReportPrestMatXML.java
+U    geocallapp\damasco\install\scripts\1.3.33.sql
+A    geocallapp\damasco\install\scripts\8.0.19011000.sql
+U    geocallapp\damasco\report\scm\prestazionimateriali\xls\XlsReportPrestazioni.xml
+U    geocallapp\damasco\ui\control\InputDecoder3.java
+U    geocallapp\damasco\ws\ConstWS.java
+U    geocallapp\damasco\util\automi\ConstAutomi.java
+U    geocallapp\damasco\util\UtilsDMS.java
+ U   .
+--- Recording mergeinfo for merge of r348721 through r353682 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 346764 a 353682 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\PackageStartup.java
+Trasmetto      geocallapp\damasco\amministrazione\acampioniravica\DATControlloPuntiApsContratto.java
+Trasmetto      geocallapp\damasco\amministrazione\rutentiorgterritoriali\CRUtentiOrgTerritoriali.java
+Trasmetto      geocallapp\damasco\amministrazione\rutentiorgterritoriali\DARUtentiOrgTerritoriali.java
+Trasmetto      geocallapp\damasco\amministrazione\rutentiorgterritoriali\DATRimuoviAssociazioneOT.java
+Trasmetto      geocallapp\damasco\amministrazione\rutentiorgterritoriali\RUtentiOrgTerritoriali.xml
+Trasmetto      geocallapp\damasco\anagrafiche\atticontrollo\DAAAttiControllo.java
+Trasmetto      geocallapp\damasco\anagrafiche\atticontrollo\DATAnnullaAttiControlloMassivo.java
+Trasmetto      geocallapp\damasco\anagrafiche\atticontrollo\LavorazioneAttoControllo.java
+Trasmetto      geocallapp\damasco\anagrafiche\atticontrollocl\DAAAttiControlloCL.java
+Trasmetto      geocallapp\damasco\anagrafiche\atticontrollocl\DATAnnullaAttoCL.java
+Trasmetto      geocallapp\damasco\anagrafiche\atticontrollocl\DATSalvaAttoControlloCL.java
+Trasmetto      geocallapp\damasco\anagrafiche\atticontrollocl\ListaAttiControlloCL.java
+Trasmetto      geocallapp\damasco\anagrafiche\attivitacontrollo\RicercaAttivita.java
+Trasmetto      geocallapp\damasco\anagrafiche\cantieri\DAACantiere.java
+Trasmetto      geocallapp\damasco\anagrafiche\comunicazioni\DAAComunicazioni.java
+Trasmetto      geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+Trasmetto      geocallapp\damasco\anagrafiche\contratti\DAAContrattiRuoliPartner.java
+Trasmetto      geocallapp\damasco\anagrafiche\contratti\DAAContrattiTestate.java
+Trasmetto      geocallapp\damasco\anagrafiche\distintemateriali\DATLoadDistintaMateriali.java
+Trasmetto      geocallapp\damasco\anagrafiche\distintemateriali\DATSalvaDistintaMateriali.java
+Trasmetto      geocallapp\damasco\anagrafiche\distintemateriali\DettaglioDM.java
+Trasmetto      geocallapp\damasco\anagrafiche\distintemateriali\DistintaMateriali.java
+Trasmetto      geocallapp\damasco\anagrafiche\entratamerci\DAAEMRighe.java
+Trasmetto      geocallapp\damasco\anagrafiche\entratamerci\DATLoadEntrataMerci.java
+Trasmetto      geocallapp\damasco\anagrafiche\entratamerci\DATSalvaEntrataMerci.java
+Trasmetto      geocallapp\damasco\anagrafiche\lcl\DAALclPosizioni.java
+Trasmetto      geocallapp\damasco\anagrafiche\lcl\DAALclTestate.java
+Trasmetto      geocallapp\damasco\anagrafiche\lcl\Lcl.java
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\DAALibrettiRighe.java
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\DATLoadLibretto.java
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\DATSalvaLibretto.java
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\MaterialiLM.java
+Trasmetto      geocallapp\damasco\anagrafiche\libretti\StrutturaLM.java
+Trasmetto      geocallapp\damasco\anagrafiche\lotticampioni\DATLoadLottoCampione.java
+Trasmetto      geocallapp\damasco\anagrafiche\odamateriali\DAAOdaMaterialiMaterialiImpresa.java
+Trasmetto      geocallapp\damasco\anagrafiche\organizzazioniterritoriali\DAAOrganizzazioneTerritoriale.java
+Trasmetto      geocallapp\damasco\anagrafiche\organizzazioniterritoriali\MappaOrganizzazioneTerr.java
+Trasmetto      geocallapp\damasco\anagrafiche\strategiecl\RicercaStrategiaCL.java
+Trasmetto      geocallapp\damasco\anagrafiche\ticketguasti\CompilazioneTicketGuasto.java
+Trasmetto      geocallapp\damasco\anagrafiche\ticketguasti\DATLoadTicketGuasto.java
+Trasmetto      geocallapp\damasco\anagrafiche\ticketguasti\DATSaveTicketGuasto.java
+Trasmetto      geocallapp\damasco\anagrafiche\ticketguasti\DATicketGuastiMatPrest.java
+Trasmetto      geocallapp\damasco\anagrafiche\ticketguasti\DATicketGuastiTestata.java
+Trasmetto      geocallapp\damasco\anagrafiche\ticketguasti\TicketGuasto.java
+Trasmetto      geocallapp\damasco\anagrafichegestioneambientale\anagraficafir\ui\EditAnagraficaFIR.xml
+Trasmetto      geocallapp\damasco\codes.xml
+Trasmetto      geocallapp\damasco\cruscottoco\ParametriPerContratto.java
+Trasmetto      geocallapp\damasco\cxf\IntestazioneChiamata.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\CheckBarcode.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\CheckBarcodeResponse.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetDM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetDMResponse.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetListaDM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetListaDMResponse.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetMaterialiRilevatiLCL.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\GetMaterialiRilevatiLCLResponse.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\SCMA2A.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\SCMA2ABindingImpl.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\SCMA2A_SCMA2ABinding_Client.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATCheckBarcode.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATEseguiOperationBase.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATGetDM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATGetListaDM.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\DATGetMaterialiRilevatiLCL.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATInviaFattura.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATRichiestaProroga.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATRichiestaSospensione.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATSetDocumentoLM.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATSetEM.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\DATTxLetteraFineLavori.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\xsd\distintamateriali\classes\BARCODEType.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\distintamateriali\classes\MATERIALEType.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\distintamateriali\classes\ObjectFactory.java
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\xsd\distintamateriali\cmd
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\distintamateriali\schema\DistintaMateriali.xsd
+Aggiungo       geocallapp\damasco\cxf\scma2a\wrapper\xsd\setentratamerci\classes\BarcodesType.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\setentratamerci\classes\ObjectFactory.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\setentratamerci\classes\PosizioniType.java
+Trasmetto      geocallapp\damasco\cxf\scma2a\wrapper\xsd\setentratamerci\schema\SetEntrataMerci.xsd
+Trasmetto      geocallapp\damasco\cxf\scmesitopresaincarico\wrapper\DATSCMEsitoPresaInCarico.java
+Trasmetto      geocallapp\damasco\cxf\scmesitouploadmodificafile\wrapper\DATSCMEsitoUploadModificaFile.java
+Trasmetto      geocallapp\damasco\cxf\scmgetentratamerce\wrapper\DATSCMGetEntrataMerce.java
+Trasmetto      geocallapp\damasco\cxf\scmticketguasti\wrapper\DATPutTicketGuasto.java
+Trasmetto      geocallapp\damasco\functionsWSA2A.xml
+Trasmetto      geocallapp\damasco\importexport\importazione\importutenti\DATImportUtentiAnagrafica.java
+Trasmetto      geocallapp\damasco\importexport\importazione\importutentimi\DATImportUtentiMI.java
+Trasmetto      geocallapp\damasco\install\scripts\1.0.1102.sql
+Trasmetto      geocallapp\damasco\install\scripts\1.0.1171.sql
+Trasmetto      geocallapp\damasco\install\scripts\1.0.1179.sql
+Trasmetto      geocallapp\damasco\install\scripts\1.0.1201.sql
+Trasmetto      geocallapp\damasco\install\scripts\1.0.19.sql
+Trasmetto      geocallapp\damasco\install\scripts\1.0.22.sql
+Trasmetto      geocallapp\damasco\install\scripts\1.0.4.sql
+Trasmetto      geocallapp\damasco\install\scripts\1.0.45.sql
+Trasmetto      geocallapp\damasco\install\scripts\1.0.5.sql
+Trasmetto      geocallapp\damasco\install\scripts\1.0.52.sql
+Trasmetto      geocallapp\damasco\install\scripts\1.0.520.sql
+Trasmetto      geocallapp\damasco\install\scripts\1.0.521.sql
+Trasmetto      geocallapp\damasco\install\scripts\1.3.33.sql
+Trasmetto      geocallapp\damasco\install\scripts\4.2.17120401.sql
+Trasmetto      geocallapp\damasco\install\scripts\5.25.18060500.sql
+Trasmetto      geocallapp\damasco\install\scripts\7.40.18110500.sql
+Aggiungo       geocallapp\damasco\install\scripts\8.0.19011000.sql
+Trasmetto      geocallapp\damasco\report\scm\prestazionimateriali\DAAPrestazioni.java
+Trasmetto      geocallapp\damasco\report\scm\prestazionimateriali\ReportPrestazioniMaterialiEnel.xml
+Trasmetto      geocallapp\damasco\report\scm\prestazionimateriali\pdf\DATReportPrestMatPDF.java
+Trasmetto      geocallapp\damasco\report\scm\prestazionimateriali\xls\XlsReportPrestazioni.xml
+Trasmetto      geocallapp\damasco\report\scm\prestazionimateriali\xml\DATReportPrestMatXML.java
+Trasmetto      geocallapp\damasco\ui\container\CExpandable.java
+Trasmetto      geocallapp\damasco\ui\container\TableViewExpandable.java
+Trasmetto      geocallapp\damasco\ui\control\InputDecoder3.java
+Trasmetto      geocallapp\damasco\util\UtilsDMS.java
+Trasmetto      geocallapp\damasco\util\automi\ConstAutomi.java
+Trasmetto      geocallapp\damasco\ws\ConstWS.java
+Trasmissione dati ...................................................................................................
+Committed revision 353683.
+
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.30
+set BRANCH_TO=10.40
+set REV_FROM=345214
+set REV_TO=346764
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set BRANCH_FROM=10.30
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set REV_FROM=345214
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set REV_TO=346764
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 353682.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 345214:346764 http://svn.overit.it/repositories/geocall/Damasco/branches/10.30/src/overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.30 da rev 345214 a 346764 sul 10.40"
+
+set PROJECT_NAME=Damasco
+set BRANCH_FROM=10.0
+set BRANCH_TO=10.40
+set REV_FROM=346764
+set REV_TO=345214
+set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+svn update
+svn_merge_branch.cmd
+svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set PROJECT_NAME=Damasco
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set BRANCH_FROM=10.0
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set BRANCH_TO=10.40
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set REV_FROM=346764
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set REV_TO=345214
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>set COMMENT="riportate modifiche dal branch %BRANCH_FROM% da rev %REV_FROM% a %REV_TO% sul %BRANCH_TO%"
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>cd ..\..\%PROJECT_NAME%-%BRANCH_TO%\overit
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn update
+Updating '.':
+Alla revisione 353675.
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_merge_branch.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn merge -r 346764:345214 http://svn.overit.it/repositories/geocall/Damasco/branches/10.0/src/overit
+--- Fusione inversa di r346764 attraverso r345215 in '.':
+U    geocallapp\damasco\anagrafiche\contratti\DAAContrattiTestate.java
+U    geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+U    geocallapp\damasco\anagrafiche\comunicazioni\DAAComunicazioni.java
+U    geocallapp\damasco\anagrafiche\atticontrollo\DATAnnullaAttiControlloMassivo.java
+U    geocallapp\damasco\cxf\scmesitouploadmodificafile\wrapper\DATSCMEsitoUploadModificaFile.java
+U    geocallapp\damasco\importexport\importazione\importutenti\DATImportUtentiAnagrafica.java
+U    geocallapp\damasco\util\UtilsDMS.java
+ U   .
+--- Recording mergeinfo for reverse merge of r346764 through r345215 into '.':
+ G   .
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn_commit.cmd
+
+C:\OVERIT\geocall61\Damasco-10.40\overit>svn commit -m "riportate modifiche dal branch 10.0 da rev 346764 a 345214 sul 10.40"
+Trasmetto      .
+Trasmetto      geocallapp\damasco\anagrafiche\atticontrollo\DATAnnullaAttiControlloMassivo.java
+Trasmetto      geocallapp\damasco\anagrafiche\comunicazioni\DAAComunicazioni.java
+Trasmetto      geocallapp\damasco\anagrafiche\comunicazioni\DATSalvaComunicazione.java
+Trasmetto      geocallapp\damasco\anagrafiche\contratti\DAAContrattiTestate.java
+Trasmetto      geocallapp\damasco\cxf\scmesitouploadmodificafile\wrapper\DATSCMEsitoUploadModificaFile.java
+Trasmetto      geocallapp\damasco\importexport\importazione\importutenti\DATImportUtentiAnagrafica.java
+Trasmetto      geocallapp\damasco\util\UtilsDMS.java
+Trasmissione dati .......
+Committed revision 353681.

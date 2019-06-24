@@ -1,5 +1,5 @@
 import subprocess
-import shutil, sys, getopt
+import shutil, sys, getopt, os
 from datetime import datetime, date, time
 import svn.local
 
@@ -134,6 +134,8 @@ def main(argv):
     print('Input file is "', inputfile)
     flist = open(inputfile,'r')
     flist_readed_lines = flist.readlines()
+    #crea directory di log, se esiste da errore ed esce:
+    os.mkdir('log')
     #passa uno ad uno i file di log del merge.
     for line in flist_readed_lines:        
         if not line.strip().startswith('#'):
@@ -163,6 +165,8 @@ def main(argv):
             shutil.move(cmd_file_name,'log\\')
             shutil.move(cmd_commit_file_name,'log\\')
     flist.close()
+    v_oggi = date.today().strftime("%Y%m%d")
+    shutil.move('log','log_'+v_oggi)
 if __name__ == "__main__":
    main(sys.argv[1:])
 
