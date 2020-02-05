@@ -1,0 +1,23 @@
+
+C:\development-cri\test-python\test-python>REM 2019-06-07 17:11:54.516805 
+
+C:\development-cri\test-python\test-python>set PROJECT_NAME=SCMGlobal 
+
+C:\development-cri\test-python\test-python>set BRANCH_FROM=1.1 
+
+C:\development-cri\test-python\test-python>set BRANCH_TO=1.2 
+
+C:\development-cri\test-python\test-python>set REV_FROM=373169 
+
+C:\development-cri\test-python\test-python>set REV_TO=373436 
+
+C:\development-cri\test-python\test-python>set COMMENT="riportate modifiche dal branch 1.1 da rev 373169 a 373436 sul 1.2" 
+
+C:\development-cri\test-python\test-python>cd \OVERIT\geocall61\SCMGlobal-1.2\overit 
+
+C:\OVERIT\geocall61\SCMGlobal-1.2\overit>svn update 
+Updating '.':
+Alla revisione 373436.
+Input file is " merge_log_list.txt
+scmglobal_1.1-1.2.cmd
+scmglobal_1.1-1.2.txt -> 373169 373436

@@ -1,0 +1,3 @@
+select 'ALTER TABLE '||l.table_name||' MOVE LOB('||l.column_name||') STORE AS (TABLESPACE &1);' from
+user_lobs l, user_segmentS ds where ds.segment_name=l.segment_name
+/

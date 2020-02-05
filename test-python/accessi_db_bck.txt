@@ -1,0 +1,10 @@
+#todo
+#script che passando solo l'identificatore (ad es scmcolombia_prod) mi si collega con sqlplus prendendo in automatico le credenziali.
+GEOCALL/DlN73,Who/scmcolombia_prod/10.152.166.125
+geocall/geocall/culliganwfm_prod/x.x.x.x
+GEOCALLBFCOL/bMj05_Vzi/fbcolombia_prod/10.154.82.39
+geocalledesur/PRO#clapsavon2462WFM/edesur_prod/10.151.204.154
+GEOCALLEDESUR/PRE#clapsavon2462WFM/edesur_pre/10.151.8.96
+GEOCALLEDESUR/PRU#clapsavon2462WFM/edesur_pru/10.151.9.110
+GEOCALLEDESUR/DES#clapsavon2462WFM/edesur_des/10.151.7.187 
+geocallwfmprod/geocallwfmprod/camuzziwfm_prod/10.0.10.191
