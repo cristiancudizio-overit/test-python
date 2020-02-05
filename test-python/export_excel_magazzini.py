@@ -2,8 +2,8 @@ import xlwt
 from datetime import datetime,date
 import cx_Oracle
 import getpass
-v_password = getpass.getpass()
-con = cx_Oracle.connect('overitcommesse/'+v_password+'@//prod-oracle-11r2/prod112.overit.it')
+#v_password = getpass.getpass()
+con = cx_Oracle.connect('esportazionitellus/tellus@//prod-oracle-11r2/prod112.overit.it')
 cur = con.cursor()
 v_query = 'SELECT * fROM ('
 v_query += ' select                                                                  '
@@ -40,6 +40,8 @@ v_query += ' JOIN X10AAZIENDELOGISTICA A2 ON (X10AOCLID_X10AALO = A2.X10AALOID)'
 v_query += ' LEFT JOIN X10TTIPOORDINI ON (X10AOCLID_X10TTOR = X10TTORID)'
 v_query += ' JOIN LSTATIAUTOMA ON (X10AOCLID_LSAU = LSAUID))'
 v_query += ' WHERE MAXORDINE = X10ROCDID'
+#"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+v_query = 'SELECT * FROM export_magazzini_tellus'
 cur.execute(v_query)
 # scarica tutto il resultset
 result = cur.fetchall()
