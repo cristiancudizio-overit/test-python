@@ -1,0 +1,8 @@
+#le righe che iniziano con # non vengono considerate.
+geocall-6-1-6-0.txt
+geocall-6-2-6-1.txt
+geocall-6-3-6-2.txt
+geocall-7-0-6-3.txt
+geocall-8-0-7-0.txt
+geocall-8.2.0-8-0.txt
+geocall-MT-8.2.0.txt

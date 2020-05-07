@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="packaging" default="" xmlns:oja="jwaresoftware.antxtras" 
+         xmlns:svn="jwaresoftware.svn4ant.client" >
+ 
+
+	<property name="file.property" value="build.properties"/>
+	<property file="${file.property}"/>
+	
+	<property environment="env"/>
+	<!-- TASK SVN -->
+	<target name="init_globalco">
+    <loadfile srcFile="elencoprogetti43.properties" property="listofprojects" />
+    <for list="${listofprojects}" delimiter="${line.separator}" param="p.project">
+     <sequential>
+     <if>
+      <matches string="@{p.project}" pattern="^#." />
+      <then>
+       <echo message="---------- @{p.project} -----------------" />
+      </then>
+      <else> 
+      <propertyregex 
+        override="true"
+        defaultValue="@{p.project}/trunk"
+	    property="prop.out"
+	    input="@{p.project}"
+	    regexp="-"
+	    replace="/branches/"
+	    global="false" />
+      <echo message="- @{p.project} -> ${prop.out}" />
+      <mkdir dir="@{p.project}" />
+      <svn:checkout from="${prop.out}/src" to="@{p.project}/" feedback="verbose" /> 
+      </else>
+     </if> 
+     </sequential>
+    </for>  
+    <!-- <echo message="${listofprojects}" /> -->
+  </target>
+   <target name="init_project_co">
+    <mkdir dir="${project.name}" />	
+    <propertyregex 
+        override="true"
+        defaultValue="${project.name}/trunk"
+	    property="prop.out"
+	    input="${project.name}"
+	    regexp="-"
+	    replace="/branches/"
+	    global="false" />
+    <svn:checkout from="${prop.out}/src" to="${project.name}/" feedback="verbose" /> 
+  </target>		
+	<!-- TASK DI COMPILAZIONE -->
+   <target name="build_geos27" description="building project" >			
+			<echo level="info" message="start building project: ${geos.project}"/>
+			<ant dir="${geos27.location1}/${geos.project}" inheritAll="false" antfile="build-6-2.xml" />
+   </target>
+   <target name="build_geos27_bofrost" description="building project" >			
+			<echo level="info" message="start building project: ${geos.project}"/>
+			<ant dir="${geos27.location1}/${geos.project}" inheritAll="false" antfile="build-bofrost.xml" />
+   </target>
+   <target name="build_jcee" description="building project" >			
+			<echo level="info" message="start building project: ${jcee.project}"/>
+			<ant dir="${jcee.location.1.1}/${jcee.project}" inheritAll="false"  antfile="build-6-2.xml" />
+   </target>
+   <target name="build_gis" 
+			description="building project" >			
+
+			<echo level="info" message="start building project: ${geocall.project}"/>
+			<ant dir="${geocall.location9}/${geocall.project}" inheritAll="false"/>
+			
+			<echo level="info" message="start building project: ${gis.project}"/>
+			<ant dir="${gis.location1}/${gis.project}" inheritAll="false"  antfile="build-5-0.xml" />
+   </target>
+
+   <target name="build_geocall62" 
+			description="building project" >			
+
+			<echo level="info" message="start building project: ${geocall.project}"/>
+			<ant dir="${geocall.location.6.2}/${geocall.project}" inheritAll="false" antfile="build-6-2.xml"/>
+   </target>
+   <target name="build_geocall63" 
+			description="building project" >			
+
+			<echo level="info" message="start building project: ${geocall.project}"/>
+			<ant dir="${geocall.location.6.3}/${geocall.project}" inheritAll="false" antfile="build-6-3.xml"/>
+   </target>
+   <target name="build_geocall70" 
+			description="building project" >			
+
+			<echo level="info" message="start building project: ${geocall.project}"/>
+			<ant dir="${geocall.location.7.0}/${geocall.project}" inheritAll="false" antfile="build-7-0.xml"/>
+   </target> 
+   <target name="build_geocall80" 
+			description="building project" >			
+
+			<echo level="info" message="start building project: ${geocall.project}"/>
+			<ant dir="${geocall.location.8.0}/${geocall.project}" inheritAll="false" antfile="build-8-0.xml"/>
+   </target>  
+</project>
+
+
