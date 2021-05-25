@@ -11,7 +11,7 @@ import pymsteams
 ##
 while (1==1):
     try: 
-        con = cx_Oracle.connect('expdpuser/expdpuser@//svil-oracle-12/svil121p1.overit.it')
+        con = cx_Oracle.connect('expdpuser/ExpDpUser01#@//svil-oracle-12/svil121p1.overit.it')
         print(con.version)
         query = ''
         #query = query + 'select * from xmonalerts'

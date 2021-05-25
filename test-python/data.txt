@@ -1,0 +1,1 @@
+{"people": [{"username": "Scott", "hashpwd": "stackabuse.com", "salt": "Nebraska"}, {"username": "Larry", "hashpwd": "google.com", "salt": "Michigan"}, {"username": "Tim", "hashpwd": "apple.com", "salt": "Alabama"}]}
