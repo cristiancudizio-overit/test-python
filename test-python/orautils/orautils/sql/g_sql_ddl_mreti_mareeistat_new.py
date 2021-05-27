@@ -1,0 +1,56 @@
+g_sql_drop_smareeistat_new = "DROP SEQUENCE SMAREEISTAT_NEW"
+g_sql_drop_smreti_new = "DROP SEQUENCE SMRETI_NEW"
+g_sql_drop_mareeistat_new = "DROP TABLE MAREEISTAT_NEW"
+g_sql_drop_mreti_new = "DROP TABLE MRETI_NEW"
+g_sql_ddl_smareeistat_new = "create sequence smareeistat_new"
+g_sql_ddl_mareeistat_new =  """create table MAREEISTAT_NEW
+(
+  MAREID            NUMBER(10),
+  MAREISTCAP        VARCHAR2(11),
+  MARECOMUNE        VARCHAR2(50),
+  MARECAP           VARCHAR2(5),
+  MAREISTAT         VARCHAR2(6),
+  MARECODICE_LPRO   VARCHAR2(3),
+  MARECODICEREGIONE VARCHAR2(15),
+  MAREID_LREG       NUMBER(10),
+  MARESIGLAPRO      VARCHAR2(2),
+  MAREXCOORD        NUMBER(20,8),
+  MAREYCOORD        NUMBER(20,8),
+  MAREAREA          NUMBER(20,12),
+  MAREPESO          VARCHAR2(30),
+  LOGIN             NUMBER(10),
+  ACTION            NUMBER(10),
+  DATASTAMP         DATE
+) tablespace MRETIDATA"""
+g_sql_ddl_smreti_new = "CREATE SEQUENCE SMRETI_NEW"
+g_sql_ddl_mreti_new = """create table MRETI_NEW
+(
+  MRETID             NUMBER(10),
+  MRETCODICE_LNAZ    VARCHAR2(3),
+  MRETCODICE_LPRO    VARCHAR2(3),
+  MRETCODICECOMUNE   VARCHAR2(3),
+  MRETCODICELOCALITA VARCHAR2(3),
+  MRETLIVELLO        NUMBER(2),
+  MRETISTAT          VARCHAR2(6),
+  MRETCAP            VARCHAR2(5),
+  MRETISTCAP         VARCHAR2(11),
+  MRETCOMUNE         VARCHAR2(40),
+  MRETLOCALITA       VARCHAR2(50),
+  MRETID_TSPE        NUMBER(10),
+  MRETSPECIE         VARCHAR2(50),
+  MRETVIA            VARCHAR2(70),
+  MRETCIVICO         NUMBER(10),
+  MRETCIVICODESTRO   NUMBER(10),
+  MRETCIVICOSINISTRO NUMBER(10),
+  MRETINTERNO        VARCHAR2(4),
+  MRETSIGLAPRO       VARCHAR2(2),
+  MRETXCOORD         NUMBER(10,8),
+  MRETYCOORD         NUMBER(10,8),
+  MRETSTREETNAV      NUMBER(10),
+  MRETANOMALO        CHAR(1),
+  MRETDESTRO         VARCHAR2(2),
+  LOGIN              NUMBER(10),
+  ACTION             NUMBER(10),
+  DATASTAMP          DATE,
+  MRETID2            NUMBER(10)
+) tablespace MRETIDATA"""

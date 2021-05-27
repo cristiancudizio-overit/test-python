@@ -5,7 +5,7 @@ import getopt
 import sys
 
 
-NON AGGIORNATO
+NON AGGIORNATO --> vedere uploadMultipleBlobStream-
 
 
 #v_password = getpass.getpass()

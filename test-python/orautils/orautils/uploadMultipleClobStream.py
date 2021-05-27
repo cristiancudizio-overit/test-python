@@ -8,6 +8,9 @@ from datetime import datetime,date
 import cx_Oracle
 import getpass
 import os
+
+TEST NON AGGIORNATO --> vedere uploadMultipleBlobStream-
+
 # encoding=utf8
 os.environ["NLS_LANG"] = "ITALIAN_ITALY.WE8MSWIN1252"
 #v_password = getpass.getpass()

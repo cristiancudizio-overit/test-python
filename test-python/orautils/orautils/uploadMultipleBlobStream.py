@@ -8,7 +8,8 @@ import cx_Oracle
 import getpass
 import os
 from .setup_db import setup_db
-from .plsqlcode import *
+from .sql.g_plsql_write_file_on_dir import g_plsql_write_file_on_dir
+from .sql.g_plsql_write_mreti_on_dir import g_plsql_write_mreti_on_dir
 #v_password = getpass.getpass()
 #variable/constant initilized during module import
 def findcsv(path, csvfiles):
@@ -19,8 +20,20 @@ def findcsv(path, csvfiles):
              csvfiles.append(path+os.path.sep+entry.name)
         elif entry.is_dir():
              findcsv(path+os.path.sep+entry.name, csvfiles)
-def uploadMultipleBlobStream(argv):
-    working_folder = input("Enter full path for the working folder/directory: ")
+def uploadMultipleBlobStream(p_connection, p_type, *argv):
+    """
+    this function my be used for load mreti/mareeistat cvs or datapump dumps
+    must be called passing dbconnection, string 'mreti' or 'dump' and optionally an abosolute path to locate files to load
+    es: uploadMultipleBlobStream(['mydb','mreti',r'c:\tmp\filestoload'])
+    """
+    con = p_connection
+    p_mreti_or_dump = 'mreti'
+    if (p_type in ('mreti','dump')):
+        p_mreti_or_dump = p_type
+    if (len(argv) >  0):
+        working_folder = argv[0]
+    else:
+        working_folder = input("Enter full path for the working folder/directory: ")
     #os.chdir(working_folder)
     #filenames_list = os.listdir()
     filenames_list = []
@@ -28,10 +41,9 @@ def uploadMultipleBlobStream(argv):
     #you can filter too, if you need so:
     #filenames_list = [filename for filename in os.listdir() if '.csv' in filename]
     print(filenames_list)
-    mretiConnectString = os.getenv('MRETI_FACTORY1_DB_CONNECT')
-    print(mretiConnectString)
-    con = cx_Oracle.connect(mretiConnectString)
-    #con = cx_Oracle.connect('expdpuser/ExpDpUser01#@//svil-oracle-19/svil193p1.overit.it')
+    #mretiConnectString = os.getenv('MRETI_FACTORY1_DB_CONNECT')
+    #print(mretiConnectString)
+    #con = cx_Oracle.connect(mretiConnectString)
     cur = con.cursor()
     setup_db(cur)
     for file in filenames_list:
@@ -39,37 +51,53 @@ def uploadMultipleBlobStream(argv):
         #print(working_folder+"\\"+file)
         idVal = 1
         lobVar = cur.var(cx_Oracle.BLOB)
+        loglobVar = cur.var(cx_Oracle.BLOB)
+        l_log_file_name = ''
+        l_notes = ''
+        cur.execute("DELETE FROM BLOBFILES")
         cur.execute("""
-            insert into blobfiles (dump_name, datetime, dump_file)
-            values (:1, sysdate, empty_blob())
-            returning dump_file into :2""", [file, lobVar])
+            insert into blobfiles (dump_name, dump_file, log_file_name, log_file, notes, datetime, id)
+            values (:1, empty_blob(), :2, empty_blob(), :3, sysdate, blobfiles_seq.nextval)
+            returning dump_file, log_file into :4, :5""", [file, l_log_file_name, l_notes, lobVar, loglobVar])
         #assign element from list:
         blob, = lobVar.getvalue()
         #print(blob)
         offset = 1
         numBytesInChunk = 65536
-        with open(file, 'rb') as f:
-        #with open(working_folder+"\\"+file, 'rb') as f:
-            while True:
-                data = f.read(numBytesInChunk)
-                #### !!! DOS2UNIX !!!! ####
-                #data.replace(b'\r\n', b'\n')
-                if data:
-                    blob.write(data.replace(b'\r\n', b'\n'), offset)
-                if len(data) < numBytesInChunk:
-                    break
-                offset += len(data.replace(b'\r\n', b'\n'))
+        
+        if (p_mreti_or_dump == 'mreti'):
+            with open(file, 'rb') as f:
+                while True:
+                    data = f.read(numBytesInChunk)
+                    #### !!! DOS2UNIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ####
+                    #################  TO CHANGE FOR MANAGE BOTH DATAPUMP DUMPS AND CSVs   ###################################################
+                    #data.replace(b'\r\n', b'\n')
+                    if data:
+                        blob.write(data.replace(b'\r\n', b'\n'), offset)
+                    if len(data) < numBytesInChunk:
+                        break
+                    offset += len(data.replace(b'\r\n', b'\n'))        
+            print("Files uploaded to BLOBs table")
+            l_plsql_code = g_plsql_write_mreti_on_dir.replace(':p_file_name',"'"+file+"'")
+        elif (p_mreti_or_dump == 'dpdump'):
+            with open(file, 'rb') as f:
+                while True:
+                    data = f.read(numBytesInChunk)
+                    if data:
+                        blob.write(data, offset)
+                    if len(data) < numBytesInChunk:
+                        break
+                    offset += len(data)        
+            print("Files uploaded to BLOBs table")
+            l_plsql_code =  g_plsql_write_file_on_dir.replace(':p_file_name',"'"+file+"'")   
         con.commit()
-        l_plsql_code = g_plsql_write_mreti_on_dir.replace(':p_file_name',"'"+file+"'")
         #print(l_plsql_code)
         cur.execute(l_plsql_code)
         print("Blobs unloaded to DIRECTORY")    
+    cur.execute("DELETE FROM BLOBFILES")
     con.commit()
-    print("Files uploaded to BLOBs")
-    #now unload blobs on DIRECTORY
-    # maybe i want to cicle on filenames_list
     cur.close()
-    con.close()
+    #con.close()
 
-if __name__ == "__main__":
-   uploadMultipleBlobStream(sys.argv[1:])
+#if __name__ == "__main__":
+#   uploadMultipleBlobStream(sys.argv[1:])

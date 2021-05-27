@@ -60,7 +60,8 @@ def create_oracle_rds_user(argv):
     connectStrings = {}
     connectStrings['GEOCTEST'] = 'ROOT_GEOCTEST_DB_CONNECT'
     connectStrings['GEOCDEMO'] = 'ROOT_GEOCDEMO_DB_CONNECT'
-    connectStrings['FATCORY1'] = 'ROOT_FACTORY1_DB_CONNECT'
+    connectStrings['FACTORY1'] = 'ROOT_FACTORY1_DB_CONNECT'
+    connectStrings['FACTORY3'] = 'ROOT_FACTORY3_DB_CONNECT'
     if connectStrings.get(v_dbtarget.upper()) == None:
         print("Available DBTARGETS: ")
         for i in connectStrings:
@@ -69,6 +70,7 @@ def create_oracle_rds_user(argv):
         print(v_dbtarget.upper()+' DB TARGET NOT FOUND, EXITING')
         os.environ
         exit()
+    v_dbstring = os.getenv(connectStrings.get(v_dbtarget.upper()))
     v_query = 'SELECT sf_getastrongpassword() NEWPASSWD FROM DUAL'
     curUtil = connUtil.cursor()
     curUtil.execute(v_query)

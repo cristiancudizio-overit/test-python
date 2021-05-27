@@ -5,7 +5,7 @@ import os
 import getopt
 import sys
 from .setup_db import setup_db
-from .plsqlcode import *
+from .sql.g_plsql_load_blob_from_dir import g_plsql_load_blob_from_dir
 #v_password = getpass.getpass()
  #h argument without parameter, i: parameter with argument, o: parameter with argumenti
 #ifile longoptions
