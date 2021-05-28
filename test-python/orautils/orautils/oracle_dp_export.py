@@ -7,21 +7,23 @@ from datetime import datetime, date, time
 import cx_Oracle
 import getpass
 from .sql.g_plsql_dpexp import g_plsql_dpexp
+from .sql.g_plsql_dpexp import g_plsql_dpexp_tables
 from .sql.g_sql_ddl_external_table_dplog import g_sql_ddl_external_table_dplog
 from .sql.g_sql_ddl_external_table_dplog import g_sql_drop_external_table_dplog
-
+from . import connectionfactory
 def oracle_dp_export(argv):
     v_dbstring = 'username/password@//hostname/servicename'
     v_username = 'username'
     v_dumpfilename='x'
     v_directory='DATA_PUMP_DIR'
     l_generate_only = False
+    v_tablepostfix = ''
     #h argument without parameter, i: parameter with argument, o: parameter with argumenti
     #ifile longoptions
-    opts, args = getopt.getopt(argv,"hgd:u:f:p:",["help","dbstring=","username=","dumpfilename=","directory="])    
+    opts, args = getopt.getopt(argv,"hgd:u:f:p:t:",["help","dbstring=","username=","dumpfilename=","directory=","tablepostfix="])    
     for opt, arg in opts:
       if opt in ("-h", "--help"):
-         print(sys.argv[0]+' -d dbstring -u username [-f dumpfilename -p directory ...] ')
+         print(sys.argv[0]+' -d dbstring -u username [-f dumpfilename -p directory -t tablepostfix ...] ')
          print(sys.argv[0]+' -g  -u username [-f dumpfilename -p directory ...] --> GENERATE ONLY PL/SQL code')
          sys.exit()
       elif opt in ("-d", "--dbstring"):
@@ -36,17 +38,20 @@ def oracle_dp_export(argv):
       elif opt in ("-p", "--directory"):
           if arg!='':
               v_directory = arg
+      elif opt in ("-t", "--tablepostfix"):
+          if arg!='':
+              v_tablepostfix = arg
       elif opt in ("-g"):
             l_generate_only = True
     v_risposta = input('username: '+v_username+' Continuare (yes/no)? ')
     if (v_risposta != 'y'):
         print('bye')
         exit()
-    connectString = os.getenv('UTILITY_DB_CONNECT')
-    #conUtil = cx_Oracle.connect(connectString)
-    v_query = 'SELECT sf_getastrongpassword() NEWPASSWD FROM DUAL'
-    #exportSchemaFiltered(p_username varchar2, p_dumpfilename varchar2 default 'x', p_directory varchar2 default 'DPDIR')
-    v_plsql_code = g_plsql_dpexp
+    
+    if (v_tablepostfix == ''):
+        v_plsql_code = g_plsql_dpexp
+    else:
+        v_plsql_code = g_plsql_dpexp_tables.replace(":p_postfix","'"+v_tablepostfix+"'")
     v_plsql_code = v_plsql_code.replace(":p_username","'"+v_username+"'")
     v_plsql_code = v_plsql_code.replace(":p_dumpfilename","'"+v_dumpfilename+"'")
     v_plsql_code = v_plsql_code.replace(":p_directory","'"+v_directory+"'")
@@ -57,7 +62,7 @@ def oracle_dp_export(argv):
     print(v_plsql_code)
     if l_generate_only:
         exit()
-    con = cx_Oracle.connect(v_dbstring)
+    con = connectionfactory.getdbconnection(v_dbstring)
     cur = con.cursor()
     v_dp_job_state = cur.var(str)
     cur.execute(v_plsql_code, dp_job_state=v_dp_job_state)

@@ -57,20 +57,6 @@ def create_oracle_rds_user(argv):
         exit()
     utilityConnectString = os.getenv('UTILITY_DB_CONNECT')
     connUtil = cx_Oracle.connect(utilityConnectString)   
-    connectStrings = {}
-    connectStrings['GEOCTEST'] = 'ROOT_GEOCTEST_DB_CONNECT'
-    connectStrings['GEOCDEMO'] = 'ROOT_GEOCDEMO_DB_CONNECT'
-    connectStrings['FACTORY1'] = 'ROOT_FACTORY1_DB_CONNECT'
-    connectStrings['FACTORY3'] = 'ROOT_FACTORY3_DB_CONNECT'
-    if connectStrings.get(v_dbtarget.upper()) == None:
-        print("Available DBTARGETS: ")
-        for i in connectStrings:
-            print('- ',i)
-        print("---------")
-        print(v_dbtarget.upper()+' DB TARGET NOT FOUND, EXITING')
-        os.environ
-        exit()
-    v_dbstring = os.getenv(connectStrings.get(v_dbtarget.upper()))
     v_query = 'SELECT sf_getastrongpassword() NEWPASSWD FROM DUAL'
     curUtil = connUtil.cursor()
     curUtil.execute(v_query)
@@ -87,7 +73,7 @@ def create_oracle_rds_user(argv):
             print(v_newpassword)
 #if you specify -p it will be created three tablespaces <prefix>geo<data,indx,lob>
 #if you specify -t it will create tablespaces specified
-    con = cx_Oracle.connect(v_dbstring)
+    con = connectionfactory.getdbconnection(v_dbstring)
     cur = con.cursor()            
     if v_tablespaces == '':
         v_tablespace_list = [v_prefix+'geodata', v_prefix+'geoindx', v_prefix+'geolob']

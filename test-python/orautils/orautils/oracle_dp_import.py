@@ -9,6 +9,7 @@ import getpass
 from .sql.g_plsql_dpimp import g_plsql_dpimp
 from .sql.g_sql_ddl_external_table_dplog import g_sql_ddl_external_table_dplog
 from .sql.g_sql_ddl_external_table_dplog import g_sql_drop_external_table_dplog
+from  . import connectionfactory
 def oracle_dp_import(argv):
     """esempio d'uso:
     python -m orautils oracle_dp_import -d root/xxxxxx@//rds-factory-03.prod.d-hub.aws.overit.it/factory  -f geocalleletropaulo_pre_20210420.dpdmp -s geocalleletropaulo -t SVIL823ENELSAOPAULO -r geodata:edrgeodata,geoindx:edrgeoindx,geolob:edrgeolob
@@ -26,6 +27,7 @@ def oracle_dp_import(argv):
     v_src_tbs3='-'
     v_des_tbs3='-'
     l_generate_only = False
+    v_tablespace_remap = ''
     #h argument without parameter, i: parameter with argument, o: parameter with argumenti
     #ifile longoptions
     opts, args = getopt.getopt(argv,"hgd:u:f:p:s:t:r:",["help","dbstring=","username=","dumpfilename=","directory=","source=","target=","remap_tablespace="])    
@@ -62,11 +64,7 @@ def oracle_dp_import(argv):
             l_generate_only = True
     if v_des_username=='':
         v_des_username = v_src_username
-    
-    connectString = os.getenv('UTILITY_DB_CONNECT')
-    #conUtil = cx_Oracle.connect(connectString)
-    v_query = 'SELECT sf_getastrongpassword() NEWPASSWD FROM DUAL'
-    #exportSchemaFiltered(p_username varchar2, p_dumpfilename varchar2 default 'x', p_directory varchar2 default 'DPDIR')
+    con = connectionfactory.getdbconnection(v_dbstring)
     v_plsql_code = g_plsql_dpimp
     v_plsql_code = v_plsql_code.replace("{.p_src_username}",v_src_username)
     v_plsql_code = v_plsql_code.replace("{.p_des_username}",v_des_username)
@@ -75,13 +73,6 @@ def oracle_dp_import(argv):
     for i in range(len(v_tablespace_remap)):
         v_plsql_code = v_plsql_code.replace("{.p_src_tbs"+str(i+1)+"}",v_tablespace_remap[i].split(':')[0])
         v_plsql_code = v_plsql_code.replace("{.p_des_tbs"+str(i+1)+"}",v_tablespace_remap[i].split(':')[1])
-    #v_plsql_code = v_plsql_code.replace("{.p_src_tbs1}",v_src_tbs1)
-    #v_plsql_code = v_plsql_code.replace("{.p_des_tbs1}",v_des_tbs1)
-    #v_plsql_code = v_plsql_code.replace("{.p_src_tbs2}",v_src_tbs2)
-    #v_plsql_code = v_plsql_code.replace("{.p_des_tbs2}",v_des_tbs2)
-    #v_plsql_code = v_plsql_code.replace("{.p_src_tbs3}",v_src_tbs3)
-    #v_plsql_code = v_plsql_code.replace("{.p_des_tbs3}",v_des_tbs3)
-
     v_ddl_external_table = g_sql_ddl_external_table_dplog    
     v_ddl_external_table = v_ddl_external_table.replace("{.directory}",v_directory)
     v_drop_external_table = g_sql_drop_external_table_dplog
@@ -91,8 +82,8 @@ def oracle_dp_import(argv):
     v_risposta = input('des_username: '+v_des_username+' Continuare (yes/no)? ')
     if (v_risposta != 'y'):
         print('bye')
+        con.close()
         exit()
-    con = cx_Oracle.connect(v_dbstring)
     cur = con.cursor()    
     v_dp_job_state = cur.var(str)
     cur.execute(v_plsql_code, dp_job_state=v_dp_job_state)
