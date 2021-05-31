@@ -8,6 +8,7 @@ import os
 from datetime import datetime, date, time
 import cx_Oracle
 import getpass
+from . import connectionfactory
 "create_oracle_rds_module"
 
 def create_tablespace(p_tablespace_name, p_cur):
@@ -55,8 +56,9 @@ def create_oracle_rds_user(argv):
     if (v_risposta != 'y'):
         print('bye')
         exit()
-    utilityConnectString = os.getenv('UTILITY_DB_CONNECT')
-    connUtil = cx_Oracle.connect(utilityConnectString)   
+    #utilityConnectString = os.getenv('UTILITY_DB_CONNECT')
+    #connUtil = cx_Oracle.connect(utilityConnectString)   
+    connUtil = connectionfactory.getdbconnection('UTILITY_FACTORY1')
     v_query = 'SELECT sf_getastrongpassword() NEWPASSWD FROM DUAL'
     curUtil = connUtil.cursor()
     curUtil.execute(v_query)

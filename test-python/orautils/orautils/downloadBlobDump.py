@@ -30,7 +30,6 @@ def downloadBlobDump(argv):
     if (v_risposta != 'y'):
         print('bye')
         exit()
-    #con = cx_Oracle.connect('root/uu8EpWJ1fkEWEwb@//rds-gcp-01.dev.internal-test.aws.overit.it:1521/GCP')
     con = cx_Oracle.connect(l_dbstring)
     cursor = con.cursor()
     setup_db(cursor)

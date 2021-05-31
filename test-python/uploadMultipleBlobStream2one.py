@@ -7,6 +7,9 @@ from datetime import datetime,date
 import cx_Oracle
 import getpass
 import os
+"""
+ TEST CODE
+"""
 #v_password = getpass.getpass()
 working_folder = input("Enter full path for the working folder/directory: ")
 os.chdir(working_folder)
@@ -14,7 +17,7 @@ filenames_list = os.listdir()
 #you can filter too, if you need so:
 filenames_list = [filename for filename in os.listdir() if '.csv' in filename]
 print(filenames_list)
-con = cx_Oracle.connect('mreti/ciribiribindoman01!@//rds-factory-01.prod.d-hub.aws.overit.it/factory1')
+con = cx_Oracle.connect('mreti/mreti@//rds-factory-01.prod.d-hub.aws.overit.it/factory1')
 cur = con.cursor()
 #with open("MRETI.csv", "rb") as f:
 

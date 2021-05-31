@@ -20,9 +20,8 @@ filenames_list = os.listdir()
 #you can filter too, if you need so:
 filenames_list = [filename for filename in os.listdir() if '.csv' in filename]
 print(filenames_list)
-#con = cx_Oracle.connect('mreti/ciribiribindoman01!@//rds-factory-01.prod.d-hub.aws.overit.it/factory1', encoding = "UTF-8")
-con = cx_Oracle.connect('mreti/ciribiribindoman01!@//rds-factory-01.prod.d-hub.aws.overit.it/factory1')
-#con = cx_Oracle.connect('expdpuser/ExpDpUser01#@//svil-oracle-19/svil193p1.overit.it')
+#con = cx_Oracle.connect('mreti/mreti@//rds-factory-01.prod.d-hub.aws.overit.it/factory1', encoding = "UTF-8")
+con = cx_Oracle.connect('mreti/mreti@//rds-factory-01.prod.d-hub.aws.overit.it/factory1')
 cur = con.cursor()
 #with open("MRETI.csv", "rb") as f:
 for file in filenames_list:

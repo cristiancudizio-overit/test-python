@@ -6,6 +6,7 @@ from .orautils.uploadMultipleBlobStream import uploadMultipleBlobStream
 from .orautils.downloadBlobDump import downloadBlobDump
 from .orautils.oracle_dp_export import oracle_dp_export
 from .orautils.oracle_dp_import import oracle_dp_import
+from .orautils.export_censimentoRDS_on_xls import exportReport2XLS
 
 #print("Type: ", type(create_oracle_rds_user))
 #print(sys.argv)
@@ -24,6 +25,7 @@ if __name__ == "__main__":
         print("\t- oracle_dp_export")
         print("\t- oracle_dp_import")
         print("\t- load_mreti_mareeistat_from_csv")
+        print("\t- exportReport2XLS")
     elif (sys.argv[1] == 'create_oracle_rds_user'):
         print('create_oracle_rds_user','\n\n')
         create_oracle_rds_user(sys.argv[2:])
@@ -43,5 +45,9 @@ if __name__ == "__main__":
         print('load_mreti_mareeistat_from_csv','\n\n')
         #load_mreti_mareeistat_from_csv(sys.argv[2:])
         locals()[sys.argv[1]](sys.argv[2:])
+    elif (sys.argv[1] == 'exportReport2XLS'):
+        print('load_mreexportReport2XLSti_mareeistat_from_csv','\n\n')
+        locals()[sys.argv[1]](sys.argv[2:])
+
         
     
