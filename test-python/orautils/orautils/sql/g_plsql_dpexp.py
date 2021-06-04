@@ -83,6 +83,7 @@ g_plsql_dpexp = """DECLARE
                                     job_name => v_username||'_EXP',
                                     version =>  p_version);
     DBMS_DATAPUMP.METADATA_FILTER(handle=>v_handle, name=>'SCHEMA_EXPR', value=>'='''||v_username||'''', object_path=>NULL);
+    --DBMS_DATAPUMP.SET_PARAMETER(handle => v_handle, name => 'COMPRESSION', value => 'ALL' );
     --DBMS_DATAPUMP.DATA_FILTER(handle => v_handle, name => 'SUBQUERY', value => ' WHERE 1=0 ', table_name  => 'SLOG', schema_name => v_username);
     --DBMS_DATAPUMP.DATA_FILTER(handle => v_handle, name => 'SUBQUERY', value => ' WHERE 1=0 ', table_name  => 'SCOLLEGAMENTI', schema_name => v_username);
     --DBMS_DATAPUMP.DATA_FILTER(handle => v_handle, name => 'SUBQUERY', value => ' WHERE 1=0 ', table_name  => 'RLASTSYNCREPLICHEPDA', schema_name => v_username);

@@ -3,6 +3,7 @@ import base64
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives.kdf.scrypt import Scrypt
 import binascii
+import json
 #salt = os.urandom(16)
 salt = b'6s\xa5\x90\xac|M-K?\x9c\xba\x92}1\xee'
 #with same salt we got same key
@@ -34,7 +35,7 @@ print('salt encoded: ', salt_encoded)
 print('key encoded: ',key_encoded)
 print('key encoded decoded: ' ,key_encoded.decode())
 f = Fernet(key_encoded)
-token = f.encrypt(b"Secret message!")
+token = f.encrypt(b"macaco2")
 print(token)
 token_enc = token.decode()
 print(token_enc)

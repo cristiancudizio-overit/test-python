@@ -1,0 +1,8 @@
+{
+    "windtest": {
+        "u_test2": {
+            "password": "gAAAAABgumJ6xF47IgyIVeX74Ksx79MALCJjfomaGybORQriLG9UvFsOZnWmvxmL_T9pLGgQF-Xrp_5wJrOtr8aVsicOQluPdw==",
+            "salt": "NnOlkKx8TS1LP5y6kn0x7g=="
+        }
+    }
+}

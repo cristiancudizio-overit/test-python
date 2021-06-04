@@ -1,0 +1,24 @@
+{
+    "factory1": {
+        "root": {
+            "password": "gAAAAABgtgZIi6HBPA6-Ap7sHiKXxd-kswPg85AGa0dUSwurDbWdz6yj8X4fwdSDvKThUCfit7_oHIQaHK5K7XgNas6QFi9wwA==",
+            "salt": "NnOlkKx8TS1LP5y6kn0x7g=="
+        },
+        "root1": {
+            "password": "gAAAAABgtgZcyhmksCAMxNbd8mn3eKzMtDgwugzQ69D14q0ENzD-HzRgedkXm9i1pMLzSGwjzhdtPgy3kysw4cMGxFAjcPVRog==",
+            "salt": "NnOlkKx8TS1LP5y6kn0x7g=="
+        }
+    },
+    "factory2": {
+        "root": {
+            "password": "gAAAAABgtgZwqxvXZBAe1XYNEGgbOvJq9bAehO5leqqm9fI4XbN3R7GJsNYUskjQawndH3yaQJKTJahtp8o5Sxs8tRBkMvMk4g==",
+            "salt": "NnOlkKx8TS1LP5y6kn0x7g=="
+        }
+    },
+    "windtretest": {
+        "root": {
+            "password": "gAAAAABgtiYcPgnLV1YafM35YibjAm1qJYabBp60tKWrDa_MpAxrqNt9RjXifiuS6l_9LihibY4M4DcJLGR8mLBdsPy3UDFOtA==",
+            "salt": "NnOlkKx8TS1LP5y6kn0x7g=="
+        }
+    }
+}

@@ -9,7 +9,13 @@ connectStrings['MRETI_FACTORY1'] = 'MRETI_FACTORY1_DB_CONNECT'
 connectStrings['FACTORY4'] = 'ROOT_FACTORY4_DB_CONNECT'
 connectStrings['GP01PROD'] = 'ROOT_GP01PROD_DB_CONNECT'
 connectStrings['GP03PROD'] = 'ROOT_GP03PROD_DB_CONNECT'
+connectStrings['WINDTRETEST'] = 'ROOT_WINDTRETEST_DB_CONNECT'
 connectStrings['UTILITY_FACTORY1'] = 'UTILITY_DB_CONNECT'
+def getDBConnectionString(p_dbstring):
+    if (p_dbstring.count('@')==1):
+        return p_dbstring.split("@",1)[1][2:]
+    else:
+        return os.getenv(connectStrings.get(p_dbstring.upper())).split("@",1)[1][2:]  
 def getdbconnection(p_dbstring):
     l_test_connection = 'NONE'
     if (p_dbstring.count('@')==1):

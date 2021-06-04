@@ -1,4 +1,0 @@
-{"gigi": {"password":"macaco", "salt":"sale"},
- "luca": {"password":"macaco2", "salt":"sale2"},
- "giovanni": {"password":"macacos2", "salt":"Ssale2"}
-}

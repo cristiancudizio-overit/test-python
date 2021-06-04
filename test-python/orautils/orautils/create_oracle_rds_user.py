@@ -24,7 +24,7 @@ def create_tablespace(p_tablespace_name, p_cur):
     #return 'ok'
 def create_oracle_rds_user(argv):
     v_dbtarget = 'geoctest'
-    v_dbstring = 'username/password@//hostname/servicename'
+    #v_dbstring = 'username/password@//hostname/servicename'
     v_username = 'username'
     v_prefix = ''
     v_tablespaces = ''
@@ -52,10 +52,7 @@ def create_oracle_rds_user(argv):
       elif opt in ("-n", "--namespace"):
           if arg!='':
               v_namespace = arg    
-    v_risposta = input('username: '+v_username+' prefix: '+v_prefix+ 'Continuare (yes/no)? ')
-    if (v_risposta != 'y'):
-        print('bye')
-        exit()
+
     #utilityConnectString = os.getenv('UTILITY_DB_CONNECT')
     #connUtil = cx_Oracle.connect(utilityConnectString)   
     connUtil = connectionfactory.getdbconnection('UTILITY_FACTORY1')
@@ -75,15 +72,27 @@ def create_oracle_rds_user(argv):
             print(v_newpassword)
 #if you specify -p it will be created three tablespaces <prefix>geo<data,indx,lob>
 #if you specify -t it will create tablespaces specified
-    con = connectionfactory.getdbconnection(v_dbstring)
-    cur = con.cursor()            
     if v_tablespaces == '':
         v_tablespace_list = [v_prefix+'geodata', v_prefix+'geoindx', v_prefix+'geolob']
+    v_tablespace_list_full = v_tablespace_list.copy()
+    print('')
+    print(v_dbtarget)
+    print('DATABASE: '+connectionfactory.getDBConnectionString(v_dbtarget))
+    print('USERNAME: '+v_username)
+    print('PASSWORD: '+v_newpassword)
+    for i_tbs in v_tablespace_list_full:
+            print('TABLESPACE: '+i_tbs)
+    print('TEST CONNECTION: sql '+v_username+'/'+v_newpassword+'@//'+connectionfactory.getDBConnectionString(v_dbtarget))
+    v_risposta = input('username: '+v_username+' prefix: '+v_prefix+ 'Continuare (yes/no)? ')
+    if (v_risposta != 'y'):
+        print('bye')
+        exit()
+    con = connectionfactory.getdbconnection(v_dbtarget)
+    cur = con.cursor()            
     for i_tbs in v_tablespace_list:
             create_tablespace(i_tbs, cur)
     v_query =  'CREATE USER '+v_username+' IDENTIFIED BY "'+v_newpassword+'" '
     v_query += 'DEFAULT TABLESPACE  '+v_tablespace_list[0]+' QUOTA UNLIMITED ON '+v_tablespace_list[0]
-    v_tablespace_list_full = v_tablespace_list.copy()
     v_tablespace_list.pop(0)
     for i_tbs in v_tablespace_list:
         v_query += ' QUOTA UNLIMITED ON '+i_tbs
@@ -111,14 +120,14 @@ def create_oracle_rds_user(argv):
     v_queryC += '(schema, password, destination, prefix, data_attivazione, aws_tenant, stringa)'
     v_queryC += ' VALUES '
     v_queryC += ' (upper(:username), :password, :destination, :prefix, :data_attivazione, :aws_tenant,:username||\'/\'||:password||\'@//\'||:destination) '
-    v_data = {"username": v_username, "password": v_newpassword, "destination": v_dbstring.split("@",1)[1][2:],
+    v_data = {"username": v_username, "password": v_newpassword, "destination": connectionfactory.getDBConnectionString(v_dbtarget),
               "prefix": v_prefix, "data_attivazione": v_oggi, "aws_tenant": v_namespace}
     #print(v_queryC)
     curUtil.execute(v_queryC, v_data)
     connUtil.commit()
     curUtil.close()
     connUtil.close()
-    v_dbstring_new = v_username+'/'+v_newpassword+'@//'+v_dbstring.split("@",1)[1][2:]
+    v_dbstring_new = v_username+'/'+v_newpassword+'@//'+connectionfactory.getDBConnectionString(v_dbtarget)
     v_query = "SELECT SYSDATE,GLOBAL_NAME FROM GLOBAL_NAME"
     print('Testing connecion to : '+ v_dbstring_new)
     connTest = cx_Oracle.connect(v_dbstring_new)
@@ -137,13 +146,7 @@ def create_oracle_rds_user(argv):
             print(v_field)
     curTest.close()
     connTest.close()
-    print('')
-    print('DATABASE: '+v_dbstring.split("@",1)[1][2:])
-    print('USERNAME: '+v_username)
-    print('PASSWORD: '+v_newpassword)
-    for i_tbs in v_tablespace_list_full:
-            print('TABLESPACE: '+i_tbs)
-    print('TEST CONNECTION: sql '+v_username+'/'+v_newpassword+'@//'+v_dbstring.split("@",1)[1][2:])
+    
     
 if __name__ == "__main__":
    create_oracle_rds_user(sys.argv[1:])

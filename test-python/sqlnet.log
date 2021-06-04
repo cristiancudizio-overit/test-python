@@ -1,0 +1,40 @@
+
+
+***********************************************************************
+Fatal NI connect error 12170, connecting to:
+ (DESCRIPTION=(CONNECT_DATA=(SERVICE_NAME=servicename)(CID=(PROGRAM=C:\Users\ccudizio\AppData\Local\Programs\Python\Python37\python.exe)(HOST=OVER901)(USER=ccudizio)))(ADDRESS=(PROTOCOL=tcp)(HOST=10.70.134.93)(PORT=1521)))
+
+  VERSION INFORMATION:
+	TNS for 64-bit Windows: Version 19.0.0.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 64-bit Windows: Version 19.0.0.0.0 - Production
+  Version 19.3.0.0.0
+  Time: 03-JUN-2021 12:27:24
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: Message 12535 not found; No message file for product=NETWORK, facility=TNS
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Message 505 not found; No message file for product=NETWORK, facility=TNS
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12170, connecting to:
+ (DESCRIPTION=(CONNECT_DATA=(SERVICE_NAME=servicename)(CID=(PROGRAM=C:\Users\ccudizio\AppData\Local\Programs\Python\Python37\python.exe)(HOST=OVER901)(USER=ccudizio)))(ADDRESS=(PROTOCOL=tcp)(HOST=10.70.134.93)(PORT=1521)))
+
+  VERSION INFORMATION:
+	TNS for 64-bit Windows: Version 19.0.0.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 64-bit Windows: Version 19.0.0.0.0 - Production
+  Version 19.3.0.0.0
+  Time: 03-JUN-2021 12:30:15
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: Message 12535 not found; No message file for product=NETWORK, facility=TNS
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Message 505 not found; No message file for product=NETWORK, facility=TNS
+    nt secondary err code: 60
+    nt OS err code: 0
