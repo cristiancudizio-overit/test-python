@@ -6,16 +6,18 @@ import getopt
 import sys
 from .setup_db import setup_db
 from .sql.g_plsql_load_blob_from_dir import g_plsql_load_blob_from_dir
+from . import connectionfactory
 #v_password = getpass.getpass()
  #h argument without parameter, i: parameter with argument, o: parameter with argumenti
 #ifile longoptions
 def downloadBlobDump(argv):
     l_log_file_name = ''
     l_dump_name = ''
-    opts, args = getopt.getopt(argv,"hd:f:l:",["help","dbstring=","dumpfilename=", "logfilename="])    
+    l_directory = 'DATA_PUMP_DIR'
+    opts, args = getopt.getopt(argv,"hd:f:l:p:",["help","dbstring=","dumpfilename=", "logfilename=", "directory="])    
     for opt, arg in opts:
         if opt in ("-h", "--help"):
-            print(sys.argv[0]+' -d dbstring -u username [-f dumpfilename -p directory ...] ')
+            print(sys.argv[0]+' -d dbstring -f dumpfilename [-p directory (default DATA_PUMP_DIR)...] ')
             sys.exit()
         elif opt in ("-d", "--dbstring"):
             if arg!='':
@@ -26,16 +28,21 @@ def downloadBlobDump(argv):
         elif opt in ("-l", "--logfilename"):
             if arg!='':
                 l_log_file_name = arg
+        elif opt in ("-p", "--directory"):
+            if arg!='':
+                l_directory = arg
     v_risposta = input('Dumpfilename: '+l_dump_name+' Continuare (yes/no)? ')
     if (v_risposta != 'y'):
         print('bye')
         exit()
-    con = cx_Oracle.connect(l_dbstring)
+    #con = cx_Oracle.connect(l_dbstring)
+    con = connectionfactory.getdbconnection(l_dbstring)
     cursor = con.cursor()
     setup_db(cursor)
     l_plsql_code = g_plsql_load_blob_from_dir
     l_plsql_code = l_plsql_code.replace(':p_dumpfilename', "'"+l_dump_name+"'")
     l_plsql_code = l_plsql_code.replace(':p_logfilename', "'"+l_log_file_name+"'")
+    l_plsql_code = l_plsql_code.replace(':p_directory', "'"+l_directory+"'")
     print(l_plsql_code)
     cursor.execute(l_plsql_code)
     con.commit()
@@ -64,6 +71,7 @@ def downloadBlobDump(argv):
                     break
                 offset += len(data)        
     cursor.close()
-    con.close()        
+    con.close()       
+    print("Files downloaded locally") 
 if __name__ == "__main__":
    downloadBlobDump(sys.argv[1:])

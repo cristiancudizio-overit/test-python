@@ -9,9 +9,9 @@ g_plsql_load_blob_from_dir = """DECLARE
         l_dest_offset integer;
         l_src_offset integer;
         BEGIN
-        l_directory := 'DATA_PUMP_DIR';
-        l_dumpfilename := :p_dumpfilename';
-        l_logfilename :=  _p_logfilename;
+        l_directory := :p_directory;
+        l_dumpfilename := :p_dumpfilename;
+        l_logfilename :=  :p_logfilename;
         l_bfile := BFILENAME(l_directory, l_dumpfilename);
         l_bfilelog := BFILENAME(l_directory, l_logfilename);
         insert into blobfiles (

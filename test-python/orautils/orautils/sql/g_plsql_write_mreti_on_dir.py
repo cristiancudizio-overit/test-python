@@ -15,7 +15,7 @@ g_plsql_write_mreti_on_dir = """DECLARE
            else substr(dump_name,1+instr(dump_name,'\\', -1))
         end dest_file_name
         from blobfiles 
-        where dump_name = cp_dump_name;
+        where UPPER(dump_name) LIKE  '%'||cp_dump_name||'%';
     rec_odpdumps cur_odpdumps%ROWTYPE;
     BEGIN
     l_dirname := 'DATA_PUMP_DIR';

@@ -1,10 +1,12 @@
-from .sql.g_plsql_carica_mreti_mareeistat import g_plsql_carica_mreti_mareeistat
+from .sql.g_plsql_carica_mreti import g_plsql_carica_mreti
+from .sql.g_plsql_carica_mareeistat import g_plsql_carica_mareeistat
 from .sql.g_sql_ddl_mreti_mareeistat_csv import g_sql_ddl_mareeistat_csv
 from .sql.g_sql_ddl_mreti_mareeistat_csv import g_sql_ddl_mreti_csv
 from .sql.g_sql_ddl_mreti_mareeistat_new import *
 from .sql.g_plsql_fremove_files import g_plsql_fremove_mareeistat_csv
 from .sql.g_plsql_fremove_files import g_plsql_fremove_mreti_csv
 from . import uploadMultipleBlobStream
+from . import connectionfactory
 import cx_Oracle
 import sys
 import getopt
@@ -55,7 +57,15 @@ def _load_mreti_mareeistat_from_csv(p_connection, p_version):
             print("Error Code:", errorObj.code)
             print("Error Message:", errorObj.message)
             print(l_ddl_stmt)
-    l_ddl_stmt = g_plsql_carica_mreti_mareeistat.replace(':p_version',"'"+l_version+"'")
+    l_ddl_stmt = g_plsql_carica_mreti.replace(':p_version',"'"+l_version+"'")
+    try:
+        cur.execute(l_ddl_stmt)
+    except cx_Oracle.DatabaseError as e:
+        errorObj, = e.args
+        print("Error Code:", errorObj.code)
+        print("Error Message:", errorObj.message)
+        print(l_ddl_stmt)
+    l_ddl_stmt = g_plsql_carica_mareeistat.replace(':p_version',"'"+l_version+"'")
     try:
         cur.execute(l_ddl_stmt)
     except cx_Oracle.DatabaseError as e:
@@ -66,8 +76,9 @@ def _load_mreti_mareeistat_from_csv(p_connection, p_version):
     
     
 def load_mreti_mareeistat_from_csv(argv):
-    opts, args = getopt.getopt(argv,"hv:p:",["help", "version=","path="])    
+    opts, args = getopt.getopt(argv,"hv:d:p:",["help", "version=" ,"dbtarget=","path="])    
     l_path = r'c:\tmp\MRETI\last'
+    v_dbtarget=''
     for opt, arg in opts:
         if opt in ("-h", "--help"):
             print(__name__,__package__)
@@ -76,6 +87,9 @@ def load_mreti_mareeistat_from_csv(argv):
         elif opt in ("-v", "--version"):
             if arg!='':
                 l_version = arg
+        elif opt in ("-d", "--dbtarget"):
+          if arg!='':
+              v_dbtarget = arg
         elif opt in ("-p", "--path"):
             if arg!='':
                 l_path = arg
@@ -83,10 +97,14 @@ def load_mreti_mareeistat_from_csv(argv):
     if (v_risposta != 'y'):
         print('bye')
         exit()
-    mretiConnectString = os.getenv('MRETI_FACTORY1_DB_CONNECT')    
-    con = cx_Oracle.connect(mretiConnectString)
-    _remove_csv_files(con)
-    uploadMultipleBlobStream.uploadMultipleBlobStream(con, 'mreti', l_path)
+    if v_dbtarget == '':
+        v_dbtarget =  'MRETI_FACTORY1'
+    con = connectionfactory.getdbconnection(v_dbtarget)
+    #mretiConnectString = os.getenv('MRETI_FACTORY1_DB_CONNECT')    
+    #con = cx_Oracle.connect(mretiConnectString)
+    #_remove_csv_files(con)
+    #uploadMultipleBlobStream.uploadMultipleBlobStream(con, 'mreti', l_path)
+    #### vanno separate MRETI e MAREEISTAT!!!!!
     _load_mreti_mareeistat_from_csv(con, l_version)
-    _remove_csv_files(con)
+    #_remove_csv_files(con)
     con.close()

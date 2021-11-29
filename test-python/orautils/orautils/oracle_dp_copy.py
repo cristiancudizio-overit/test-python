@@ -6,13 +6,13 @@ import os
 from datetime import datetime, date, time
 import cx_Oracle
 import getpass
-from .sql.g_plsql_dpimp import g_plsql_dpimp
+from .sql.g_plsql_dp_copy import g_plsql_dp_copy
 from .sql.g_sql_ddl_external_table_dplog import g_sql_ddl_external_table_dplog
 from .sql.g_sql_ddl_external_table_dplog import g_sql_drop_external_table_dplog
 from  . import connectionfactory
-def oracle_dp_import(argv):
+def oracle_dp_copy(argv):
     """esempio d'uso:
-    python -m orautils oracle_dp_import -d root/xxxxxx@//rds-factory-03.prod.d-hub.aws.overit.it/factory  -f geocalleletropaulo_pre_20210420.dpdmp -s geocalleletropaulo -t SVIL823ENELSAOPAULO -r geodata:edrgeodata,geoindx:edrgeoindx,geolob:edrgeolob
+    python -m orautils oracle_dp_copy -d root/xxxxxx@//rds-factory-03.prod.d-hub.aws.overit.it/factory -s geocalleletropaulo -t SVIL823ENELSAOPAULO -r geodata:edrgeodata,geoindx:edrgeoindx,geolob:edrgeolob
     """
     v_dbstring = 'username/password@//hostname/servicename'
     v_username = 'username'
@@ -26,24 +26,17 @@ def oracle_dp_import(argv):
     v_des_tbs2='-'
     v_src_tbs3='-'
     v_des_tbs3='-'
+    v_db_link='SELFLINK'
     l_generate_only = False
     v_tablespace_remap = ''
-    v_tablemode = 'no'
-    v_table_name = ''
-    v_table_exists_action = 'SKIP'
-    v_tablespace_remap = list()
-    for i in range(len(v_tablespace_remap),3):
-                    v_tablespace_remap.append('-:-')
     #h argument without parameter, i: parameter with argument, o: parameter with argumenti
     #ifile longoptions
-    opts, args = getopt.getopt(argv,"hgmd:u:f:p:s:t:r:n:x:",["help","generateonly","tablemode","dbstring=","username=","dumpfilename=","directory=","source=","target=","remap_tablespace=","tablename","tableexistsaction"])    
+    opts, args = getopt.getopt(argv,"hgd:u:p:s:t:r:l:",["help","dbstring=","username=","directory=","source=","target=","remap_tablespace=","db_link="])    
     for opt, arg in opts:
       if opt in ("-h", "--help"):
-         print(sys.argv[0]+' -d dbstring -s sourceschema -t targetschema -f dumpfilename -r srctbs:destbs, [-m for table mode -p directory ... -n tablename -x TRUNCATE, REPLACE, APPEND, and SKIP.] ')
+         print(sys.argv[0]+' -d dbstring -s source -t target [-f dumpfilename -p directory -l db_link_name -r tablespacemapping...] ')
          print(sys.argv[0]+' -g -u username [-f dumpfilename -p directory ...] --> GENERATE ONLY PL/SQL code')
          sys.exit()
-      elif opt in ("-m", "--tablemode"):
-           v_tablemode = 'yes'
       elif opt in ("-d", "--dbstring"):
           if arg!='':
               v_dbstring = arg
@@ -62,12 +55,9 @@ def oracle_dp_import(argv):
       elif opt in ("-t", "--target"):
           if arg!='':
               v_des_username = arg.upper()
-      elif opt in ("-n", "--tablename"):
+      elif opt in ("-l", "--db_link"):
           if arg!='':
-              v_table_name = arg.upper()
-      elif opt in ("-x", "--tableexistsaction"):
-          if arg!='':
-              v_table_exists_action = arg.upper()
+              v_db_link = arg.upper()
       elif opt in ("-r", "--remap_tablespace"):
           if arg!='':
               v_tablespace_remap =  list(element for element in arg.upper().split(','))
@@ -79,20 +69,15 @@ def oracle_dp_import(argv):
     if v_des_username=='':
         v_des_username = v_src_username
     con = connectionfactory.getdbconnection(v_dbstring)
-    v_plsql_code = g_plsql_dpimp
+    v_plsql_code = g_plsql_dp_copy
     v_plsql_code = v_plsql_code.replace("{.p_src_username}",v_src_username.upper())
     v_plsql_code = v_plsql_code.replace("{.p_des_username}",v_des_username.upper())
     v_plsql_code = v_plsql_code.replace("{.p_dumpfilename}",v_dumpfilename)
     v_plsql_code = v_plsql_code.replace("{.p_directory}",v_directory.upper())
-    v_plsql_code = v_plsql_code.replace("{.p_table_name}",v_table_name.upper())
-    v_plsql_code = v_plsql_code.replace("{.p_table_exists_action}",v_table_exists_action.upper())
+    v_plsql_code = v_plsql_code.replace("{.p_db_link}",v_db_link)
     for i in range(len(v_tablespace_remap)):
         v_plsql_code = v_plsql_code.replace("{.p_src_tbs"+str(i+1)+"}",v_tablespace_remap[i].split(':')[0])
         v_plsql_code = v_plsql_code.replace("{.p_des_tbs"+str(i+1)+"}",v_tablespace_remap[i].split(':')[1])
-    if (v_tablemode == 'yes'):
-       v_plsql_code = v_plsql_code.replace("job_mode =>'SCHEMA',","job_mode =>'TABLE',")
-    if (v_table_name != ''):
-        v_plsql_code = v_plsql_code.replace("--TABLE_NAME--","")
     v_ddl_external_table = g_sql_ddl_external_table_dplog    
     v_ddl_external_table = v_ddl_external_table.replace("{.directory}",v_directory)
     v_drop_external_table = g_sql_drop_external_table_dplog
@@ -134,11 +119,7 @@ def oracle_dp_import(argv):
         for j in range(v_num_cols):
             v_log_line = result[i][j]
             print(v_log_line)
-    print('')
-    #print('DATABASE: '+v_dbstring.split("@",1)[1][2:])
-    print('DATABASE: '+v_dbstring)
-    print('USERNAME: '+v_des_username)
     
 if __name__ == "__main__":
-   oracle_dp_import(sys.argv[1:])
+   oracle_dp_copy(sys.argv[1:])
     

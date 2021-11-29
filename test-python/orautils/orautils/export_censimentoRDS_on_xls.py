@@ -12,13 +12,15 @@ def exportReport2XLS(argv):
     con = connectionfactory.getdbconnection('UTILITY_FACTORY1')
     cur = con.cursor()
     v_query = 'SELECT  '
-    v_query += 'ORIGINE, SCHEMA, PASSWORD, '
-    v_query += ' \' sql \'||schema||\'/\'||password||\'@//\'||destination '+','
-    v_query += 'TIPO, DESTINATION, DIMENSIONE_MB, RIFERIMENTO,'
-    v_query += 'COMMESSA, DATA_ATTIVAZIONE, ORARIO_OPERATIVO,'
-    v_query += 'AWS_TENANT, ZONE, NOTE, NOTE2, PREFIX,'
-    v_query += 'DATA_ELIMINAZIONE'
-    v_query += ' fROM censimentodbawsrds'
+    v_query += 'SOURCE, SCHEMA, PASSWORD, '
+    #v_query += ' \' sql \'||schema||\'/\'||password||\'@//\'||destination '+','
+    v_query += 'FULL_CONNECTION_STRING, '
+    v_query += 'DB_INFO, DESTINATION, SIZE_MB, REFERENT,'
+    v_query += 'ORDER_ID, ACTIVATION_DATE, OPERATING_HOURS,'
+    v_query += 'AWS_TENANT, AWS_ZONE, PROJECT_PREFIX,'
+    v_query += 'END_DATE, NOTES'
+    v_query += ' FROM AWSRDSDATABASELIST '
+    v_query += ' ORDER BY DESTINATION, SCHEMA'
     print(v_query)
     cur.execute(v_query)
     # scarica tutto il resultset
